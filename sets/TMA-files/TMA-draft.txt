@@ -1,0 +1,3572 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "CW06 Deep-Space Voyager",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Scout ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/7_CW06 Deep-Space Voyager.png"
+			}
+		},
+		{
+			"name": "CW02 Innocent Bystander",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/3_CW02 Innocent Bystander.png"
+			}
+		},
+		{
+			"name": "CW01 Closed Case Inspector",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/2_CW01 Closed Case Inspector.png"
+			}
+		},
+		{
+			"name": "CW05 Servant of the Vast",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Avatar ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/6_CW05 Servant of the Vast.png"
+			}
+		},
+		{
+			"name": "CW11 Divine Chain Follower",
+			"rarity": "common",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/12_CW11 Divine Chain Follower.png"
+			}
+		},
+		{
+			"name": "CW12 Act of Mercy",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/13_CW12 Act of Mercy.png"
+			}
+		},
+		{
+			"name": "CW15 Turn Your Gaze",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/16_CW15 Turn Your Gaze.png"
+			}
+		},
+		{
+			"name": "CW13 Captivated by Fear",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/14_CW13 Captivated by Fear.png"
+			}
+		},
+		{
+			"name": "CU02 Strangeling",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/44_CU02 Strangeling.png"
+			}
+		},
+		{
+			"name": "CU01 Dissertation Student",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/43_CU01 Dissertation Student.png"
+			}
+		},
+		{
+			"name": "CU06 Man Who Wasn't There",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Illusion ",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/48_CU06 Man Who Wasn't There.png"
+			}
+		},
+		{
+			"name": "CU04 Inexplicable Door",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Illusion Wall Avatar ",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/46_CU04 Inexplicable Door.png"
+			}
+		},
+		{
+			"name": "CU05 Archive Infiltrator",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Rogue Archivist ",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/47_CU05 Archive Infiltrator.png"
+			}
+		},
+		{
+			"name": "CU07 Off World Observer",
+			"rarity": "common",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Creature — Human Scout Avatar ",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/49_CU07 Off World Observer.png"
+			}
+		},
+		{
+			"name": "CU08 Lurking Angler",
+			"rarity": "common",
+			"mana_cost": "{5}{U}",
+			"type": "Creature — Fish Horror ",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/50_CU08 Lurking Angler.png"
+			}
+		},
+		{
+			"name": "CU03 Traveling Researcher",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/45_CU03 Traveling Researcher.png"
+			}
+		},
+		{
+			"name": "CU12 Compulsive Research",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/54_CU12 Compulsive Research.png"
+			}
+		},
+		{
+			"name": "CU10 Free Will",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/52_CU10 Free Will.png"
+			}
+		},
+		{
+			"name": "CU14 Across the Street",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/56_CU14 Across the Street.png"
+			}
+		},
+		{
+			"name": "CB04 Still and Lightless Beast",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Shade Beast Avatar ",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/87_CB04 Still and Lightless Beast.png"
+			}
+		},
+		{
+			"name": "CB02 Isolated Tenant",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/85_CB02 Isolated Tenant.png"
+			}
+		},
+		{
+			"name": "CB03 Dreamscape Victim",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/86_CB03 Dreamscape Victim.png"
+			}
+		},
+		{
+			"name": "CB01 Soldier of Chance",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/84_CB01 Soldier of Chance.png"
+			}
+		},
+		{
+			"name": "CB09 Amritsar Phantom",
+			"rarity": "common",
+			"mana_cost": "{5}{B}",
+			"type": "Creature — Spirit Soldier Avatar ",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/92_CB09 Amritsar Phantom.png"
+			}
+		},
+		{
+			"name": "CB06 Mutilated Gymnast",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Horror ",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/89_CB06 Mutilated Gymnast.png"
+			}
+		},
+		{
+			"name": "CB14 Murder",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Instant",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/97_CB14 Murder.png"
+			}
+		},
+		{
+			"name": "CB11 Undying Malice",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/94_CB11 Undying Malice.png"
+			}
+		},
+		{
+			"name": "CB13 Disrupt Thoughts",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/96_CB13 Disrupt Thoughts.png"
+			}
+		},
+		{
+			"name": "CB12 DIG",
+			"rarity": "common",
+			"mana_cost": "{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/95_CB12 DIG.png"
+			}
+		},
+		{
+			"name": "CR02 Burning Cultist",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Warlock ",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/126_CR02 Burning Cultist.png"
+			}
+		},
+		{
+			"name": "CR01 Soldier of Slaughter",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Avatar Soldier ",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/125_CR01 Soldier of Slaughter.png"
+			}
+		},
+		{
+			"name": "CR03 Everchase Fanatic",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Vampire ",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/127_CR03 Everchase Fanatic.png"
+			}
+		},
+		{
+			"name": "CR04 Tormented Artist",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/128_CR04 Tormented Artist.png"
+			}
+		},
+		{
+			"name": "CR05 Abrasive Investigator",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/129_CR05 Abrasive Investigator.png"
+			}
+		},
+		{
+			"name": "CR06 Bloodthirtsy Hiker",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Werewolf ",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/130_CR06 Bloodthirtsy Hiker.png"
+			}
+		},
+		{
+			"name": "CR07 Impossible Manifestation",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Fractal Illusion ",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/131_CR07 Impossible Manifestation.png"
+			}
+		},
+		{
+			"name": "CR10 Painful Meeting",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/134_CR10 Painful Meeting.png"
+			}
+		},
+		{
+			"name": "CR13 Into the Distortion",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/137_CR13 Into the Distortion.png"
+			}
+		},
+		{
+			"name": "CR15 To a Crisp",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/139_CR15 To a Crisp.png"
+			}
+		},
+		{
+			"name": "CR12 Cathartic Reunion",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/136_CR12 Cathartic Reunion.png"
+			}
+		},
+		{
+			"name": "CG02 Deadly Arachnid",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Spider ",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/167_CG02 Deadly Arachnid.png"
+			}
+		},
+		{
+			"name": "CG01 Living Host",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Insect ",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/166_CG01 Living Host.png"
+			}
+		},
+		{
+			"name": "CG03 Boneturner's Apprentice",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/168_CG03 Boneturner's Apprentice.png"
+			}
+		},
+		{
+			"name": "CG04 Uncanny Taxidermist",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/169_CG04 Uncanny Taxidermist.png"
+			}
+		},
+		{
+			"name": "CG08 Writhing Hive",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Insect ",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/173_CG08 Writhing Hive.png"
+			}
+		},
+		{
+			"name": "CG10 Burrowing Crawler",
+			"rarity": "common",
+			"mana_cost": "{6}{G}{G}",
+			"type": "Creature — Beast Worm Horror ",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/175_CG10 Burrowing Crawler.png"
+			}
+		},
+		{
+			"name": "CG11 Feral Pounce",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/176_CG11 Feral Pounce.png"
+			}
+		},
+		{
+			"name": "UG09 Architect's Goal",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/200_UG09 Architect's Goal.png"
+			}
+		},
+		{
+			"name": "CG07 Ambitious Doppleganger",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/172_CG07 Ambitious Doppleganger.png"
+			}
+		},
+		{
+			"name": "CG12 The Hunt is On",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/177_CG12 The Hunt is On.png"
+			}
+		},
+		{
+			"name": "UW02 Primary Reviewer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/29_UW02 Primary Reviewer.png"
+			}
+		},
+		{
+			"name": "UW06 Paranormal Pointer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Dog Archivist ",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/33_UW06 Paranormal Pointer.png"
+			}
+		},
+		{
+			"name": "UW01 Infected Hostess",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/28_UW01 Infected Hostess.png"
+			}
+		},
+		{
+			"name": "UU04 Sasha, Archival Assistant",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "72",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://LowBatteries681.github.io/sets/TMA-files/img/72_UU04 Sasha, Archival Assistant_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/72_UU04 Sasha, Archival Assistant_front.png"
+			}
+		},
+		{
+			"name": "UU02 Anatomy Students",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/70_UU02 Anatomy Students.png"
+			}
+		},
+		{
+			"name": "UU11 Impostor Syndrome",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/79_UU11 Impostor Syndrome.png"
+			}
+		},
+		{
+			"name": "UU06 Unblinking Watcher",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Eye Horror ",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/74_UU06 Unblinking Watcher.png"
+			}
+		},
+		{
+			"name": "UU05 Intricate Dollmaker",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human Artificer Avatar ",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/73_UU05 Intricate Dollmaker.png"
+			}
+		},
+		{
+			"name": "UU03 Obsessive Researcher",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/71_UU03 Obsessive Researcher.png"
+			}
+		},
+		{
+			"name": "UB06 Blood Hunter",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Vampire Avatar ",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/115_UB06 Blood Hunter.png"
+			}
+		},
+		{
+			"name": "UB07 Harbinger of The End",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Creature — Horror ",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/116_UB07 Harbinger of The End.png"
+			}
+		},
+		{
+			"name": "UB08 Dark Ritual",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/117_UB08 Dark Ritual.png"
+			}
+		},
+		{
+			"name": "UB10 Grifter's Song",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/119_UB10 Grifter's Song.png"
+			}
+		},
+		{
+			"name": "UB09 Grisly Scene",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/118_UB09 Grisly Scene.png"
+			}
+		},
+		{
+			"name": "UB13 Complete Isolation",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Enchantment",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/122_UB13 Complete Isolation.png"
+			}
+		},
+		{
+			"name": "UR03 Tim, Archival Assistant",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/153_UR03 Tim, Archival Assistant.png"
+			}
+		},
+		{
+			"name": "UR06 Blueridge Ranger",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Werewolf Ranger Scout ",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/156_UR06 Blueridge Ranger.png"
+			}
+		},
+		{
+			"name": "UR01 Burning Apparition",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Spirit ",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/151_UR01 Burning Apparition.png"
+			}
+		},
+		{
+			"name": "UR02 Ashen Devastator",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Zombie Elemental ",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/152_UR02 Ashen Devastator.png"
+			}
+		},
+		{
+			"name": "UR07 Bloodboil Drummer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Horror Bard Avatar ",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/157_UR07 Bloodboil Drummer.png"
+			}
+		},
+		{
+			"name": "UR05 Reckless Researcher",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/155_UR05 Reckless Researcher.png"
+			}
+		},
+		{
+			"name": "UG03 Institute Infiltrator",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/194_UG03 Institute Infiltrator.png"
+			}
+		},
+		{
+			"name": "UG01 Permeating Mould",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Fungus ",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/192_UG01 Permeating Mould.png"
+			}
+		},
+		{
+			"name": "UG02 Archive Transcriber",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/193_UG02 Archive Transcriber.png"
+			}
+		},
+		{
+			"name": "UG05 Cemetery Facsimile",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/196_UG05 Cemetery Facsimile.png"
+			}
+		},
+		{
+			"name": "UG04 Valley Stalker",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human ",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/195_UG04 Valley Stalker.png"
+			}
+		},
+		{
+			"name": "RW04 Formless Fog",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Elemental Horror ",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/23_RW04 Formless Fog.png"
+			}
+		},
+		{
+			"name": "RW01 Georgie Barker",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Legendary Creature — Human ",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/20_RW01 Georgie Barker.png"
+			}
+		},
+		{
+			"name": "RW03 Near Death Specialist",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/22_RW03 Near Death Specialist.png"
+			}
+		},
+		{
+			"name": "RU02 Jonathan Sims, Head Archivist",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/62_RU02 Jonathan Sims, Head Archivist.png"
+			}
+		},
+		{
+			"name": "RU03 Master Puppeteer",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Creature — Human Avatar ",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/63_RU03 Master Puppeteer.png"
+			}
+		},
+		{
+			"name": "UU14 Memory Analyst",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/82_UU14 Memory Analyst.png"
+			}
+		},
+		{
+			"name": "RU08 The Mass Ritual",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Legendary Sorcery",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/68_RU08 The Mass Ritual.png"
+			}
+		},
+		{
+			"name": "RB02 Maxwell Rayner",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/103_RB02 Maxwell Rayner.png"
+			}
+		},
+		{
+			"name": "RB05 Catalogue of the Trapped Dead",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Legendary Artifact",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/106_RB05 Catalogue of the Trapped Dead.png"
+			}
+		},
+		{
+			"name": "RB06 Creature Feature",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/107_RB06 Creature Feature.png"
+			}
+		},
+		{
+			"name": "RB07 Overwhelming Fear",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/108_RB07 Overwhelming Fear.png"
+			}
+		},
+		{
+			"name": "RR04 Jude Perry",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}{R}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/146_RR04 Jude Perry.png"
+			}
+		},
+		{
+			"name": "RR02 Shifting Enigma",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Fractal Illusion Horror ",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/144_RR02 Shifting Enigma.png"
+			}
+		},
+		{
+			"name": "RG01 Love Bug",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Insect ",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/184_RG01 Love Bug.png"
+			}
+		},
+		{
+			"name": "RG04 Grow the Last Feast",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/187_RG04 Grow the Last Feast.png"
+			}
+		},
+		{
+			"name": "MW02 Institute Historian",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/18_MW02 Institute Historian.png"
+			}
+		},
+		{
+			"name": "MU01 Enter the Infinite",
+			"rarity": "mythic",
+			"mana_cost": "{8}{U}{U}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/58_MU01 Enter the Infinite.png"
+			}
+		},
+		{
+			"name": "MB02 By the Web's Design",
+			"rarity": "mythic",
+			"mana_cost": "{7}{B}",
+			"type": "Sorcery",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/100_MB02 By the Web's Design.png"
+			}
+		},
+		{
+			"name": "MG01 Morphing Skinsuit",
+			"rarity": "mythic",
+			"mana_cost": "{G}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/181_MG01 Morphing Skinsuit.png"
+			}
+		},
+		{
+			"name": "UM01 Freefall",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/221_UM01 Freefall.png"
+			}
+		},
+		{
+			"name": "UM03 A Guest for Mr. Spider",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/223_UM03 A Guest for Mr. Spider.png"
+			}
+		},
+		{
+			"name": "UM07 Thrill of the Chase",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/227_UM07 Thrill of the Chase.png"
+			}
+		},
+		{
+			"name": "UM09 Love Bombing",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/229_UM09 Love Bombing.png"
+			}
+		},
+		{
+			"name": "UM11 Boatswain's Call",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/231_UM11 Boatswain's Call.png"
+			}
+		},
+		{
+			"name": "UM13 Upon the Stair",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/233_UM13 Upon the Stair.png"
+			}
+		},
+		{
+			"name": "UM05 Civilian Casualties",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/225_UM05 Civilian Casualties.png"
+			}
+		},
+		{
+			"name": "RG05 Blood Bag",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/188_RG05 Blood Bag.png"
+			}
+		},
+		{
+			"name": "RM01 Simon Fairchild",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/211_RM01 Simon Fairchild.png"
+			}
+		},
+		{
+			"name": "MM01 Annabelle, the Weaver",
+			"rarity": "mythic",
+			"mana_cost": "{6}{U}{B}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/207_MM01 Annabelle, the Weaver.png"
+			}
+		},
+		{
+			"name": "RM03 The Piper",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Creature — Horror Avatar ",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/213_RM03 The Piper.png"
+			}
+		},
+		{
+			"name": "RM04 Trevor and Julia, Hunters",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Legendary Creature — Human Ranger Avatar ",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/214_RM04 Trevor and Julia, Hunters.png"
+			}
+		},
+		{
+			"name": "RM05 Jane Prentiss and the Hive",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/215_RM05 Jane Prentiss and the Hive.png"
+			}
+		},
+		{
+			"name": "RM08 Jared, the Boneturner",
+			"rarity": "rare",
+			"mana_cost": "{B}{G}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/218_RM08 Jared, the Boneturner.png"
+			}
+		},
+		{
+			"name": "CA05 Tape Recorder",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/245_CA05 Tape Recorder.png"
+			}
+		},
+		{
+			"name": "CA04 Brutal Pipe",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue Equipment ",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/244_CA04 Brutal Pipe.png"
+			}
+		},
+		{
+			"name": "CA03 Stuffed Scarecrow",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Scarecrow ",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/243_CA03 Stuffed Scarecrow.png"
+			}
+		},
+		{
+			"name": "CA02 Mechanical Turk",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact — Vehicle ",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/242_CA02 Mechanical Turk.png"
+			}
+		},
+		{
+			"name": "UA01 Rusted Slaughter Knife",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/247_UA01 Rusted Slaughter Knife.png"
+			}
+		},
+		{
+			"name": "UA02 Porcelain Dolly",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Toy ",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/248_UA02 Porcelain Dolly.png"
+			}
+		},
+		{
+			"name": "UA03 Death's Game Pieces",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue ",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/249_UA03 Death's Game Pieces.png"
+			}
+		},
+		{
+			"name": "UA04 Blood Money Pouch",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue ",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/250_UA04 Blood Money Pouch.png"
+			}
+		},
+		{
+			"name": "UA05 Meat Grinder",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Clue ",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/251_UA05 Meat Grinder.png"
+			}
+		},
+		{
+			"name": "Towering Skyscraper",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/269_Towering Skyscraper.png"
+			}
+		},
+		{
+			"name": "Panoptic Prison",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/268_Panoptic Prison.png"
+			}
+		},
+		{
+			"name": "Bloodsoaked Trenches",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/263_Bloodsoaked Trenches.png"
+			}
+		},
+		{
+			"name": "Wildlife Lodge",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/271_Wildlife Lodge.png"
+			}
+		},
+		{
+			"name": "Community Resort",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/265_Community Resort.png"
+			}
+		},
+		{
+			"name": "UM19 Drawing a Blank",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/239_UM19 Drawing a Blank.png"
+			}
+		},
+		{
+			"name": "RM06 Peter, Captain of the Tundra",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/216_RM06 Peter, Captain of the Tundra.png"
+			}
+		},
+		{
+			"name": "UM15 Cruelty Free",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/235_UM15 Cruelty Free.png"
+			}
+		},
+		{
+			"name": "CW07 Devout Exorcist",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/8_CW07 Devout Exorcist.png"
+			}
+		},
+		{
+			"name": "RM02 Elias, Vessel of Magnus",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/212_RM02 Elias, Vessel of Magnus.png"
+			}
+		},
+		{
+			"name": "CB07 Voracious Feeder",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Vampire ",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/90_CB07 Voracious Feeder.png"
+			}
+		},
+		{
+			"name": "RL01 Vast's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/252_RL01 Vast's Domain.png"
+			}
+		},
+		{
+			"name": "CW04 Colony",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/5_CW04 Colony.png"
+			}
+		},
+		{
+			"name": "RL08 Flesh's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/259_RL08 Flesh's Domain.png"
+			}
+		},
+		{
+			"name": "CB15 Tucked In",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/98_CB15 Tucked In.png"
+			}
+		},
+		{
+			"name": "CR11 Third Degree",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/135_CR11 Third Degree.png"
+			}
+		},
+		{
+			"name": "RL10 Stranger's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/261_RL10 Stranger's Domain.png"
+			}
+		},
+		{
+			"name": "CG13 Twisting Bone",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Instant",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/178_CG13 Twisting Bone.png"
+			}
+		},
+		{
+			"name": "RL07 Spiral's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/258_RL07 Spiral's Domain.png"
+			}
+		},
+		{
+			"name": "RL09 Desolation's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/260_RL09 Desolation's Domain.png"
+			}
+		},
+		{
+			"name": "MM02 Gertrude, Former Archivist",
+			"rarity": "mythic",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/208_MM02 Gertrude, Former Archivist.png"
+			}
+		},
+		{
+			"name": "RM10 Nikola, Ringmaster",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Legendary Creature — Shapeshifter ",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/220_RM10 Nikola, Ringmaster.png"
+			}
+		},
+		{
+			"name": "UM17 Burning Desire",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/237_UM17 Burning Desire.png"
+			}
+		},
+		{
+			"name": "The Risen War",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/4_The Risen War.png"
+			}
+		},
+		{
+			"name": "The Unknowing",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/5_The Unknowing.png"
+			}
+		},
+		{
+			"name": "The Great Twisting",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/3_The Great Twisting.png"
+			}
+		},
+		{
+			"name": "MA01 The Magnus Institute",
+			"rarity": "mythic",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/246_MA01 The Magnus Institute.png"
+			}
+		},
+		{
+			"name": "Foggy Dock",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/267_Foggy Dock.png"
+			}
+		},
+		{
+			"name": "Endless Hallway",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/266_Endless Hallway.png"
+			}
+		},
+		{
+			"name": "Butcher Shop",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/264_Butcher Shop.png"
+			}
+		},
+		{
+			"name": "Billowing Furnace",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/262_Billowing Furnace.png"
+			}
+		},
+		{
+			"name": "Wax Museum",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/270_Wax Museum.png"
+			}
+		},
+		{
+			"name": "CU13 Tight Squeeze",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/55_CU13 Tight Squeeze.png"
+			}
+		},
+		{
+			"name": "CW14 Encounter the Beyond",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/15_CW14 Encounter the Beyond.png"
+			}
+		},
+		{
+			"name": "UW14 Swarming Chorus",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Insect ",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/41_UW14 Swarming Chorus.png"
+			}
+		},
+		{
+			"name": "RU04 The Calliope",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Artifact",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/64_RU04 The Calliope.png"
+			}
+		},
+		{
+			"name": "RB01 Bucoda Locals",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Creature — Citizen Avatar ",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/102_RB01 Bucoda Locals.png"
+			}
+		},
+		{
+			"name": "RR06 In Pursuit",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/148_RR06 In Pursuit.png"
+			}
+		},
+		{
+			"name": "The Extinguished Sun",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/2_The Extinguished Sun.png"
+			}
+		},
+		{
+			"name": "CG06 Wolf of the Woods",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Werewolf Avatar ",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/171_CG06 Wolf of the Woods.png"
+			}
+		},
+		{
+			"name": "UW05 Pestilent Locusts",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Insect ",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/32_UW05 Pestilent Locusts.png"
+			}
+		},
+		{
+			"name": "CW10 Skysoaring Hawk",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Bird Avatar ",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/11_CW10 Skysoaring Hawk.png"
+			}
+		},
+		{
+			"name": "CW08 Overnight Security",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/9_CW08 Overnight Security.png"
+			}
+		},
+		{
+			"name": "CW09 Doomwing Moth",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Insect ",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/10_CW09 Doomwing Moth.png"
+			}
+		},
+		{
+			"name": "RW02 Leitner, Foolish Librarian",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Creature — Human ",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/21_RW02 Leitner, Foolish Librarian.png"
+			}
+		},
+		{
+			"name": "The Everchase",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/1_The Everchase.png"
+			}
+		},
+		{
+			"name": "CW03 Statement Giver",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/4_CW03 Statement Giver.png"
+			}
+		},
+		{
+			"name": "UU08 Drown",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/76_UU08 Drown.png"
+			}
+		},
+		{
+			"name": "UU09 Under Surveillance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/77_UU09 Under Surveillance.png"
+			}
+		},
+		{
+			"name": "CU15 Workplace Paranoia",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/57_CU15 Workplace Paranoia.png"
+			}
+		},
+		{
+			"name": "CU09 Unorthodox Solution",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/51_CU09 Unorthodox Solution.png"
+			}
+		},
+		{
+			"name": "CU11 Swept Up",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/53_CU11 Swept Up.png"
+			}
+		},
+		{
+			"name": "CB10 Stage Fright",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/93_CB10 Stage Fright.png"
+			}
+		},
+		{
+			"name": "CB08 Maimed Figure",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Horror ",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/91_CB08 Maimed Figure.png"
+			}
+		},
+		{
+			"name": "CB05 Occult Analyst",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/88_CB05 Occult Analyst.png"
+			}
+		},
+		{
+			"name": "CR14 Inspector's Inferno",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/138_CR14 Inspector's Inferno.png"
+			}
+		},
+		{
+			"name": "CR09 Frenzied Hunter",
+			"rarity": "common",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Werewolf Avatar ",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/133_CR09 Frenzied Hunter.png"
+			}
+		},
+		{
+			"name": "CR08 Institute Defiler",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Horror Avatar ",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/132_CR08 Institute Defiler.png"
+			}
+		},
+		{
+			"name": "CA01 I Guess You Had To Be There",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/1_CA01 I Guess You Had To Be There.png"
+			}
+		},
+		{
+			"name": "UG12 Invasion of the Institute",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Sorcery",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/203_UG12 Invasion of the Institute.png"
+			}
+		},
+		{
+			"name": "CG14 Reshape the World",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/179_CG14 Reshape the World.png"
+			}
+		},
+		{
+			"name": "CG09 Symbiotic Beast",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Insect Beast ",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/174_CG09 Symbiotic Beast.png"
+			}
+		},
+		{
+			"name": "CG05 Artefact Curator",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/170_CG05 Artefact Curator.png"
+			}
+		},
+		{
+			"name": "CA01 Observing Mannequin",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Shapeshifter ",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/241_CA01 Observing Mannequin.png"
+			}
+		},
+		{
+			"name": "UR12 Another Twist",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/162_UR12 Another Twist.png"
+			}
+		},
+		{
+			"name": "CG15 Underground",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/180_CG15 Underground.png"
+			}
+		},
+		{
+			"name": "UW08 Storm of The Void",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Elemental Horror ",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/35_UW08 Storm of The Void.png"
+			}
+		},
+		{
+			"name": "UW13 Another Attempt",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Sorcery",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/40_UW13 Another Attempt.png"
+			}
+		},
+		{
+			"name": "UW11 Replacement",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/38_UW11 Replacement.png"
+			}
+		},
+		{
+			"name": "UW03 Inquisitive Antiquary",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/30_UW03 Inquisitive Antiquary.png"
+			}
+		},
+		{
+			"name": "UW07 Corrections Officer",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/34_UW07 Corrections Officer.png"
+			}
+		},
+		{
+			"name": "UW10 Swallowed by the Sky",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/37_UW10 Swallowed by the Sky.png"
+			}
+		},
+		{
+			"name": "UB04 Stranglevine",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Plant Horror ",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/113_UB04 Stranglevine.png"
+			}
+		},
+		{
+			"name": "UB12 Last Words",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/121_UB12 Last Words.png"
+			}
+		},
+		{
+			"name": "UB05 Militant Reaper",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Specter Soldier ",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/114_UB05 Militant Reaper.png"
+			}
+		},
+		{
+			"name": "UB02 Nightveil Stalker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Vampire Rogue ",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/111_UB02 Nightveil Stalker.png"
+			}
+		},
+		{
+			"name": "UB03 Patient Necroturner",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Avatar ",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/112_UB03 Patient Necroturner.png"
+			}
+		},
+		{
+			"name": "UB01 Unethical Scholar",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/110_UB01 Unethical Scholar.png"
+			}
+		},
+		{
+			"name": "UG06 Cultivator Beetle",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Insect ",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/197_UG06 Cultivator Beetle.png"
+			}
+		},
+		{
+			"name": "UG07 Bloodguide Predator",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Creature — Werewolf ",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/198_UG07 Bloodguide Predator.png"
+			}
+		},
+		{
+			"name": "UG08 Piece Together the Puzzle",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/199_UG08 Piece Together the Puzzle.png"
+			}
+		},
+		{
+			"name": "UG13 Thrilling Conclusion",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Sorcery",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/204_UG13 Thrilling Conclusion.png"
+			}
+		},
+		{
+			"name": "UG10 Rite of the Sunken Sky",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/201_UG10 Rite of the Sunken Sky.png"
+			}
+		},
+		{
+			"name": "UR08 Catastrophic Amalgam",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Elemental Horror ",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/158_UR08 Catastrophic Amalgam.png"
+			}
+		},
+		{
+			"name": "UR10 Perplexing End",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Instant",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/160_UR10 Perplexing End.png"
+			}
+		},
+		{
+			"name": "UR13 Give Chase",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Enchantment",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/163_UR13 Give Chase.png"
+			}
+		},
+		{
+			"name": "UR09 Desolation's Mark",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/159_UR09 Desolation's Mark.png"
+			}
+		},
+		{
+			"name": "UR11 Maddening Melody",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Sorcery",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/161_UR11 Maddening Melody.png"
+			}
+		},
+		{
+			"name": "UU07 Eerie Impersonator",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/75_UU07 Eerie Impersonator.png"
+			}
+		},
+		{
+			"name": "UU01 Fractal Vase",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Artifact Creature — Horror ",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/69_UU01 Fractal Vase.png"
+			}
+		},
+		{
+			"name": "UU13 Overwhelming Insight",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Instant",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/81_UU13 Overwhelming Insight.png"
+			}
+		},
+		{
+			"name": "UM04 Gerard Keay",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Spirit ",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/224_UM04 Gerard Keay.png"
+			}
+		},
+		{
+			"name": "UM06 Alfred Grifter",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Legendary Creature — Human Bard Avatar ",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/226_UM06 Alfred Grifter.png"
+			}
+		},
+		{
+			"name": "UM08 Daisy Tonner",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Legendary Creature — Human Werewolf ",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/228_UM08 Daisy Tonner.png"
+			}
+		},
+		{
+			"name": "UM10 Agape",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Legendary Creature — Dog Avatar ",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/230_UM10 Agape.png"
+			}
+		},
+		{
+			"name": "UM12 Oliver Banks",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/232_UM12 Oliver Banks.png"
+			}
+		},
+		{
+			"name": "UM14 Gabriel, Worker of Clay",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Legendary Creature — Human  Avatar ",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/234_UM14 Gabriel, Worker of Clay.png"
+			}
+		},
+		{
+			"name": "UM16 John Amherst",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/236_UM16 John Amherst.png"
+			}
+		},
+		{
+			"name": "UM18 Basira Hussain",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Creature — Human Detective ",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/238_UM18 Basira Hussain.png"
+			}
+		},
+		{
+			"name": "UM02 Mike Crew",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/222_UM02 Mike Crew.png"
+			}
+		},
+		{
+			"name": "RM07 The Distortion",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{R}",
+			"type": "Legendary Creature — Avatar ",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/217_RM07 The Distortion.png"
+			}
+		},
+		{
+			"name": "UM20 The Anglerfish",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}{U}",
+			"type": "Legendary Creature — Shapeshifter ",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/240_UM20 The Anglerfish.png"
+			}
+		},
+		{
+			"name": "UU10 On With the Show",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/78_UU10 On With the Show.png"
+			}
+		},
+		{
+			"name": "RU05 Ushanka's Despair",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/65_RU05 Ushanka's Despair.png"
+			}
+		},
+		{
+			"name": "RR07 A Cold and Quiet Death",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/149_RR07 A Cold and Quiet Death.png"
+			}
+		},
+		{
+			"name": "UR04 Melanie King",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/154_UR04 Melanie King.png"
+			}
+		},
+		{
+			"name": "UW12 Cost of Living",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/39_UW12 Cost of Living.png"
+			}
+		},
+		{
+			"name": "UU12 Eye Contact",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/80_UU12 Eye Contact.png"
+			}
+		},
+		{
+			"name": "UB11 Meat",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/120_UB11 Meat.png"
+			}
+		},
+		{
+			"name": "Ritual",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Ritual",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/1_Ritual.png"
+			}
+		},
+		{
+			"name": "UG14 Thorough Journalist",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/205_UG14 Thorough Journalist.png"
+			}
+		},
+		{
+			"name": "RU06 Identity Theft",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/66_RU06 Identity Theft.png"
+			}
+		},
+		{
+			"name": "UW09 Chronicle of Fear",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/36_UW09 Chronicle of Fear.png"
+			}
+		},
+		{
+			"name": "RW05 Personal Space",
+			"rarity": "rare",
+			"mana_cost": "{W}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/24_RW05 Personal Space.png"
+			}
+		},
+		{
+			"name": "RW07 Sever the Eye's Watch",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/26_RW07 Sever the Eye's Watch.png"
+			}
+		},
+		{
+			"name": "RW06 Organize the Archives",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/25_RW06 Organize the Archives.png"
+			}
+		},
+		{
+			"name": "RW08 Statement Begins",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Sorcery",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/27_RW08 Statement Begins.png"
+			}
+		},
+		{
+			"name": "RU01 Waxhouse Operator",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Shapeshifter ",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/61_RU01 Waxhouse Operator.png"
+			}
+		},
+		{
+			"name": "RB08 The Eye Opens",
+			"rarity": "rare",
+			"mana_cost": "{7}{B}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/109_RB08 The Eye Opens.png"
+			}
+		},
+		{
+			"name": "UB14 Agent of The Eye",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Archivist ",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/123_UB14 Agent of The Eye.png"
+			}
+		},
+		{
+			"name": "RB04 Daedalus Survivor",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Scout Survivor ",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/105_RB04 Daedalus Survivor.png"
+			}
+		},
+		{
+			"name": "RB03 Rotten Deserter",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/104_RB03 Rotten Deserter.png"
+			}
+		},
+		{
+			"name": "RR05 Total War",
+			"rarity": "rare",
+			"mana_cost": "{R}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/147_RR05 Total War.png"
+			}
+		},
+		{
+			"name": "RR03 Bloodscent Hunter",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Creature — Werewolf Avatar ",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/145_RR03 Bloodscent Hunter.png"
+			}
+		},
+		{
+			"name": "UR14 Soldier of the Nemesis",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/164_UR14 Soldier of the Nemesis.png"
+			}
+		},
+		{
+			"name": "RR08 Disrupt the Unknowing",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/150_RR08 Disrupt the Unknowing.png"
+			}
+		},
+		{
+			"name": "RG03 Apocalypse Worm",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Worm Horror ",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/186_RG03 Apocalypse Worm.png"
+			}
+		},
+		{
+			"name": "RG08 Marked for the Hunt",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/191_RG08 Marked for the Hunt.png"
+			}
+		},
+		{
+			"name": "RG06 Monster Pig",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Boar ",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/189_RG06 Monster Pig.png"
+			}
+		},
+		{
+			"name": "MW03 Birthed by Flame",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/19_MW03 Birthed by Flame.png"
+			}
+		},
+		{
+			"name": "MB03 The Coffin",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Artifact",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/101_MB03 The Coffin.png"
+			}
+		},
+		{
+			"name": "MR03 Spreading Flames",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/142_MR03 Spreading Flames.png"
+			}
+		},
+		{
+			"name": "MG02 Grim Boneturner",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Human Avatar ",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/182_MG02 Grim Boneturner.png"
+			}
+		},
+		{
+			"name": "RU07 Literary Heights",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/67_RU07 Literary Heights.png"
+			}
+		},
+		{
+			"name": "UG11 First Hunt",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/202_UG11 First Hunt.png"
+			}
+		},
+		{
+			"name": "MB01 Mikaele Salesa",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Creature — Human ",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/99_MB01 Mikaele Salesa.png"
+			}
+		},
+		{
+			"name": "MR02 The New Door",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/141_MR02 The New Door.png"
+			}
+		},
+		{
+			"name": "MG03 Become Prey",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/183_MG03 Become Prey.png"
+			}
+		},
+		{
+			"name": "MM03 Breekon and Hope",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Legendary Creature — Shapeshifter ",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/209_MM03 Breekon and Hope.png"
+			}
+		},
+		{
+			"name": "RM09 Agnes, Messiah of Flame",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/219_RM09 Agnes, Messiah of Flame.png"
+			}
+		},
+		{
+			"name": "MM04 Compulsive Nature",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/210_MM04 Compulsive Nature.png"
+			}
+		},
+		{
+			"name": "RG07 The Circus is in Town",
+			"rarity": "rare",
+			"mana_cost": "{5}{G}",
+			"type": "Sorcery",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/190_RG07 The Circus is in Town.png"
+			}
+		},
+		{
+			"name": "RG02 Hezekiah, the Gravedigger",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Legendary Creature — Human Avatar ",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/185_RG02 Hezekiah, the Gravedigger.png"
+			}
+		},
+		{
+			"name": "MU02 A Talk with Doctor David",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/59_MU02 A Talk with Doctor David.png"
+			}
+		},
+		{
+			"name": "UW04 Martin, Archival Assistant",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Creature — Human Archivist ",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/31_UW04 Martin, Archival Assistant.png"
+			}
+		},
+		{
+			"name": "RR01 The Cult of the Lightless Flame",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Legendary Creature — Avatar ",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/143_RR01 The Cult of the Lightless Flame.png"
+			}
+		},
+		{
+			"name": "MW01 Aspect of the End",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Skeleton Avatar ",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/17_MW01 Aspect of the End.png"
+			}
+		},
+		{
+			"name": "MU03 The Archivist",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{U}{U}",
+			"type": "Legendary Planeswalker — Jonathan ",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/60_MU03 The Archivist.png"
+			}
+		},
+		{
+			"name": "MR01 Bloodsoaked Militia",
+			"rarity": "mythic",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Soldier Avatar ",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/140_MR01 Bloodsoaked Militia.png"
+			}
+		},
+		{
+			"name": "RL06 Lonely's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/257_RL06 Lonely's Domain.png"
+			}
+		},
+		{
+			"name": "RL05 Corruption's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/256_RL05 Corruption's Domain.png"
+			}
+		},
+		{
+			"name": "RL02 Web's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/253_RL02 Web's Domain.png"
+			}
+		},
+		{
+			"name": "RL03 Slaughter's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/254_RL03 Slaughter's Domain.png"
+			}
+		},
+		{
+			"name": "RL04 Hunt's Domain",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/255_RL04 Hunt's Domain.png"
+			}
+		},
+		{
+			"name": "Clue",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Clue ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/7_Clue.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain ",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/275_Mountain.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island ",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/273_Island.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest ",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/276_Forest.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp ",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/274_Swamp.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains ",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/272_Plains.png"
+			}
+		},
+		{
+			"name": "UW15 It That Ignores",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Horror ",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/42_UW15 It That Ignores.png"
+			}
+		},
+		{
+			"name": "UU15 It That Watches",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Horror ",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/83_UU15 It That Watches.png"
+			}
+		},
+		{
+			"name": "UB15 It That Frenzies",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Horror ",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/124_UB15 It That Frenzies.png"
+			}
+		},
+		{
+			"name": "UR15 It That Preys",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Horror ",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/165_UR15 It That Preys.png"
+			}
+		},
+		{
+			"name": "UG15 It That Butchers",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Horror ",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/206_UG15 It That Butchers.png"
+			}
+		},
+		{
+			"name": "SG09 Parallel Lives",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/9_SG09 Parallel Lives.png"
+			}
+		},
+		{
+			"name": "SG010 Primal Surge",
+			"rarity": "masterpiece",
+			"mana_cost": "{8}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/10_SG010 Primal Surge.png"
+			}
+		},
+		{
+			"name": "SG08 Uncivil Unrest",
+			"rarity": "masterpiece",
+			"mana_cost": "{4}{R}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/8_SG08 Uncivil Unrest.png"
+			}
+		},
+		{
+			"name": "SG06 Snuff Out",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{B}",
+			"type": "Instant",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/6_SG06 Snuff Out.png"
+			}
+		},
+		{
+			"name": "SG02 Silence",
+			"rarity": "masterpiece",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/2_SG02 Silence.png"
+			}
+		},
+		{
+			"name": "SG01 Journey to Nowhere",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/1_SG01 Journey to Nowhere.png"
+			}
+		},
+		{
+			"name": "SG04 Visions of Beyond",
+			"rarity": "masterpiece",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/4_SG04 Visions of Beyond.png"
+			}
+		},
+		{
+			"name": "SG07 Fiery Temper",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/7_SG07 Fiery Temper.png"
+			}
+		},
+		{
+			"name": "SG03 Cyclonic Rift",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/3_SG03 Cyclonic Rift.png"
+			}
+		},
+		{
+			"name": "SG05 Buried Alive",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/5_SG05 Buried Alive.png"
+			}
+		},
+		{
+			"name": "Werewolf",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Werewolf ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/5_Werewolf.png"
+			}
+		},
+		{
+			"name": "Shapeshifter",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Shapeshifter ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/3_Shapeshifter.png"
+			}
+		},
+		{
+			"name": "Insect",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Insect ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/6_Insect.png"
+			}
+		},
+		{
+			"name": "Living Lightning",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Elemental Shaman ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/4_Living Lightning.png"
+			}
+		},
+		{
+			"name": "Food",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Food ",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/8_Food.png"
+			}
+		},
+		{
+			"name": "Human",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Human ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/2_Human.png"
+			}
+		},
+		{
+			"name": "Treasure",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Treasure ",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/9_Treasure.png"
+			}
+		},
+		{
+			"name": "The Archivist",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Emblem",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/TMA-files/img/10_The Archivist.png"
+			}
+		}
+	]
+[RareSlot(1)]
+2 RW04 Formless Fog
+2 RW01 Georgie Barker
+2 RW03 Near Death Specialist
+2 RU02 Jonathan Sims, Head Archivist
+2 RU03 Master Puppeteer
+2 RU08 The Mass Ritual
+2 RB02 Maxwell Rayner
+2 RB05 Catalogue of the Trapped Dead
+2 RB06 Creature Feature
+2 RB07 Overwhelming Fear
+2 RR04 Jude Perry
+2 RR02 Shifting Enigma
+2 RG01 Love Bug
+2 RG04 Grow the Last Feast
+2 RG05 Blood Bag
+2 RM01 Simon Fairchild
+2 RM03 The Piper
+2 RM04 Trevor and Julia, Hunters
+2 RM05 Jane Prentiss and the Hive
+2 RM08 Jared, the Boneturner
+2 RM06 Peter, Captain of the Tundra
+2 RM02 Elias, Vessel of Magnus
+2 RL01 Vast's Domain
+2 RL08 Flesh's Domain
+2 RL10 Stranger's Domain
+2 RL07 Spiral's Domain
+2 RL09 Desolation's Domain
+2 RM10 Nikola, Ringmaster
+2 RU04 The Calliope
+2 RB01 Bucoda Locals
+2 RR06 In Pursuit
+2 RW02 Leitner, Foolish Librarian
+2 RM07 The Distortion
+2 RU05 Ushanka's Despair
+2 RR07 A Cold and Quiet Death
+2 RU06 Identity Theft
+2 RW05 Personal Space
+2 RW07 Sever the Eye's Watch
+2 RW06 Organize the Archives
+2 RW08 Statement Begins
+2 RU01 Waxhouse Operator
+2 RB08 The Eye Opens
+2 RB04 Daedalus Survivor
+2 RB03 Rotten Deserter
+2 RR05 Total War
+2 RR03 Bloodscent Hunter
+2 RR08 Disrupt the Unknowing
+2 RG03 Apocalypse Worm
+2 RG08 Marked for the Hunt
+2 RG06 Monster Pig
+2 RU07 Literary Heights
+2 RM09 Agnes, Messiah of Flame
+2 RG07 The Circus is in Town
+2 RG02 Hezekiah, the Gravedigger
+2 RR01 The Cult of the Lightless Flame
+2 RL06 Lonely's Domain
+2 RL05 Corruption's Domain
+2 RL02 Web's Domain
+2 RL03 Slaughter's Domain
+2 RL04 Hunt's Domain
+1 MW02 Institute Historian
+1 MU01 Enter the Infinite
+1 MB02 By the Web's Design
+1 MG01 Morphing Skinsuit
+1 MM01 Annabelle, the Weaver
+1 MM02 Gertrude, Former Archivist
+1 MA01 The Magnus Institute
+1 MW03 Birthed by Flame
+1 MB03 The Coffin
+1 MR03 Spreading Flames
+1 MG02 Grim Boneturner
+1 MB01 Mikaele Salesa
+1 MR02 The New Door
+1 MG03 Become Prey
+1 MM03 Breekon and Hope
+1 MM04 Compulsive Nature
+1 MU02 A Talk with Doctor David
+1 MW01 Aspect of the End
+1 MU03 The Archivist
+1 MR01 Bloodsoaked Militia
+[UncommonSlot(3)]
+9 UG09 Architect's Goal
+9 UW02 Primary Reviewer
+9 UW06 Paranormal Pointer
+9 UW01 Infected Hostess
+9 UU04 Sasha, Archival Assistant
+9 UU02 Anatomy Students
+9 UU11 Impostor Syndrome
+9 UU06 Unblinking Watcher
+9 UU05 Intricate Dollmaker
+9 UU03 Obsessive Researcher
+9 UB06 Blood Hunter
+9 UB07 Harbinger of The End
+9 UB08 Dark Ritual
+9 UB10 Grifter's Song
+9 UB09 Grisly Scene
+9 UB13 Complete Isolation
+9 UR03 Tim, Archival Assistant
+9 UR06 Blueridge Ranger
+9 UR01 Burning Apparition
+9 UR02 Ashen Devastator
+9 UR07 Bloodboil Drummer
+9 UR05 Reckless Researcher
+9 UG03 Institute Infiltrator
+9 UG01 Permeating Mould
+9 UG02 Archive Transcriber
+9 UG05 Cemetery Facsimile
+9 UG04 Valley Stalker
+9 UU14 Memory Analyst
+9 UM01 Freefall
+9 UM03 A Guest for Mr. Spider
+9 UM07 Thrill of the Chase
+9 UM09 Love Bombing
+9 UM11 Boatswain's Call
+9 UM13 Upon the Stair
+9 UM05 Civilian Casualties
+9 UA01 Rusted Slaughter Knife
+9 UA02 Porcelain Dolly
+9 UA03 Death's Game Pieces
+9 UA04 Blood Money Pouch
+9 UA05 Meat Grinder
+9 UM19 Drawing a Blank
+9 UM15 Cruelty Free
+9 UM17 Burning Desire
+9 UW14 Swarming Chorus
+9 UW05 Pestilent Locusts
+9 UU08 Drown
+9 UU09 Under Surveillance
+9 UG12 Invasion of the Institute
+9 UR12 Another Twist
+9 UW08 Storm of The Void
+9 UW13 Another Attempt
+9 UW11 Replacement
+9 UW03 Inquisitive Antiquary
+9 UW07 Corrections Officer
+9 UW10 Swallowed by the Sky
+9 UB04 Stranglevine
+9 UB12 Last Words
+9 UB05 Militant Reaper
+9 UB02 Nightveil Stalker
+9 UB03 Patient Necroturner
+9 UB01 Unethical Scholar
+9 UG06 Cultivator Beetle
+9 UG07 Bloodguide Predator
+9 UG08 Piece Together the Puzzle
+9 UG13 Thrilling Conclusion
+9 UG10 Rite of the Sunken Sky
+9 UR08 Catastrophic Amalgam
+9 UR10 Perplexing End
+9 UR13 Give Chase
+9 UR09 Desolation's Mark
+9 UR11 Maddening Melody
+9 UU07 Eerie Impersonator
+9 UU01 Fractal Vase
+9 UU13 Overwhelming Insight
+9 UM04 Gerard Keay
+9 UM06 Alfred Grifter
+9 UM08 Daisy Tonner
+9 UM10 Agape
+9 UM12 Oliver Banks
+9 UM14 Gabriel, Worker of Clay
+9 UM16 John Amherst
+9 UM18 Basira Hussain
+9 UM02 Mike Crew
+9 UM20 The Anglerfish
+9 UU10 On With the Show
+9 UR04 Melanie King
+9 UW12 Cost of Living
+9 UU12 Eye Contact
+9 UB11 Meat
+9 UG14 Thorough Journalist
+9 UW09 Chronicle of Fear
+9 UB14 Agent of The Eye
+9 UR14 Soldier of the Nemesis
+9 UG11 First Hunt
+9 UW04 Martin, Archival Assistant
+9 UW15 It That Ignores
+9 UU15 It That Watches
+9 UB15 It That Frenzies
+9 UR15 It That Preys
+9 UG15 It That Butchers
+[CommonSlot(7)]
+30 CW06 Deep-Space Voyager
+30 CW02 Innocent Bystander
+30 CW01 Closed Case Inspector
+30 CW05 Servant of the Vast
+30 CW11 Divine Chain Follower
+30 CW12 Act of Mercy
+30 CW15 Turn Your Gaze
+30 CW13 Captivated by Fear
+30 CU02 Strangeling
+30 CU01 Dissertation Student
+30 CU06 Man Who Wasn't There
+30 CU04 Inexplicable Door
+30 CU05 Archive Infiltrator
+30 CU07 Off World Observer
+30 CU08 Lurking Angler
+30 CU03 Traveling Researcher
+30 CU12 Compulsive Research
+30 CU10 Free Will
+30 CU14 Across the Street
+30 CB04 Still and Lightless Beast
+30 CB02 Isolated Tenant
+30 CB03 Dreamscape Victim
+30 CB01 Soldier of Chance
+30 CB09 Amritsar Phantom
+30 CB06 Mutilated Gymnast
+30 CB14 Murder
+30 CB11 Undying Malice
+30 CB13 Disrupt Thoughts
+30 CB12 DIG
+30 CR02 Burning Cultist
+30 CR01 Soldier of Slaughter
+30 CR03 Everchase Fanatic
+30 CR04 Tormented Artist
+30 CR05 Abrasive Investigator
+30 CR06 Bloodthirtsy Hiker
+30 CR07 Impossible Manifestation
+30 CR10 Painful Meeting
+30 CR13 Into the Distortion
+30 CR15 To a Crisp
+30 CR12 Cathartic Reunion
+30 CG02 Deadly Arachnid
+30 CG01 Living Host
+30 CG03 Boneturner's Apprentice
+30 CG04 Uncanny Taxidermist
+30 CG08 Writhing Hive
+30 CG10 Burrowing Crawler
+30 CG11 Feral Pounce
+30 CG07 Ambitious Doppleganger
+30 CG12 The Hunt is On
+30 CA05 Tape Recorder
+30 CA04 Brutal Pipe
+30 CA03 Stuffed Scarecrow
+30 CA02 Mechanical Turk
+30 CW07 Devout Exorcist
+30 CB07 Voracious Feeder
+30 CW04 Colony
+30 CB15 Tucked In
+30 CR11 Third Degree
+30 CG13 Twisting Bone
+30 CU13 Tight Squeeze
+30 CW14 Encounter the Beyond
+30 CG06 Wolf of the Woods
+30 CW10 Skysoaring Hawk
+30 CW08 Overnight Security
+30 CW09 Doomwing Moth
+30 CW03 Statement Giver
+30 CU15 Workplace Paranoia
+30 CU09 Unorthodox Solution
+30 CU11 Swept Up
+30 CB10 Stage Fright
+30 CB08 Maimed Figure
+30 CB05 Occult Analyst
+30 CR14 Inspector's Inferno
+30 CR09 Frenzied Hunter
+30 CR08 Institute Defiler
+30 CA01 I Guess You Had To Be There
+30 CG14 Reshape the World
+30 CG09 Symbiotic Beast
+30 CG05 Artefact Curator
+30 CA01 Observing Mannequin
+30 CG15 Underground
+[WildcardSlot(2)]
+10 CW06 Deep-Space Voyager
+10 CW02 Innocent Bystander
+10 CW01 Closed Case Inspector
+10 CW05 Servant of the Vast
+10 CW11 Divine Chain Follower
+10 CW12 Act of Mercy
+10 CW15 Turn Your Gaze
+10 CW13 Captivated by Fear
+10 CU02 Strangeling
+10 CU01 Dissertation Student
+10 CU06 Man Who Wasn't There
+10 CU04 Inexplicable Door
+10 CU05 Archive Infiltrator
+10 CU07 Off World Observer
+10 CU08 Lurking Angler
+10 CU03 Traveling Researcher
+10 CU12 Compulsive Research
+10 CU10 Free Will
+10 CU14 Across the Street
+10 CB04 Still and Lightless Beast
+10 CB02 Isolated Tenant
+10 CB03 Dreamscape Victim
+10 CB01 Soldier of Chance
+10 CB09 Amritsar Phantom
+10 CB06 Mutilated Gymnast
+10 CB14 Murder
+10 CB11 Undying Malice
+10 CB13 Disrupt Thoughts
+10 CB12 DIG
+10 CR02 Burning Cultist
+10 CR01 Soldier of Slaughter
+10 CR03 Everchase Fanatic
+10 CR04 Tormented Artist
+10 CR05 Abrasive Investigator
+10 CR06 Bloodthirtsy Hiker
+10 CR07 Impossible Manifestation
+10 CR10 Painful Meeting
+10 CR13 Into the Distortion
+10 CR15 To a Crisp
+10 CR12 Cathartic Reunion
+10 CG02 Deadly Arachnid
+10 CG01 Living Host
+10 CG03 Boneturner's Apprentice
+10 CG04 Uncanny Taxidermist
+10 CG08 Writhing Hive
+10 CG10 Burrowing Crawler
+10 CG11 Feral Pounce
+10 UG09 Architect's Goal
+10 CG07 Ambitious Doppleganger
+10 CG12 The Hunt is On
+10 UW02 Primary Reviewer
+10 UW06 Paranormal Pointer
+10 UW01 Infected Hostess
+10 UU04 Sasha, Archival Assistant
+10 UU02 Anatomy Students
+10 UU11 Impostor Syndrome
+10 UU06 Unblinking Watcher
+10 UU05 Intricate Dollmaker
+10 UU03 Obsessive Researcher
+10 UB06 Blood Hunter
+10 UB07 Harbinger of The End
+10 UB08 Dark Ritual
+10 UB10 Grifter's Song
+10 UB09 Grisly Scene
+10 UB13 Complete Isolation
+10 UR03 Tim, Archival Assistant
+10 UR06 Blueridge Ranger
+10 UR01 Burning Apparition
+10 UR02 Ashen Devastator
+10 UR07 Bloodboil Drummer
+10 UR05 Reckless Researcher
+10 UG03 Institute Infiltrator
+10 UG01 Permeating Mould
+10 UG02 Archive Transcriber
+10 UG05 Cemetery Facsimile
+10 UG04 Valley Stalker
+10 RW04 Formless Fog
+10 RW01 Georgie Barker
+10 RW03 Near Death Specialist
+10 RU02 Jonathan Sims, Head Archivist
+10 RU03 Master Puppeteer
+10 UU14 Memory Analyst
+10 RU08 The Mass Ritual
+10 RB02 Maxwell Rayner
+10 RB05 Catalogue of the Trapped Dead
+10 RB06 Creature Feature
+10 RB07 Overwhelming Fear
+10 RR04 Jude Perry
+10 RR02 Shifting Enigma
+10 RG01 Love Bug
+10 RG04 Grow the Last Feast
+10 MW02 Institute Historian
+10 MU01 Enter the Infinite
+10 MB02 By the Web's Design
+10 MG01 Morphing Skinsuit
+10 UM01 Freefall
+10 UM03 A Guest for Mr. Spider
+10 UM07 Thrill of the Chase
+10 UM09 Love Bombing
+10 UM11 Boatswain's Call
+10 UM13 Upon the Stair
+10 UM05 Civilian Casualties
+10 RG05 Blood Bag
+10 RM01 Simon Fairchild
+10 MM01 Annabelle, the Weaver
+10 RM03 The Piper
+10 RM04 Trevor and Julia, Hunters
+10 RM05 Jane Prentiss and the Hive
+10 RM08 Jared, the Boneturner
+10 CA05 Tape Recorder
+10 CA04 Brutal Pipe
+10 CA03 Stuffed Scarecrow
+10 CA02 Mechanical Turk
+10 UA01 Rusted Slaughter Knife
+10 UA02 Porcelain Dolly
+10 UA03 Death's Game Pieces
+10 UA04 Blood Money Pouch
+10 UA05 Meat Grinder
+10 UM19 Drawing a Blank
+10 RM06 Peter, Captain of the Tundra
+10 UM15 Cruelty Free
+10 CW07 Devout Exorcist
+10 RM02 Elias, Vessel of Magnus
+10 CB07 Voracious Feeder
+10 RL01 Vast's Domain
+10 CW04 Colony
+10 RL08 Flesh's Domain
+10 CB15 Tucked In
+10 CR11 Third Degree
+10 RL10 Stranger's Domain
+10 CG13 Twisting Bone
+10 RL07 Spiral's Domain
+10 RL09 Desolation's Domain
+10 MM02 Gertrude, Former Archivist
+10 RM10 Nikola, Ringmaster
+10 UM17 Burning Desire
+10 The Risen War
+10 The Unknowing
+10 The Great Twisting
+10 MA01 The Magnus Institute
+10 CU13 Tight Squeeze
+10 CW14 Encounter the Beyond
+10 UW14 Swarming Chorus
+10 RU04 The Calliope
+10 RB01 Bucoda Locals
+10 RR06 In Pursuit
+10 The Extinguished Sun
+10 CG06 Wolf of the Woods
+10 UW05 Pestilent Locusts
+10 CW10 Skysoaring Hawk
+10 CW08 Overnight Security
+10 CW09 Doomwing Moth
+10 RW02 Leitner, Foolish Librarian
+10 The Everchase
+10 CW03 Statement Giver
+10 UU08 Drown
+10 UU09 Under Surveillance
+10 CU15 Workplace Paranoia
+10 CU09 Unorthodox Solution
+10 CU11 Swept Up
+10 CB10 Stage Fright
+10 CB08 Maimed Figure
+10 CB05 Occult Analyst
+10 CR14 Inspector's Inferno
+10 CR09 Frenzied Hunter
+10 CR08 Institute Defiler
+10 CA01 I Guess You Had To Be There
+10 UG12 Invasion of the Institute
+10 CG14 Reshape the World
+10 CG09 Symbiotic Beast
+10 CG05 Artefact Curator
+10 CA01 Observing Mannequin
+10 UR12 Another Twist
+10 CG15 Underground
+10 UW08 Storm of The Void
+10 UW13 Another Attempt
+10 UW11 Replacement
+10 UW03 Inquisitive Antiquary
+10 UW07 Corrections Officer
+10 UW10 Swallowed by the Sky
+10 UB04 Stranglevine
+10 UB12 Last Words
+10 UB05 Militant Reaper
+10 UB02 Nightveil Stalker
+10 UB03 Patient Necroturner
+10 UB01 Unethical Scholar
+10 UG06 Cultivator Beetle
+10 UG07 Bloodguide Predator
+10 UG08 Piece Together the Puzzle
+10 UG13 Thrilling Conclusion
+10 UG10 Rite of the Sunken Sky
+10 UR08 Catastrophic Amalgam
+10 UR10 Perplexing End
+10 UR13 Give Chase
+10 UR09 Desolation's Mark
+10 UR11 Maddening Melody
+10 UU07 Eerie Impersonator
+10 UU01 Fractal Vase
+10 UU13 Overwhelming Insight
+10 UM04 Gerard Keay
+10 UM06 Alfred Grifter
+10 UM08 Daisy Tonner
+10 UM10 Agape
+10 UM12 Oliver Banks
+10 UM14 Gabriel, Worker of Clay
+10 UM16 John Amherst
+10 UM18 Basira Hussain
+10 UM02 Mike Crew
+10 RM07 The Distortion
+10 UM20 The Anglerfish
+10 UU10 On With the Show
+10 RU05 Ushanka's Despair
+10 RR07 A Cold and Quiet Death
+10 UR04 Melanie King
+10 UW12 Cost of Living
+10 UU12 Eye Contact
+10 UB11 Meat
+10 UG14 Thorough Journalist
+10 RU06 Identity Theft
+10 UW09 Chronicle of Fear
+10 RW05 Personal Space
+10 RW07 Sever the Eye's Watch
+10 RW06 Organize the Archives
+10 RW08 Statement Begins
+10 RU01 Waxhouse Operator
+10 RB08 The Eye Opens
+10 UB14 Agent of The Eye
+10 RB04 Daedalus Survivor
+10 RB03 Rotten Deserter
+10 RR05 Total War
+10 RR03 Bloodscent Hunter
+10 UR14 Soldier of the Nemesis
+10 RR08 Disrupt the Unknowing
+10 RG03 Apocalypse Worm
+10 RG08 Marked for the Hunt
+10 RG06 Monster Pig
+10 MW03 Birthed by Flame
+10 MB03 The Coffin
+10 MR03 Spreading Flames
+10 MG02 Grim Boneturner
+10 RU07 Literary Heights
+10 UG11 First Hunt
+10 MB01 Mikaele Salesa
+10 MR02 The New Door
+10 MG03 Become Prey
+10 MM03 Breekon and Hope
+10 RM09 Agnes, Messiah of Flame
+10 MM04 Compulsive Nature
+10 RG07 The Circus is in Town
+10 RG02 Hezekiah, the Gravedigger
+10 MU02 A Talk with Doctor David
+10 UW04 Martin, Archival Assistant
+10 RR01 The Cult of the Lightless Flame
+10 MW01 Aspect of the End
+10 MU03 The Archivist
+10 MR01 Bloodsoaked Militia
+10 RL06 Lonely's Domain
+10 RL05 Corruption's Domain
+10 RL02 Web's Domain
+10 RL03 Slaughter's Domain
+10 RL04 Hunt's Domain
+10 UW15 It That Ignores
+10 UU15 It That Watches
+10 UB15 It That Frenzies
+10 UR15 It That Preys
+10 UG15 It That Butchers
+10 SG09 Parallel Lives
+10 SG010 Primal Surge
+10 SG08 Uncivil Unrest
+10 SG06 Snuff Out
+10 SG02 Silence
+10 SG01 Journey to Nowhere
+10 SG04 Visions of Beyond
+10 SG07 Fiery Temper
+10 SG03 Cyclonic Rift
+10 SG05 Buried Alive
+[LandSlot(1)]
+10 Towering Skyscraper
+10 Panoptic Prison
+10 Bloodsoaked Trenches
+10 Wildlife Lodge
+10 Community Resort
+10 Foggy Dock
+10 Endless Hallway
+10 Butcher Shop
+10 Billowing Furnace
+10 Wax Museum

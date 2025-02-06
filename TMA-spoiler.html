@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/TMA-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>TMA visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/TMA-files/logo.png" />
+	<img class="preload-hidden" src="/sets/TMA-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="TMA-spoiler"><img src="sets/TMA-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/TMA-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\TMA-files\img\17_MW01 Aspect of the End.png" id="17_MW01 Aspect of the End" data-flag="@X" onclick="openSidebar('17_MW01 Aspect of the End',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\58_MU01 Enter the Infinite.png" id="58_MU01 Enter the Infinite" data-flag="@X" onclick="openSidebar('58_MU01 Enter the Infinite',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\99_MB01 Mikaele Salesa.png" id="99_MB01 Mikaele Salesa" data-flag="@X" onclick="openSidebar('99_MB01 Mikaele Salesa',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\140_MR01 Bloodsoaked Militia.png" id="140_MR01 Bloodsoaked Militia" data-flag="@X" onclick="openSidebar('140_MR01 Bloodsoaked Militia',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\181_MG01 Morphing Skinsuit.png" id="181_MG01 Morphing Skinsuit" data-flag="@X" onclick="openSidebar('181_MG01 Morphing Skinsuit',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\18_MW02 Institute Historian.png" id="18_MW02 Institute Historian" data-flag="@X" onclick="openSidebar('18_MW02 Institute Historian',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\59_MU02 A Talk with Doctor David.png" id="59_MU02 A Talk with Doctor David" data-flag="@X" onclick="openSidebar('59_MU02 A Talk with Doctor David',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\100_MB02 By the Web's Design.png" id="100_MB02 By the Webs Design" data-flag="@X" onclick="openSidebar('100_MB02 By the Webs Design',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\141_MR02 The New Door.png" id="141_MR02 The New Door" data-flag="@X" onclick="openSidebar('141_MR02 The New Door',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\182_MG02 Grim Boneturner.png" id="182_MG02 Grim Boneturner" data-flag="@X" onclick="openSidebar('182_MG02 Grim Boneturner',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\19_MW03 Birthed by Flame.png" id="19_MW03 Birthed by Flame" data-flag="@X" onclick="openSidebar('19_MW03 Birthed by Flame',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\60_MU03 The Archivist.png" id="60_MU03 The Archivist" data-flag="@X" onclick="openSidebar('60_MU03 The Archivist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\101_MB03 The Coffin.png" id="101_MB03 The Coffin" data-flag="@X" onclick="openSidebar('101_MB03 The Coffin',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\142_MR03 Spreading Flames.png" id="142_MR03 Spreading Flames" data-flag="@X" onclick="openSidebar('142_MR03 Spreading Flames',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\183_MG03 Become Prey.png" id="183_MG03 Become Prey" data-flag="@X" onclick="openSidebar('183_MG03 Become Prey',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\20_RW01 Georgie Barker.png" id="20_RW01 Georgie Barker" data-flag="@X" onclick="openSidebar('20_RW01 Georgie Barker',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\61_RU01 Waxhouse Operator.png" id="61_RU01 Waxhouse Operator" data-flag="@X" onclick="openSidebar('61_RU01 Waxhouse Operator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\102_RB01 Bucoda Locals.png" id="102_RB01 Bucoda Locals" data-flag="@X" onclick="openSidebar('102_RB01 Bucoda Locals',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\143_RR01 The Cult of the Lightless Flame.png" id="143_RR01 The Cult of the Lightless Flame" data-flag="@X" onclick="openSidebar('143_RR01 The Cult of the Lightless Flame',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\184_RG01 Love Bug.png" id="184_RG01 Love Bug" data-flag="@X" onclick="openSidebar('184_RG01 Love Bug',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\21_RW02 Leitner, Foolish Librarian.png" id="21_RW02 Leitner, Foolish Librarian" data-flag="@X" onclick="openSidebar('21_RW02 Leitner, Foolish Librarian',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\62_RU02 Jonathan Sims, Head Archivist.png" id="62_RU02 Jonathan Sims, Head Archivist" data-flag="@X" onclick="openSidebar('62_RU02 Jonathan Sims, Head Archivist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\103_RB02 Maxwell Rayner.png" id="103_RB02 Maxwell Rayner" data-flag="@X" onclick="openSidebar('103_RB02 Maxwell Rayner',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\144_RR02 Shifting Enigma.png" id="144_RR02 Shifting Enigma" data-flag="@X" onclick="openSidebar('144_RR02 Shifting Enigma',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\185_RG02 Hezekiah, the Gravedigger.png" id="185_RG02 Hezekiah, the Gravedigger" data-flag="@X" onclick="openSidebar('185_RG02 Hezekiah, the Gravedigger',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\22_RW03 Near Death Specialist.png" id="22_RW03 Near Death Specialist" data-flag="@X" onclick="openSidebar('22_RW03 Near Death Specialist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\63_RU03 Master Puppeteer.png" id="63_RU03 Master Puppeteer" data-flag="@X" onclick="openSidebar('63_RU03 Master Puppeteer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\104_RB03 Rotten Deserter.png" id="104_RB03 Rotten Deserter" data-flag="@X" onclick="openSidebar('104_RB03 Rotten Deserter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\145_RR03 Bloodscent Hunter.png" id="145_RR03 Bloodscent Hunter" data-flag="@X" onclick="openSidebar('145_RR03 Bloodscent Hunter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\186_RG03 Apocalypse Worm.png" id="186_RG03 Apocalypse Worm" data-flag="@X" onclick="openSidebar('186_RG03 Apocalypse Worm',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\23_RW04 Formless Fog.png" id="23_RW04 Formless Fog" data-flag="@X" onclick="openSidebar('23_RW04 Formless Fog',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\64_RU04 The Calliope.png" id="64_RU04 The Calliope" data-flag="@X" onclick="openSidebar('64_RU04 The Calliope',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\105_RB04 Daedalus Survivor.png" id="105_RB04 Daedalus Survivor" data-flag="@X" onclick="openSidebar('105_RB04 Daedalus Survivor',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\146_RR04 Jude Perry.png" id="146_RR04 Jude Perry" data-flag="@X" onclick="openSidebar('146_RR04 Jude Perry',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\187_RG04 Grow the Last Feast.png" id="187_RG04 Grow the Last Feast" data-flag="@X" onclick="openSidebar('187_RG04 Grow the Last Feast',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\24_RW05 Personal Space.png" id="24_RW05 Personal Space" data-flag="@X" onclick="openSidebar('24_RW05 Personal Space',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\65_RU05 Ushanka's Despair.png" id="65_RU05 Ushankas Despair" data-flag="@X" onclick="openSidebar('65_RU05 Ushankas Despair',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\106_RB05 Catalogue of the Trapped Dead.png" id="106_RB05 Catalogue of the Trapped Dead" data-flag="@X" onclick="openSidebar('106_RB05 Catalogue of the Trapped Dead',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\147_RR05 Total War.png" id="147_RR05 Total War" data-flag="@X" onclick="openSidebar('147_RR05 Total War',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\188_RG05 Blood Bag.png" id="188_RG05 Blood Bag" data-flag="@X" onclick="openSidebar('188_RG05 Blood Bag',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\25_RW06 Organize the Archives.png" id="25_RW06 Organize the Archives" data-flag="@X" onclick="openSidebar('25_RW06 Organize the Archives',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\66_RU06 Identity Theft.png" id="66_RU06 Identity Theft" data-flag="@X" onclick="openSidebar('66_RU06 Identity Theft',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\107_RB06 Creature Feature.png" id="107_RB06 Creature Feature" data-flag="@X" onclick="openSidebar('107_RB06 Creature Feature',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\148_RR06 In Pursuit.png" id="148_RR06 In Pursuit" data-flag="@X" onclick="openSidebar('148_RR06 In Pursuit',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\189_RG06 Monster Pig.png" id="189_RG06 Monster Pig" data-flag="@X" onclick="openSidebar('189_RG06 Monster Pig',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\26_RW07 Sever the Eye's Watch.png" id="26_RW07 Sever the Eyes Watch" data-flag="@X" onclick="openSidebar('26_RW07 Sever the Eyes Watch',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\67_RU07 Literary Heights.png" id="67_RU07 Literary Heights" data-flag="@X" onclick="openSidebar('67_RU07 Literary Heights',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\108_RB07 Overwhelming Fear.png" id="108_RB07 Overwhelming Fear" data-flag="@X" onclick="openSidebar('108_RB07 Overwhelming Fear',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\149_RR07 A Cold and Quiet Death.png" id="149_RR07 A Cold and Quiet Death" data-flag="@X" onclick="openSidebar('149_RR07 A Cold and Quiet Death',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\190_RG07 The Circus is in Town.png" id="190_RG07 The Circus is in Town" data-flag="@X" onclick="openSidebar('190_RG07 The Circus is in Town',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\27_RW08 Statement Begins.png" id="27_RW08 Statement Begins" data-flag="@X" onclick="openSidebar('27_RW08 Statement Begins',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\68_RU08 The Mass Ritual.png" id="68_RU08 The Mass Ritual" data-flag="@X" onclick="openSidebar('68_RU08 The Mass Ritual',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\109_RB08 The Eye Opens.png" id="109_RB08 The Eye Opens" data-flag="@X" onclick="openSidebar('109_RB08 The Eye Opens',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\150_RR08 Disrupt the Unknowing.png" id="150_RR08 Disrupt the Unknowing" data-flag="@X" onclick="openSidebar('150_RR08 Disrupt the Unknowing',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\191_RG08 Marked for the Hunt.png" id="191_RG08 Marked for the Hunt" data-flag="@X" onclick="openSidebar('191_RG08 Marked for the Hunt',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\28_UW01 Infected Hostess.png" id="28_UW01 Infected Hostess" data-flag="@X" onclick="openSidebar('28_UW01 Infected Hostess',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\69_UU01 Fractal Vase.png" id="69_UU01 Fractal Vase" data-flag="@X" onclick="openSidebar('69_UU01 Fractal Vase',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\110_UB01 Unethical Scholar.png" id="110_UB01 Unethical Scholar" data-flag="@X" onclick="openSidebar('110_UB01 Unethical Scholar',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\151_UR01 Burning Apparition.png" id="151_UR01 Burning Apparition" data-flag="@X" onclick="openSidebar('151_UR01 Burning Apparition',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\192_UG01 Permeating Mould.png" id="192_UG01 Permeating Mould" data-flag="@X" onclick="openSidebar('192_UG01 Permeating Mould',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\29_UW02 Primary Reviewer.png" id="29_UW02 Primary Reviewer" data-flag="@X" onclick="openSidebar('29_UW02 Primary Reviewer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\70_UU02 Anatomy Students.png" id="70_UU02 Anatomy Students" data-flag="@X" onclick="openSidebar('70_UU02 Anatomy Students',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\111_UB02 Nightveil Stalker.png" id="111_UB02 Nightveil Stalker" data-flag="@X" onclick="openSidebar('111_UB02 Nightveil Stalker',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\152_UR02 Ashen Devastator.png" id="152_UR02 Ashen Devastator" data-flag="@X" onclick="openSidebar('152_UR02 Ashen Devastator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\193_UG02 Archive Transcriber.png" id="193_UG02 Archive Transcriber" data-flag="@X" onclick="openSidebar('193_UG02 Archive Transcriber',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\30_UW03 Inquisitive Antiquary.png" id="30_UW03 Inquisitive Antiquary" data-flag="@X" onclick="openSidebar('30_UW03 Inquisitive Antiquary',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\71_UU03 Obsessive Researcher.png" id="71_UU03 Obsessive Researcher" data-flag="@X" onclick="openSidebar('71_UU03 Obsessive Researcher',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\112_UB03 Patient Necroturner.png" id="112_UB03 Patient Necroturner" data-flag="@X" onclick="openSidebar('112_UB03 Patient Necroturner',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\153_UR03 Tim, Archival Assistant.png" id="153_UR03 Tim, Archival Assistant" data-flag="@X" onclick="openSidebar('153_UR03 Tim, Archival Assistant',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\194_UG03 Institute Infiltrator.png" id="194_UG03 Institute Infiltrator" data-flag="@X" onclick="openSidebar('194_UG03 Institute Infiltrator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\31_UW04 Martin, Archival Assistant.png" id="31_UW04 Martin, Archival Assistant" data-flag="@X" onclick="openSidebar('31_UW04 Martin, Archival Assistant',false)"></div>
+			<div class="container"><img data-alt_src="sets\TMA-files\img\72_UU04 Sasha, Archival Assistant_back.png" alt="sets\TMA-files\img\72_UU04 Sasha, Archival Assistant_front.png" id="72_UU04 Sasha, Archival Assistant" data-flag="@XD" onclick="openSidebar('72_UU04 Sasha, Archival Assistant',false)"><button class="flip-btn" onclick="imgFlip(72_UU04 Sasha, Archival Assistant)"></button></div>
+			<div class="container"><img alt="sets\TMA-files\img\113_UB04 Stranglevine.png" id="113_UB04 Stranglevine" data-flag="@X" onclick="openSidebar('113_UB04 Stranglevine',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\154_UR04 Melanie King.png" id="154_UR04 Melanie King" data-flag="@X" onclick="openSidebar('154_UR04 Melanie King',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\195_UG04 Valley Stalker.png" id="195_UG04 Valley Stalker" data-flag="@X" onclick="openSidebar('195_UG04 Valley Stalker',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\32_UW05 Pestilent Locusts.png" id="32_UW05 Pestilent Locusts" data-flag="@X" onclick="openSidebar('32_UW05 Pestilent Locusts',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\73_UU05 Intricate Dollmaker.png" id="73_UU05 Intricate Dollmaker" data-flag="@X" onclick="openSidebar('73_UU05 Intricate Dollmaker',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\114_UB05 Militant Reaper.png" id="114_UB05 Militant Reaper" data-flag="@X" onclick="openSidebar('114_UB05 Militant Reaper',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\155_UR05 Reckless Researcher.png" id="155_UR05 Reckless Researcher" data-flag="@X" onclick="openSidebar('155_UR05 Reckless Researcher',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\196_UG05 Cemetery Facsimile.png" id="196_UG05 Cemetery Facsimile" data-flag="@X" onclick="openSidebar('196_UG05 Cemetery Facsimile',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\33_UW06 Paranormal Pointer.png" id="33_UW06 Paranormal Pointer" data-flag="@X" onclick="openSidebar('33_UW06 Paranormal Pointer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\74_UU06 Unblinking Watcher.png" id="74_UU06 Unblinking Watcher" data-flag="@X" onclick="openSidebar('74_UU06 Unblinking Watcher',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\115_UB06 Blood Hunter.png" id="115_UB06 Blood Hunter" data-flag="@X" onclick="openSidebar('115_UB06 Blood Hunter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\156_UR06 Blueridge Ranger.png" id="156_UR06 Blueridge Ranger" data-flag="@X" onclick="openSidebar('156_UR06 Blueridge Ranger',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\197_UG06 Cultivator Beetle.png" id="197_UG06 Cultivator Beetle" data-flag="@X" onclick="openSidebar('197_UG06 Cultivator Beetle',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\34_UW07 Corrections Officer.png" id="34_UW07 Corrections Officer" data-flag="@X" onclick="openSidebar('34_UW07 Corrections Officer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\75_UU07 Eerie Impersonator.png" id="75_UU07 Eerie Impersonator" data-flag="@X" onclick="openSidebar('75_UU07 Eerie Impersonator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\116_UB07 Harbinger of The End.png" id="116_UB07 Harbinger of The End" data-flag="@X" onclick="openSidebar('116_UB07 Harbinger of The End',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\157_UR07 Bloodboil Drummer.png" id="157_UR07 Bloodboil Drummer" data-flag="@X" onclick="openSidebar('157_UR07 Bloodboil Drummer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\198_UG07 Bloodguide Predator.png" id="198_UG07 Bloodguide Predator" data-flag="@X" onclick="openSidebar('198_UG07 Bloodguide Predator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\35_UW08 Storm of The Void.png" id="35_UW08 Storm of The Void" data-flag="@X" onclick="openSidebar('35_UW08 Storm of The Void',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\76_UU08 Drown.png" id="76_UU08 Drown" data-flag="@X" onclick="openSidebar('76_UU08 Drown',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\117_UB08 Dark Ritual.png" id="117_UB08 Dark Ritual" data-flag="@X" onclick="openSidebar('117_UB08 Dark Ritual',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\158_UR08 Catastrophic Amalgam.png" id="158_UR08 Catastrophic Amalgam" data-flag="@X" onclick="openSidebar('158_UR08 Catastrophic Amalgam',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\199_UG08 Piece Together the Puzzle.png" id="199_UG08 Piece Together the Puzzle" data-flag="@X" onclick="openSidebar('199_UG08 Piece Together the Puzzle',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\36_UW09 Chronicle of Fear.png" id="36_UW09 Chronicle of Fear" data-flag="@X" onclick="openSidebar('36_UW09 Chronicle of Fear',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\77_UU09 Under Surveillance.png" id="77_UU09 Under Surveillance" data-flag="@X" onclick="openSidebar('77_UU09 Under Surveillance',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\118_UB09 Grisly Scene.png" id="118_UB09 Grisly Scene" data-flag="@X" onclick="openSidebar('118_UB09 Grisly Scene',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\159_UR09 Desolation's Mark.png" id="159_UR09 Desolations Mark" data-flag="@X" onclick="openSidebar('159_UR09 Desolations Mark',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\200_UG09 Architect's Goal.png" id="200_UG09 Architects Goal" data-flag="@X" onclick="openSidebar('200_UG09 Architects Goal',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\37_UW10 Swallowed by the Sky.png" id="37_UW10 Swallowed by the Sky" data-flag="@X" onclick="openSidebar('37_UW10 Swallowed by the Sky',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\78_UU10 On With the Show.png" id="78_UU10 On With the Show" data-flag="@X" onclick="openSidebar('78_UU10 On With the Show',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\119_UB10 Grifter's Song.png" id="119_UB10 Grifters Song" data-flag="@X" onclick="openSidebar('119_UB10 Grifters Song',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\160_UR10 Perplexing End.png" id="160_UR10 Perplexing End" data-flag="@X" onclick="openSidebar('160_UR10 Perplexing End',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\201_UG10 Rite of the Sunken Sky.png" id="201_UG10 Rite of the Sunken Sky" data-flag="@X" onclick="openSidebar('201_UG10 Rite of the Sunken Sky',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\38_UW11 Replacement.png" id="38_UW11 Replacement" data-flag="@X" onclick="openSidebar('38_UW11 Replacement',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\79_UU11 Impostor Syndrome.png" id="79_UU11 Impostor Syndrome" data-flag="@X" onclick="openSidebar('79_UU11 Impostor Syndrome',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\120_UB11 Meat.png" id="120_UB11 Meat" data-flag="@X" onclick="openSidebar('120_UB11 Meat',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\161_UR11 Maddening Melody.png" id="161_UR11 Maddening Melody" data-flag="@X" onclick="openSidebar('161_UR11 Maddening Melody',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\202_UG11 First Hunt.png" id="202_UG11 First Hunt" data-flag="@X" onclick="openSidebar('202_UG11 First Hunt',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\39_UW12 Cost of Living.png" id="39_UW12 Cost of Living" data-flag="@X" onclick="openSidebar('39_UW12 Cost of Living',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\80_UU12 Eye Contact.png" id="80_UU12 Eye Contact" data-flag="@X" onclick="openSidebar('80_UU12 Eye Contact',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\121_UB12 Last Words.png" id="121_UB12 Last Words" data-flag="@X" onclick="openSidebar('121_UB12 Last Words',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\162_UR12 Another Twist.png" id="162_UR12 Another Twist" data-flag="@X" onclick="openSidebar('162_UR12 Another Twist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\203_UG12 Invasion of the Institute.png" id="203_UG12 Invasion of the Institute" data-flag="@X" onclick="openSidebar('203_UG12 Invasion of the Institute',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\40_UW13 Another Attempt.png" id="40_UW13 Another Attempt" data-flag="@X" onclick="openSidebar('40_UW13 Another Attempt',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\81_UU13 Overwhelming Insight.png" id="81_UU13 Overwhelming Insight" data-flag="@X" onclick="openSidebar('81_UU13 Overwhelming Insight',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\122_UB13 Complete Isolation.png" id="122_UB13 Complete Isolation" data-flag="@X" onclick="openSidebar('122_UB13 Complete Isolation',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\163_UR13 Give Chase.png" id="163_UR13 Give Chase" data-flag="@X" onclick="openSidebar('163_UR13 Give Chase',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\204_UG13 Thrilling Conclusion.png" id="204_UG13 Thrilling Conclusion" data-flag="@X" onclick="openSidebar('204_UG13 Thrilling Conclusion',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\41_UW14 Swarming Chorus.png" id="41_UW14 Swarming Chorus" data-flag="@X" onclick="openSidebar('41_UW14 Swarming Chorus',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\82_UU14 Memory Analyst.png" id="82_UU14 Memory Analyst" data-flag="@X" onclick="openSidebar('82_UU14 Memory Analyst',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\123_UB14 Agent of The Eye.png" id="123_UB14 Agent of The Eye" data-flag="@X" onclick="openSidebar('123_UB14 Agent of The Eye',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\164_UR14 Soldier of the Nemesis.png" id="164_UR14 Soldier of the Nemesis" data-flag="@X" onclick="openSidebar('164_UR14 Soldier of the Nemesis',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\205_UG14 Thorough Journalist.png" id="205_UG14 Thorough Journalist" data-flag="@X" onclick="openSidebar('205_UG14 Thorough Journalist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\42_UW15 It That Ignores.png" id="42_UW15 It That Ignores" data-flag="@X" onclick="openSidebar('42_UW15 It That Ignores',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\83_UU15 It That Watches.png" id="83_UU15 It That Watches" data-flag="@X" onclick="openSidebar('83_UU15 It That Watches',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\124_UB15 It That Frenzies.png" id="124_UB15 It That Frenzies" data-flag="@X" onclick="openSidebar('124_UB15 It That Frenzies',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\165_UR15 It That Preys.png" id="165_UR15 It That Preys" data-flag="@X" onclick="openSidebar('165_UR15 It That Preys',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\206_UG15 It That Butchers.png" id="206_UG15 It That Butchers" data-flag="@X" onclick="openSidebar('206_UG15 It That Butchers',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\2_CW01 Closed Case Inspector.png" id="2_CW01 Closed Case Inspector" data-flag="@X" onclick="openSidebar('2_CW01 Closed Case Inspector',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\43_CU01 Dissertation Student.png" id="43_CU01 Dissertation Student" data-flag="@X" onclick="openSidebar('43_CU01 Dissertation Student',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\84_CB01 Soldier of Chance.png" id="84_CB01 Soldier of Chance" data-flag="@X" onclick="openSidebar('84_CB01 Soldier of Chance',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\125_CR01 Soldier of Slaughter.png" id="125_CR01 Soldier of Slaughter" data-flag="@X" onclick="openSidebar('125_CR01 Soldier of Slaughter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\166_CG01 Living Host.png" id="166_CG01 Living Host" data-flag="@X" onclick="openSidebar('166_CG01 Living Host',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\3_CW02 Innocent Bystander.png" id="3_CW02 Innocent Bystander" data-flag="@X" onclick="openSidebar('3_CW02 Innocent Bystander',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\44_CU02 Strangeling.png" id="44_CU02 Strangeling" data-flag="@X" onclick="openSidebar('44_CU02 Strangeling',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\85_CB02 Isolated Tenant.png" id="85_CB02 Isolated Tenant" data-flag="@X" onclick="openSidebar('85_CB02 Isolated Tenant',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\126_CR02 Burning Cultist.png" id="126_CR02 Burning Cultist" data-flag="@X" onclick="openSidebar('126_CR02 Burning Cultist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\167_CG02 Deadly Arachnid.png" id="167_CG02 Deadly Arachnid" data-flag="@X" onclick="openSidebar('167_CG02 Deadly Arachnid',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\4_CW03 Statement Giver.png" id="4_CW03 Statement Giver" data-flag="@X" onclick="openSidebar('4_CW03 Statement Giver',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\45_CU03 Traveling Researcher.png" id="45_CU03 Traveling Researcher" data-flag="@X" onclick="openSidebar('45_CU03 Traveling Researcher',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\86_CB03 Dreamscape Victim.png" id="86_CB03 Dreamscape Victim" data-flag="@X" onclick="openSidebar('86_CB03 Dreamscape Victim',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\127_CR03 Everchase Fanatic.png" id="127_CR03 Everchase Fanatic" data-flag="@X" onclick="openSidebar('127_CR03 Everchase Fanatic',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\168_CG03 Boneturner's Apprentice.png" id="168_CG03 Boneturners Apprentice" data-flag="@X" onclick="openSidebar('168_CG03 Boneturners Apprentice',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\5_CW04 Colony.png" id="5_CW04 Colony" data-flag="@X" onclick="openSidebar('5_CW04 Colony',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\46_CU04 Inexplicable Door.png" id="46_CU04 Inexplicable Door" data-flag="@X" onclick="openSidebar('46_CU04 Inexplicable Door',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\87_CB04 Still and Lightless Beast.png" id="87_CB04 Still and Lightless Beast" data-flag="@X" onclick="openSidebar('87_CB04 Still and Lightless Beast',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\128_CR04 Tormented Artist.png" id="128_CR04 Tormented Artist" data-flag="@X" onclick="openSidebar('128_CR04 Tormented Artist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\169_CG04 Uncanny Taxidermist.png" id="169_CG04 Uncanny Taxidermist" data-flag="@X" onclick="openSidebar('169_CG04 Uncanny Taxidermist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\6_CW05 Servant of the Vast.png" id="6_CW05 Servant of the Vast" data-flag="@X" onclick="openSidebar('6_CW05 Servant of the Vast',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\47_CU05 Archive Infiltrator.png" id="47_CU05 Archive Infiltrator" data-flag="@X" onclick="openSidebar('47_CU05 Archive Infiltrator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\88_CB05 Occult Analyst.png" id="88_CB05 Occult Analyst" data-flag="@X" onclick="openSidebar('88_CB05 Occult Analyst',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\129_CR05 Abrasive Investigator.png" id="129_CR05 Abrasive Investigator" data-flag="@X" onclick="openSidebar('129_CR05 Abrasive Investigator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\170_CG05 Artefact Curator.png" id="170_CG05 Artefact Curator" data-flag="@X" onclick="openSidebar('170_CG05 Artefact Curator',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\7_CW06 Deep-Space Voyager.png" id="7_CW06 Deep-Space Voyager" data-flag="@X" onclick="openSidebar('7_CW06 Deep-Space Voyager',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\48_CU06 Man Who Wasn't There.png" id="48_CU06 Man Who Wasnt There" data-flag="@X" onclick="openSidebar('48_CU06 Man Who Wasnt There',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\89_CB06 Mutilated Gymnast.png" id="89_CB06 Mutilated Gymnast" data-flag="@X" onclick="openSidebar('89_CB06 Mutilated Gymnast',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\130_CR06 Bloodthirtsy Hiker.png" id="130_CR06 Bloodthirtsy Hiker" data-flag="@X" onclick="openSidebar('130_CR06 Bloodthirtsy Hiker',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\171_CG06 Wolf of the Woods.png" id="171_CG06 Wolf of the Woods" data-flag="@X" onclick="openSidebar('171_CG06 Wolf of the Woods',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\8_CW07 Devout Exorcist.png" id="8_CW07 Devout Exorcist" data-flag="@X" onclick="openSidebar('8_CW07 Devout Exorcist',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\49_CU07 Off World Observer.png" id="49_CU07 Off World Observer" data-flag="@X" onclick="openSidebar('49_CU07 Off World Observer',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\90_CB07 Voracious Feeder.png" id="90_CB07 Voracious Feeder" data-flag="@X" onclick="openSidebar('90_CB07 Voracious Feeder',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\131_CR07 Impossible Manifestation.png" id="131_CR07 Impossible Manifestation" data-flag="@X" onclick="openSidebar('131_CR07 Impossible Manifestation',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\172_CG07 Ambitious Doppleganger.png" id="172_CG07 Ambitious Doppleganger" data-flag="@X" onclick="openSidebar('172_CG07 Ambitious Doppleganger',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\9_CW08 Overnight Security.png" id="9_CW08 Overnight Security" data-flag="@X" onclick="openSidebar('9_CW08 Overnight Security',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\50_CU08 Lurking Angler.png" id="50_CU08 Lurking Angler" data-flag="@X" onclick="openSidebar('50_CU08 Lurking Angler',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\91_CB08 Maimed Figure.png" id="91_CB08 Maimed Figure" data-flag="@X" onclick="openSidebar('91_CB08 Maimed Figure',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\132_CR08 Institute Defiler.png" id="132_CR08 Institute Defiler" data-flag="@X" onclick="openSidebar('132_CR08 Institute Defiler',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\173_CG08 Writhing Hive.png" id="173_CG08 Writhing Hive" data-flag="@X" onclick="openSidebar('173_CG08 Writhing Hive',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\10_CW09 Doomwing Moth.png" id="10_CW09 Doomwing Moth" data-flag="@X" onclick="openSidebar('10_CW09 Doomwing Moth',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\51_CU09 Unorthodox Solution.png" id="51_CU09 Unorthodox Solution" data-flag="@X" onclick="openSidebar('51_CU09 Unorthodox Solution',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\92_CB09 Amritsar Phantom.png" id="92_CB09 Amritsar Phantom" data-flag="@X" onclick="openSidebar('92_CB09 Amritsar Phantom',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\133_CR09 Frenzied Hunter.png" id="133_CR09 Frenzied Hunter" data-flag="@X" onclick="openSidebar('133_CR09 Frenzied Hunter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\174_CG09 Symbiotic Beast.png" id="174_CG09 Symbiotic Beast" data-flag="@X" onclick="openSidebar('174_CG09 Symbiotic Beast',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\11_CW10 Skysoaring Hawk.png" id="11_CW10 Skysoaring Hawk" data-flag="@X" onclick="openSidebar('11_CW10 Skysoaring Hawk',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\52_CU10 Free Will.png" id="52_CU10 Free Will" data-flag="@X" onclick="openSidebar('52_CU10 Free Will',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\93_CB10 Stage Fright.png" id="93_CB10 Stage Fright" data-flag="@X" onclick="openSidebar('93_CB10 Stage Fright',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\134_CR10 Painful Meeting.png" id="134_CR10 Painful Meeting" data-flag="@X" onclick="openSidebar('134_CR10 Painful Meeting',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\175_CG10 Burrowing Crawler.png" id="175_CG10 Burrowing Crawler" data-flag="@X" onclick="openSidebar('175_CG10 Burrowing Crawler',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\12_CW11 Divine Chain Follower.png" id="12_CW11 Divine Chain Follower" data-flag="@X" onclick="openSidebar('12_CW11 Divine Chain Follower',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\53_CU11 Swept Up.png" id="53_CU11 Swept Up" data-flag="@X" onclick="openSidebar('53_CU11 Swept Up',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\94_CB11 Undying Malice.png" id="94_CB11 Undying Malice" data-flag="@X" onclick="openSidebar('94_CB11 Undying Malice',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\135_CR11 Third Degree.png" id="135_CR11 Third Degree" data-flag="@X" onclick="openSidebar('135_CR11 Third Degree',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\176_CG11 Feral Pounce.png" id="176_CG11 Feral Pounce" data-flag="@X" onclick="openSidebar('176_CG11 Feral Pounce',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\13_CW12 Act of Mercy.png" id="13_CW12 Act of Mercy" data-flag="@X" onclick="openSidebar('13_CW12 Act of Mercy',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\54_CU12 Compulsive Research.png" id="54_CU12 Compulsive Research" data-flag="@X" onclick="openSidebar('54_CU12 Compulsive Research',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\95_CB12 DIG.png" id="95_CB12 DIG" data-flag="@X" onclick="openSidebar('95_CB12 DIG',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\136_CR12 Cathartic Reunion.png" id="136_CR12 Cathartic Reunion" data-flag="@X" onclick="openSidebar('136_CR12 Cathartic Reunion',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\177_CG12 The Hunt is On.png" id="177_CG12 The Hunt is On" data-flag="@X" onclick="openSidebar('177_CG12 The Hunt is On',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\14_CW13 Captivated by Fear.png" id="14_CW13 Captivated by Fear" data-flag="@X" onclick="openSidebar('14_CW13 Captivated by Fear',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\55_CU13 Tight Squeeze.png" id="55_CU13 Tight Squeeze" data-flag="@X" onclick="openSidebar('55_CU13 Tight Squeeze',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\96_CB13 Disrupt Thoughts.png" id="96_CB13 Disrupt Thoughts" data-flag="@X" onclick="openSidebar('96_CB13 Disrupt Thoughts',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\137_CR13 Into the Distortion.png" id="137_CR13 Into the Distortion" data-flag="@X" onclick="openSidebar('137_CR13 Into the Distortion',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\178_CG13 Twisting Bone.png" id="178_CG13 Twisting Bone" data-flag="@X" onclick="openSidebar('178_CG13 Twisting Bone',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\15_CW14 Encounter the Beyond.png" id="15_CW14 Encounter the Beyond" data-flag="@X" onclick="openSidebar('15_CW14 Encounter the Beyond',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\56_CU14 Across the Street.png" id="56_CU14 Across the Street" data-flag="@X" onclick="openSidebar('56_CU14 Across the Street',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\97_CB14 Murder.png" id="97_CB14 Murder" data-flag="@X" onclick="openSidebar('97_CB14 Murder',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\138_CR14 Inspector's Inferno.png" id="138_CR14 Inspectors Inferno" data-flag="@X" onclick="openSidebar('138_CR14 Inspectors Inferno',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\179_CG14 Reshape the World.png" id="179_CG14 Reshape the World" data-flag="@X" onclick="openSidebar('179_CG14 Reshape the World',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\16_CW15 Turn Your Gaze.png" id="16_CW15 Turn Your Gaze" data-flag="@X" onclick="openSidebar('16_CW15 Turn Your Gaze',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\57_CU15 Workplace Paranoia.png" id="57_CU15 Workplace Paranoia" data-flag="@X" onclick="openSidebar('57_CU15 Workplace Paranoia',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\98_CB15 Tucked In.png" id="98_CB15 Tucked In" data-flag="@X" onclick="openSidebar('98_CB15 Tucked In',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\139_CR15 To a Crisp.png" id="139_CR15 To a Crisp" data-flag="@X" onclick="openSidebar('139_CR15 To a Crisp',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\180_CG15 Underground.png" id="180_CG15 Underground" data-flag="@X" onclick="openSidebar('180_CG15 Underground',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\1_SG01 Journey to Nowhere.png" id="1_SG01 Journey to Nowhere" data-flag="@X" onclick="openSidebar('1_SG01 Journey to Nowhere',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\3_SG03 Cyclonic Rift.png" id="3_SG03 Cyclonic Rift" data-flag="@X" onclick="openSidebar('3_SG03 Cyclonic Rift',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\5_SG05 Buried Alive.png" id="5_SG05 Buried Alive" data-flag="@X" onclick="openSidebar('5_SG05 Buried Alive',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\7_SG07 Fiery Temper.png" id="7_SG07 Fiery Temper" data-flag="@X" onclick="openSidebar('7_SG07 Fiery Temper',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\9_SG09 Parallel Lives.png" id="9_SG09 Parallel Lives" data-flag="@X" onclick="openSidebar('9_SG09 Parallel Lives',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\2_SG02 Silence.png" id="2_SG02 Silence" data-flag="@X" onclick="openSidebar('2_SG02 Silence',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\4_SG04 Visions of Beyond.png" id="4_SG04 Visions of Beyond" data-flag="@X" onclick="openSidebar('4_SG04 Visions of Beyond',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\6_SG06 Snuff Out.png" id="6_SG06 Snuff Out" data-flag="@X" onclick="openSidebar('6_SG06 Snuff Out',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\8_SG08 Uncivil Unrest.png" id="8_SG08 Uncivil Unrest" data-flag="@X" onclick="openSidebar('8_SG08 Uncivil Unrest',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\10_SG010 Primal Surge.png" id="10_SG010 Primal Surge" data-flag="@X" onclick="openSidebar('10_SG010 Primal Surge',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\211_RM01 Simon Fairchild.png" id="211_RM01 Simon Fairchild" data-flag="@X" onclick="openSidebar('211_RM01 Simon Fairchild',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\207_MM01 Annabelle, the Weaver.png" id="207_MM01 Annabelle, the Weaver" data-flag="@X" onclick="openSidebar('207_MM01 Annabelle, the Weaver',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\213_RM03 The Piper.png" id="213_RM03 The Piper" data-flag="@X" onclick="openSidebar('213_RM03 The Piper',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\214_RM04 Trevor and Julia, Hunters.png" id="214_RM04 Trevor and Julia, Hunters" data-flag="@X" onclick="openSidebar('214_RM04 Trevor and Julia, Hunters',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\215_RM05 Jane Prentiss and the Hive.png" id="215_RM05 Jane Prentiss and the Hive" data-flag="@X" onclick="openSidebar('215_RM05 Jane Prentiss and the Hive',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\221_UM01 Freefall.png" id="221_UM01 Freefall" data-flag="@X" onclick="openSidebar('221_UM01 Freefall',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\212_RM02 Elias, Vessel of Magnus.png" id="212_RM02 Elias, Vessel of Magnus" data-flag="@X" onclick="openSidebar('212_RM02 Elias, Vessel of Magnus',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\225_UM05 Civilian Casualties.png" id="225_UM05 Civilian Casualties" data-flag="@X" onclick="openSidebar('225_UM05 Civilian Casualties',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\227_UM07 Thrill of the Chase.png" id="227_UM07 Thrill of the Chase" data-flag="@X" onclick="openSidebar('227_UM07 Thrill of the Chase',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\229_UM09 Love Bombing.png" id="229_UM09 Love Bombing" data-flag="@X" onclick="openSidebar('229_UM09 Love Bombing',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\222_UM02 Mike Crew.png" id="222_UM02 Mike Crew" data-flag="@X" onclick="openSidebar('222_UM02 Mike Crew',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\223_UM03 A Guest for Mr. Spider.png" id="223_UM03 A Guest for Mr. Spider" data-flag="@X" onclick="openSidebar('223_UM03 A Guest for Mr. Spider',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\226_UM06 Alfred Grifter.png" id="226_UM06 Alfred Grifter" data-flag="@X" onclick="openSidebar('226_UM06 Alfred Grifter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\228_UM08 Daisy Tonner.png" id="228_UM08 Daisy Tonner" data-flag="@X" onclick="openSidebar('228_UM08 Daisy Tonner',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\230_UM10 Agape.png" id="230_UM10 Agape" data-flag="@X" onclick="openSidebar('230_UM10 Agape',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\224_UM04 Gerard Keay.png" id="224_UM04 Gerard Keay" data-flag="@X" onclick="openSidebar('224_UM04 Gerard Keay',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\216_RM06 Peter, Captain of the Tundra.png" id="216_RM06 Peter, Captain of the Tundra" data-flag="@X" onclick="openSidebar('216_RM06 Peter, Captain of the Tundra',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\209_MM03 Breekon and Hope.png" id="209_MM03 Breekon and Hope" data-flag="@X" onclick="openSidebar('209_MM03 Breekon and Hope',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\210_MM04 Compulsive Nature.png" id="210_MM04 Compulsive Nature" data-flag="@X" onclick="openSidebar('210_MM04 Compulsive Nature',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\217_RM07 The Distortion.png" id="217_RM07 The Distortion" data-flag="@X" onclick="openSidebar('217_RM07 The Distortion',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\219_RM09 Agnes, Messiah of Flame.png" id="219_RM09 Agnes, Messiah of Flame" data-flag="@X" onclick="openSidebar('219_RM09 Agnes, Messiah of Flame',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\231_UM11 Boatswain's Call.png" id="231_UM11 Boatswains Call" data-flag="@X" onclick="openSidebar('231_UM11 Boatswains Call',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\218_RM08 Jared, the Boneturner.png" id="218_RM08 Jared, the Boneturner" data-flag="@X" onclick="openSidebar('218_RM08 Jared, the Boneturner',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\220_RM10 Nikola, Ringmaster.png" id="220_RM10 Nikola, Ringmaster" data-flag="@X" onclick="openSidebar('220_RM10 Nikola, Ringmaster',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\233_UM13 Upon the Stair.png" id="233_UM13 Upon the Stair" data-flag="@X" onclick="openSidebar('233_UM13 Upon the Stair',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\237_UM17 Burning Desire.png" id="237_UM17 Burning Desire" data-flag="@X" onclick="openSidebar('237_UM17 Burning Desire',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\232_UM12 Oliver Banks.png" id="232_UM12 Oliver Banks" data-flag="@X" onclick="openSidebar('232_UM12 Oliver Banks',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\235_UM15 Cruelty Free.png" id="235_UM15 Cruelty Free" data-flag="@X" onclick="openSidebar('235_UM15 Cruelty Free',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\239_UM19 Drawing a Blank.png" id="239_UM19 Drawing a Blank" data-flag="@X" onclick="openSidebar('239_UM19 Drawing a Blank',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\234_UM14 Gabriel, Worker of Clay.png" id="234_UM14 Gabriel, Worker of Clay" data-flag="@X" onclick="openSidebar('234_UM14 Gabriel, Worker of Clay',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\238_UM18 Basira Hussain.png" id="238_UM18 Basira Hussain" data-flag="@X" onclick="openSidebar('238_UM18 Basira Hussain',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\236_UM16 John Amherst.png" id="236_UM16 John Amherst" data-flag="@X" onclick="openSidebar('236_UM16 John Amherst',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\240_UM20 The Anglerfish.png" id="240_UM20 The Anglerfish" data-flag="@X" onclick="openSidebar('240_UM20 The Anglerfish',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\208_MM02 Gertrude, Former Archivist.png" id="208_MM02 Gertrude, Former Archivist" data-flag="@X" onclick="openSidebar('208_MM02 Gertrude, Former Archivist',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\246_MA01 The Magnus Institute.png" id="246_MA01 The Magnus Institute" data-flag="@X" onclick="openSidebar('246_MA01 The Magnus Institute',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\247_UA01 Rusted Slaughter Knife.png" id="247_UA01 Rusted Slaughter Knife" data-flag="@X" onclick="openSidebar('247_UA01 Rusted Slaughter Knife',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\248_UA02 Porcelain Dolly.png" id="248_UA02 Porcelain Dolly" data-flag="@X" onclick="openSidebar('248_UA02 Porcelain Dolly',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\249_UA03 Death's Game Pieces.png" id="249_UA03 Deaths Game Pieces" data-flag="@X" onclick="openSidebar('249_UA03 Deaths Game Pieces',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\250_UA04 Blood Money Pouch.png" id="250_UA04 Blood Money Pouch" data-flag="@X" onclick="openSidebar('250_UA04 Blood Money Pouch',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\251_UA05 Meat Grinder.png" id="251_UA05 Meat Grinder" data-flag="@X" onclick="openSidebar('251_UA05 Meat Grinder',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\1_CA01 I Guess You Had To Be There.png" id="1_CA01 I Guess You Had To Be There" data-flag="@X" onclick="openSidebar('1_CA01 I Guess You Had To Be There',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\241_CA01 Observing Mannequin.png" id="241_CA01 Observing Mannequin" data-flag="@X" onclick="openSidebar('241_CA01 Observing Mannequin',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\242_CA02 Mechanical Turk.png" id="242_CA02 Mechanical Turk" data-flag="@X" onclick="openSidebar('242_CA02 Mechanical Turk',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\243_CA03 Stuffed Scarecrow.png" id="243_CA03 Stuffed Scarecrow" data-flag="@X" onclick="openSidebar('243_CA03 Stuffed Scarecrow',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\244_CA04 Brutal Pipe.png" id="244_CA04 Brutal Pipe" data-flag="@X" onclick="openSidebar('244_CA04 Brutal Pipe',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\245_CA05 Tape Recorder.png" id="245_CA05 Tape Recorder" data-flag="@X" onclick="openSidebar('245_CA05 Tape Recorder',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\1_The Everchase.png" id="1_The Everchase" data-flag="@X" onclick="openSidebar('1_The Everchase',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\2_The Extinguished Sun.png" id="2_The Extinguished Sun" data-flag="@X" onclick="openSidebar('2_The Extinguished Sun',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\3_The Great Twisting.png" id="3_The Great Twisting" data-flag="@X" onclick="openSidebar('3_The Great Twisting',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\4_The Risen War.png" id="4_The Risen War" data-flag="@X" onclick="openSidebar('4_The Risen War',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\5_The Unknowing.png" id="5_The Unknowing" data-flag="@X" onclick="openSidebar('5_The Unknowing',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\252_RL01 Vast's Domain.png" id="252_RL01 Vasts Domain" data-flag="@X" onclick="openSidebar('252_RL01 Vasts Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\253_RL02 Web's Domain.png" id="253_RL02 Webs Domain" data-flag="@X" onclick="openSidebar('253_RL02 Webs Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\254_RL03 Slaughter's Domain.png" id="254_RL03 Slaughters Domain" data-flag="@X" onclick="openSidebar('254_RL03 Slaughters Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\255_RL04 Hunt's Domain.png" id="255_RL04 Hunts Domain" data-flag="@X" onclick="openSidebar('255_RL04 Hunts Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\256_RL05 Corruption's Domain.png" id="256_RL05 Corruptions Domain" data-flag="@X" onclick="openSidebar('256_RL05 Corruptions Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\269_Towering Skyscraper.png" id="269_Towering Skyscraper" data-flag="@X" onclick="openSidebar('269_Towering Skyscraper',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\268_Panoptic Prison.png" id="268_Panoptic Prison" data-flag="@X" onclick="openSidebar('268_Panoptic Prison',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\263_Bloodsoaked Trenches.png" id="263_Bloodsoaked Trenches" data-flag="@X" onclick="openSidebar('263_Bloodsoaked Trenches',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\271_Wildlife Lodge.png" id="271_Wildlife Lodge" data-flag="@X" onclick="openSidebar('271_Wildlife Lodge',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\265_Community Resort.png" id="265_Community Resort" data-flag="@X" onclick="openSidebar('265_Community Resort',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\257_RL06 Lonely's Domain.png" id="257_RL06 Lonelys Domain" data-flag="@X" onclick="openSidebar('257_RL06 Lonelys Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\259_RL08 Flesh's Domain.png" id="259_RL08 Fleshs Domain" data-flag="@X" onclick="openSidebar('259_RL08 Fleshs Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\261_RL10 Stranger's Domain.png" id="261_RL10 Strangers Domain" data-flag="@X" onclick="openSidebar('261_RL10 Strangers Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\258_RL07 Spiral's Domain.png" id="258_RL07 Spirals Domain" data-flag="@X" onclick="openSidebar('258_RL07 Spirals Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\260_RL09 Desolation's Domain.png" id="260_RL09 Desolations Domain" data-flag="@X" onclick="openSidebar('260_RL09 Desolations Domain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\267_Foggy Dock.png" id="267_Foggy Dock" data-flag="@X" onclick="openSidebar('267_Foggy Dock',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\264_Butcher Shop.png" id="264_Butcher Shop" data-flag="@X" onclick="openSidebar('264_Butcher Shop',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\270_Wax Museum.png" id="270_Wax Museum" data-flag="@X" onclick="openSidebar('270_Wax Museum',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\266_Endless Hallway.png" id="266_Endless Hallway" data-flag="@X" onclick="openSidebar('266_Endless Hallway',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\262_Billowing Furnace.png" id="262_Billowing Furnace" data-flag="@X" onclick="openSidebar('262_Billowing Furnace',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\272_Plains.png" id="272_Plains" data-flag="@X" onclick="openSidebar('272_Plains',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\273_Island.png" id="273_Island" data-flag="@X" onclick="openSidebar('273_Island',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\274_Swamp.png" id="274_Swamp" data-flag="@X" onclick="openSidebar('274_Swamp',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\275_Mountain.png" id="275_Mountain" data-flag="@X" onclick="openSidebar('275_Mountain',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\276_Forest.png" id="276_Forest" data-flag="@X" onclick="openSidebar('276_Forest',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\1t_Ritual.png" id="1t_Ritual" data-flag="@X" onclick="openSidebar('1t_Ritual',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\2t_Human.png" id="2t_Human" data-flag="@X" onclick="openSidebar('2t_Human',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\3t_Shapeshifter.png" id="3t_Shapeshifter" data-flag="@X" onclick="openSidebar('3t_Shapeshifter',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\4t_Living Lightning.png" id="4t_Living Lightning" data-flag="@X" onclick="openSidebar('4t_Living Lightning',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\5t_Werewolf.png" id="5t_Werewolf" data-flag="@X" onclick="openSidebar('5t_Werewolf',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\6t_Insect.png" id="6t_Insect" data-flag="@X" onclick="openSidebar('6t_Insect',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\7t_Clue.png" id="7t_Clue" data-flag="@X" onclick="openSidebar('7t_Clue',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\8t_Food.png" id="8t_Food" data-flag="@X" onclick="openSidebar('8t_Food',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\9t_Treasure.png" id="9t_Treasure" data-flag="@X" onclick="openSidebar('9t_Treasure',false)"></div>
+			<div class="container"><img alt="sets\TMA-files\img\10t_The Archivist.png" id="10t_The Archivist" data-flag="@X" onclick="openSidebar('10t_The Archivist',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>
