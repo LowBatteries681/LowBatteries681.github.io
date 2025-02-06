@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/LOR-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>LOR visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/LOR-files/logo.png" />
+	<img class="preload-hidden" src="/sets/LOR-files/icon.png" />
+		<img class="preload-hidden" src="/sets/TMA-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="LOR-spoiler"><img src="sets/LOR-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="TMA-spoiler"><img src="sets/TMA-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/LOR-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\LOR-files\img\6_Bonfire Lit.png" id="6_Bonfire Lit" data-flag="@X" onclick="openSidebar('6_Bonfire Lit',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\50_The Cycle Continues.png" id="50_The Cycle Continues" data-flag="@X" onclick="openSidebar('50_The Cycle Continues',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\98_Gravelord Nito.png" id="98_Gravelord Nito" data-flag="@X" onclick="openSidebar('98_Gravelord Nito',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\127_Ceaseless Discharge.png" id="127_Ceaseless Discharge" data-flag="@X" onclick="openSidebar('127_Ceaseless Discharge',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\177_Fang Boar.png" id="177_Fang Boar" data-flag="@X" onclick="openSidebar('177_Fang Boar',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\19_Link the Fire.png" id="19_Link the Fire" data-flag="@X" onclick="openSidebar('19_Link the Fire',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\57_Horde of Hollows.png" id="57_Horde of Hollows" data-flag="@X" onclick="openSidebar('57_Horde of Hollows',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\103_Into the Abyss.png" id="103_Into the Abyss" data-flag="@X" onclick="openSidebar('103_Into the Abyss',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\142_Gwyn's Greatsword.png" id="142_Gwyns Greatsword" data-flag="@X" onclick="openSidebar('142_Gwyns Greatsword',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\178_Giants of Sen's Fortress.png" id="178_Giants of Sens Fortress" data-flag="@X" onclick="openSidebar('178_Giants of Sens Fortress',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\30_Royal Sentinels.png" id="30_Royal Sentinels" data-flag="@X" onclick="openSidebar('30_Royal Sentinels',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\72_Pursuit of Immortality.png" id="72_Pursuit of Immortality" data-flag="@X" onclick="openSidebar('72_Pursuit of Immortality',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\117_Trusty Patches.png" id="117_Trusty Patches" data-flag="@X" onclick="openSidebar('117_Trusty Patches',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\148_Red Eye Champion.png" id="148_Red Eye Champion" data-flag="@X" onclick="openSidebar('148_Red Eye Champion',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\192_Ring the Two Bells.png" id="192_Ring the Two Bells" data-flag="@X" onclick="openSidebar('192_Ring the Two Bells',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\5_Black Crystal Banisher.png" id="5_Black Crystal Banisher" data-flag="@X" onclick="openSidebar('5_Black Crystal Banisher',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\47_Crow Demon of Ariamis.png" id="47_Crow Demon of Ariamis" data-flag="@X" onclick="openSidebar('47_Crow Demon of Ariamis',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\82_Age of Dark.png" id="82_Age of Dark" data-flag="@X" onclick="openSidebar('82_Age of Dark',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\123_Bounding Demon of Izalith.png" id="123_Bounding Demon of Izalith" data-flag="@X" onclick="openSidebar('123_Bounding Demon of Izalith',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\164_Ash Lake Hydra.png" id="164_Ash Lake Hydra" data-flag="@X" onclick="openSidebar('164_Ash Lake Hydra',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\12_Fire Keeper's Soul.png" id="12_Fire Keepers Soul" data-flag="@X" onclick="openSidebar('12_Fire Keepers Soul',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\51_Dark Sun Gwyndolin.png" id="51_Dark Sun Gwyndolin" data-flag="@X" onclick="openSidebar('51_Dark Sun Gwyndolin',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\85_Black Knight of the Kiln.png" id="85_Black Knight of the Kiln" data-flag="@X" onclick="openSidebar('85_Black Knight of the Kiln',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\125_Capra Demon.png" id="125_Capra Demon" data-flag="@X" onclick="openSidebar('125_Capra Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\172_Darkroot Summoner.png" id="172_Darkroot Summoner" data-flag="@X" onclick="openSidebar('172_Darkroot Summoner',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\13_Golden Phantom Ally.png" id="13_Golden Phantom Ally" data-flag="@X" onclick="openSidebar('13_Golden Phantom Ally',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\60_Ingward, Guardian of the Seal.png" id="60_Ingward, Guardian of the Seal" data-flag="@X" onclick="openSidebar('60_Ingward, Guardian of the Seal',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\89_Catacomb Necromage.png" id="89_Catacomb Necromage" data-flag="@X" onclick="openSidebar('89_Catacomb Necromage',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\128_The Centipede Demon.png" id="128_The Centipede Demon" data-flag="@X" onclick="openSidebar('128_The Centipede Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\174_Dragon Bone Fist.png" id="174_Dragon Bone Fist" data-flag="@X" onclick="openSidebar('174_Dragon Bone Fist',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\15_Greatsword of Artorias.png" id="15_Greatsword of Artorias" data-flag="@X" onclick="openSidebar('15_Greatsword of Artorias',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\66_Mass of Souls.png" id="66_Mass of Souls" data-flag="@X" onclick="openSidebar('66_Mass of Souls',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\92_Darkwraith Knight.png" id="92_Darkwraith Knight" data-flag="@X" onclick="openSidebar('92_Darkwraith Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\134_Dragon Slayer Ornstein.png" id="134_Dragon Slayer Ornstein" data-flag="@X" onclick="openSidebar('134_Dragon Slayer Ornstein',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\175_End of the Ancients.png" id="175_End of the Ancients" data-flag="@X" onclick="openSidebar('175_End of the Ancients',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\22_Oswald of Carim.png" id="22_Oswald of Carim" data-flag="@X" onclick="openSidebar('22_Oswald of Carim',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\68_Moonlight Greatsword.png" id="68_Moonlight Greatsword" data-flag="@X" onclick="openSidebar('68_Moonlight Greatsword',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\95_Executioner Smough.png" id="95_Executioner Smough" data-flag="@X" onclick="openSidebar('95_Executioner Smough',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\135_Dragonslayer Spear.png" id="135_Dragonslayer Spear" data-flag="@X" onclick="openSidebar('135_Dragonslayer Spear',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\176_Expedition of the Undead.png" id="176_Expedition of the Undead" data-flag="@X" onclick="openSidebar('176_Expedition of the Undead',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\27_Princess Gwynevere.png" id="27_Princess Gwynevere" data-flag="@X" onclick="openSidebar('27_Princess Gwynevere',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\70_Open the Floodgates.png" id="70_Open the Floodgates" data-flag="@X" onclick="openSidebar('70_Open the Floodgates',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\100_Gravelord's Miasma.png" id="100_Gravelords Miasma" data-flag="@X" onclick="openSidebar('100_Gravelords Miasma',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\140_Forged by Giants.png" id="140_Forged by Giants" data-flag="@X" onclick="openSidebar('140_Forged by Giants',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\191_Ricard, Undead Prince.png" id="191_Ricard, Undead Prince" data-flag="@X" onclick="openSidebar('191_Ricard, Undead Prince',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\36_Solaire of Astora.png" id="36_Solaire of Astora" data-flag="@X" onclick="openSidebar('36_Solaire of Astora',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\71_Pale Drake's Betrayal.png" id="71_Pale Drakes Betrayal" data-flag="@X" onclick="openSidebar('71_Pale Drakes Betrayal',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\108_Pinwheel.png" id="108_Pinwheel" data-flag="@X" onclick="openSidebar('108_Pinwheel',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\145_Knight Lautrec of Carim.png" id="145_Knight Lautrec of Carim" data-flag="@X" onclick="openSidebar('145_Knight Lautrec of Carim',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\194_Siegmeyer of Catarina.png" id="194_Siegmeyer of Catarina" data-flag="@X" onclick="openSidebar('194_Siegmeyer of Catarina',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\39_Traverse the White Light.png" id="39_Traverse the White Light" data-flag="@X" onclick="openSidebar('39_Traverse the White Light',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\80_Twilight of Anor Londo.png" id="80_Twilight of Anor Londo" data-flag="@X" onclick="openSidebar('80_Twilight of Anor Londo',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\114_Smough's Great Hammer.png" id="114_Smoughs Great Hammer" data-flag="@X" onclick="openSidebar('114_Smoughs Great Hammer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\153_Student of Laurentius.png" id="153_Student of Laurentius" data-flag="@X" onclick="openSidebar('153_Student of Laurentius',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\200_Undead Merchant.png" id="200_Undead Merchant" data-flag="@X" onclick="openSidebar('200_Undead Merchant',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\4_Berenike Knight.png" id="4_Berenike Knight" data-flag="@X" onclick="openSidebar('4_Berenike Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\44_Big Hat Logan.png" id="44_Big Hat Logan" data-flag="@X" onclick="openSidebar('44_Big Hat Logan',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\83_The Asylum Demon.png" id="83_The Asylum Demon" data-flag="@X" onclick="openSidebar('83_The Asylum Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\124_Burrowing Rockworm.png" id="124_Burrowing Rockworm" data-flag="@X" onclick="openSidebar('124_Burrowing Rockworm',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\162_Alvina of the Darkroot Wood.png" id="162_Alvina of the Darkroot Wood" data-flag="@X" onclick="openSidebar('162_Alvina of the Darkroot Wood',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\7_Cleric of Replenishment.png" id="7_Cleric of Replenishment" data-flag="@X" onclick="openSidebar('7_Cleric of Replenishment',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\48_Crow of Undead Asylum.png" id="48_Crow of Undead Asylum" data-flag="@X" onclick="openSidebar('48_Crow of Undead Asylum',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\84_Batwing Demon.png" id="84_Batwing Demon" data-flag="@X" onclick="openSidebar('84_Batwing Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\126_Catacomb Wisp.png" id="126_Catacomb Wisp" data-flag="@X" onclick="openSidebar('126_Catacomb Wisp',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\163_Anor Londo Archer.png" id="163_Anor Londo Archer" data-flag="@X" onclick="openSidebar('163_Anor Londo Archer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\8_Covenant of Sunlight.png" id="8_Covenant of Sunlight" data-flag="@X" onclick="openSidebar('8_Covenant of Sunlight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\52_Darkroot Sorcerer.png" id="52_Darkroot Sorcerer" data-flag="@X" onclick="openSidebar('52_Darkroot Sorcerer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\87_Bonewheel Skeleton.png" id="87_Bonewheel Skeleton" data-flag="@X" onclick="openSidebar('87_Bonewheel Skeleton',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\129_Chaos Eater.png" id="129_Chaos Eater" data-flag="@X" onclick="openSidebar('129_Chaos Eater',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\165_Black-Iron Tarkus.png" id="165_Black-Iron Tarkus" data-flag="@X" onclick="openSidebar('165_Black-Iron Tarkus',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\10_Fated Pilgrimage.png" id="10_Fated Pilgrimage" data-flag="@X" onclick="openSidebar('10_Fated Pilgrimage',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\53_Discover the Weakness.png" id="53_Discover the Weakness" data-flag="@X" onclick="openSidebar('53_Discover the Weakness',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\88_Butcher of the Depths.png" id="88_Butcher of the Depths" data-flag="@X" onclick="openSidebar('88_Butcher of the Depths',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\131_Cragspider.png" id="131_Cragspider" data-flag="@X" onclick="openSidebar('131_Cragspider',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\171_Darkroot Outlander.png" id="171_Darkroot Outlander" data-flag="@X" onclick="openSidebar('171_Darkroot Outlander',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\17_Homeward Paladin.png" id="17_Homeward Paladin" data-flag="@X" onclick="openSidebar('17_Homeward Paladin',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\54_Dragon School Researchers.png" id="54_Dragon School Researchers" data-flag="@X" onclick="openSidebar('54_Dragon School Researchers',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\91_Curse of the Darksign.png" id="91_Curse of the Darksign" data-flag="@X" onclick="openSidebar('91_Curse of the Darksign',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\132_Darkwraith Invader.png" id="132_Darkwraith Invader" data-flag="@X" onclick="openSidebar('132_Darkwraith Invader',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\179_Grass Crest Shield.png" id="179_Grass Crest Shield" data-flag="@X" onclick="openSidebar('179_Grass Crest Shield',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\18_Jolly Cooperation.png" id="18_Jolly Cooperation" data-flag="@X" onclick="openSidebar('18_Jolly Cooperation',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\59_Illusory Wall.png" id="59_Illusory Wall" data-flag="@X" onclick="openSidebar('59_Illusory Wall',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\93_Desperate Strike.png" id="93_Desperate Strike" data-flag="@X" onclick="openSidebar('93_Desperate Strike',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\133_Domhnall of Zena.png" id="133_Domhnall of Zena" data-flag="@X" onclick="openSidebar('133_Domhnall of Zena',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\180_Great Magic Barrier.png" id="180_Great Magic Barrier" data-flag="@X" onclick="openSidebar('180_Great Magic Barrier',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\21_Oscar, Astorian Knight.png" id="21_Oscar, Astorian Knight" data-flag="@X" onclick="openSidebar('21_Oscar, Astorian Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\61_Into the Painting.png" id="61_Into the Painting" data-flag="@X" onclick="openSidebar('61_Into the Painting',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\99_Gravelord's Curse.png" id="99_Gravelords Curse" data-flag="@X" onclick="openSidebar('99_Gravelords Curse',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\136_Eingyi the Egg-Burdened.png" id="136_Eingyi the Egg-Burdened" data-flag="@X" onclick="openSidebar('136_Eingyi the Egg-Burdened',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\181_Great Stone Knight.png" id="181_Great Stone Knight" data-flag="@X" onclick="openSidebar('181_Great Stone Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\25_Petrus of Thorolund.png" id="25_Petrus of Thorolund" data-flag="@X" onclick="openSidebar('25_Petrus of Thorolund',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\62_Kingseeker's Insight.png" id="62_Kingseekers Insight" data-flag="@X" onclick="openSidebar('62_Kingseekers Insight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\101_Gravelord's Servant.png" id="101_Gravelords Servant" data-flag="@X" onclick="openSidebar('101_Gravelords Servant',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\143_Hellkite Ambush.png" id="143_Hellkite Ambush" data-flag="@X" onclick="openSidebar('143_Hellkite Ambush',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\182_Infested Barbarian.png" id="182_Infested Barbarian" data-flag="@X" onclick="openSidebar('182_Infested Barbarian',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\26_Plunging Attack.png" id="26_Plunging Attack" data-flag="@X" onclick="openSidebar('26_Plunging Attack',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\63_Logan's Teachings.png" id="63_Logans Teachings" data-flag="@X" onclick="openSidebar('63_Logans Teachings',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\104_Knight Kirk of Thorns.png" id="104_Knight Kirk of Thorns" data-flag="@X" onclick="openSidebar('104_Knight Kirk of Thorns',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\146_Notched Whip.png" id="146_Notched Whip" data-flag="@X" onclick="openSidebar('146_Notched Whip',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\185_Kindle the Bonfire.png" id="185_Kindle the Bonfire" data-flag="@X" onclick="openSidebar('185_Kindle the Bonfire',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\31_Selfless Summon.png" id="31_Selfless Summon" data-flag="@X" onclick="openSidebar('31_Selfless Summon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\65_Magic Shield Sorcerer.png" id="65_Magic Shield Sorcerer" data-flag="@X" onclick="openSidebar('65_Magic Shield Sorcerer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\112_Skeletal Beast.png" id="112_Skeletal Beast" data-flag="@X" onclick="openSidebar('112_Skeletal Beast',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\149_Red-Eye Chaos Bug.png" id="149_Red-Eye Chaos Bug" data-flag="@X" onclick="openSidebar('149_Red-Eye Chaos Bug',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\187_Mushroom People.png" id="187_Mushroom People" data-flag="@X" onclick="openSidebar('187_Mushroom People',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\32_Sentinel of Anor Londo.png" id="32_Sentinel of Anor Londo" data-flag="@X" onclick="openSidebar('32_Sentinel of Anor Londo',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\69_Obsessive Archivist.png" id="69_Obsessive Archivist" data-flag="@X" onclick="openSidebar('69_Obsessive Archivist',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\115_Struggle for Humanity.png" id="115_Struggle for Humanity" data-flag="@X" onclick="openSidebar('115_Struggle for Humanity',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\152_Sporting Duel.png" id="152_Sporting Duel" data-flag="@X" onclick="openSidebar('152_Sporting Duel',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\189_Parasitic Wall-Hugger.png" id="189_Parasitic Wall-Hugger" data-flag="@X" onclick="openSidebar('189_Parasitic Wall-Hugger',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\33_Silver Knight Armor Set.png" id="33_Silver Knight Armor Set" data-flag="@X" onclick="openSidebar('33_Silver Knight Armor Set',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\74_Rickert, Vinheim Smith.png" id="74_Rickert, Vinheim Smith" data-flag="@X" onclick="openSidebar('74_Rickert, Vinheim Smith',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\116_Titanite Demon.png" id="116_Titanite Demon" data-flag="@X" onclick="openSidebar('116_Titanite Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\154_Sunlight Spear.png" id="154_Sunlight Spear" data-flag="@X" onclick="openSidebar('154_Sunlight Spear',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\193_Seek Guidance.png" id="193_Seek Guidance" data-flag="@X" onclick="openSidebar('193_Seek Guidance',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\34_Silver Knights of Gwyn.png" id="34_Silver Knights of Gwyn" data-flag="@X" onclick="openSidebar('34_Silver Knights of Gwyn',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\75_Sanctum of Seath.png" id="75_Sanctum of Seath" data-flag="@X" onclick="openSidebar('75_Sanctum of Seath',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\118_Turn Hollow.png" id="118_Turn Hollow" data-flag="@X" onclick="openSidebar('118_Turn Hollow',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\155_Talisman Throw.png" id="155_Talisman Throw" data-flag="@X" onclick="openSidebar('155_Talisman Throw',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\196_Souls Retrieved.png" id="196_Souls Retrieved" data-flag="@X" onclick="openSidebar('196_Souls Retrieved',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\37_Thorolund Clerics.png" id="37_Thorolund Clerics" data-flag="@X" onclick="openSidebar('37_Thorolund Clerics',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\79_Thirst for Power.png" id="79_Thirst for Power" data-flag="@X" onclick="openSidebar('79_Thirst for Power',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\119_Undead Assassin.png" id="119_Undead Assassin" data-flag="@X" onclick="openSidebar('119_Undead Assassin',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\158_Treacherous Invasion.png" id="158_Treacherous Invasion" data-flag="@X" onclick="openSidebar('158_Treacherous Invasion',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\198_Toxic Ooze.png" id="198_Toxic Ooze" data-flag="@X" onclick="openSidebar('198_Toxic Ooze',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\2_Anor Londo Gargoyle.png" id="2_Anor Londo Gargoyle" data-flag="@X" onclick="openSidebar('2_Anor Londo Gargoyle',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\42_Archival Apparition.png" id="42_Archival Apparition" data-flag="@X" onclick="openSidebar('42_Archival Apparition',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\86_Blighttown Mosquito.png" id="86_Blighttown Mosquito" data-flag="@X" onclick="openSidebar('86_Blighttown Mosquito',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\122_Apply Resin.png" id="122_Apply Resin" data-flag="@X" onclick="openSidebar('122_Apply Resin',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\166_Blowdart Sniper.png" id="166_Blowdart Sniper" data-flag="@X" onclick="openSidebar('166_Blowdart Sniper',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\3_Balder Knight.png" id="3_Balder Knight" data-flag="@X" onclick="openSidebar('3_Balder Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\43_Ash Lake Explorer.png" id="43_Ash Lake Explorer" data-flag="@X" onclick="openSidebar('43_Ash Lake Explorer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\90_Cemetery Scavenger.png" id="90_Cemetery Scavenger" data-flag="@X" onclick="openSidebar('90_Cemetery Scavenger',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\130_Confrontation.png" id="130_Confrontation" data-flag="@X" onclick="openSidebar('130_Confrontation',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\167_Cat Covenant Ring.png" id="167_Cat Covenant Ring" data-flag="@X" onclick="openSidebar('167_Cat Covenant Ring',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\9_Drakerider Elite.png" id="9_Drakerider Elite" data-flag="@X" onclick="openSidebar('9_Drakerider Elite',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\45_Blue Crystal Golem.png" id="45_Blue Crystal Golem" data-flag="@X" onclick="openSidebar('45_Blue Crystal Golem',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\94_Dragon's Grasp.png" id="94_Dragons Grasp" data-flag="@X" onclick="openSidebar('94_Dragons Grasp',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\137_Fearless Warrior.png" id="137_Fearless Warrior" data-flag="@X" onclick="openSidebar('137_Fearless Warrior',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\168_Cursebreath Basilisk.png" id="168_Cursebreath Basilisk" data-flag="@X" onclick="openSidebar('168_Cursebreath Basilisk',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\11_Fire Keeper.png" id="11_Fire Keeper" data-flag="@X" onclick="openSidebar('11_Fire Keeper',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\46_Catalyst Instructor.png" id="46_Catalyst Instructor" data-flag="@X" onclick="openSidebar('46_Catalyst Instructor',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\96_From the Catacombs.png" id="96_From the Catacombs" data-flag="@X" onclick="openSidebar('96_From the Catacombs',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\138_Firebomb Toss.png" id="138_Firebomb Toss" data-flag="@X" onclick="openSidebar('138_Firebomb Toss',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\169_Darkroot Bramble.png" id="169_Darkroot Bramble" data-flag="@X" onclick="openSidebar('169_Darkroot Bramble',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\14_Great Heal Cleric.png" id="14_Great Heal Cleric" data-flag="@X" onclick="openSidebar('14_Great Heal Cleric',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\49_Crystalline Banisher.png" id="49_Crystalline Banisher" data-flag="@X" onclick="openSidebar('49_Crystalline Banisher',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\97_Giant Leeches.png" id="97_Giant Leeches" data-flag="@X" onclick="openSidebar('97_Giant Leeches',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\139_Foolish Undead.png" id="139_Foolish Undead" data-flag="@X" onclick="openSidebar('139_Foolish Undead',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\170_Darkroot Foliage.png" id="170_Darkroot Foliage" data-flag="@X" onclick="openSidebar('170_Darkroot Foliage',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\16_Hollowed Spearman.png" id="16_Hollowed Spearman" data-flag="@X" onclick="openSidebar('16_Hollowed Spearman',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\55_Ghost of New Londo.png" id="55_Ghost of New Londo" data-flag="@X" onclick="openSidebar('55_Ghost of New Londo',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\102_Hollows of Undead Burg.png" id="102_Hollows of Undead Burg" data-flag="@X" onclick="openSidebar('102_Hollows of Undead Burg',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\141_Great Swamp Pyromancer.png" id="141_Great Swamp Pyromancer" data-flag="@X" onclick="openSidebar('141_Great Swamp Pyromancer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\173_Down to the Depths.png" id="173_Down to the Depths" data-flag="@X" onclick="openSidebar('173_Down to the Depths',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\20_Miracle Princess Guard.png" id="20_Miracle Princess Guard" data-flag="@X" onclick="openSidebar('20_Miracle Princess Guard',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\56_Guilt-Ridden Thief.png" id="56_Guilt-Ridden Thief" data-flag="@X" onclick="openSidebar('56_Guilt-Ridden Thief',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\105_Low-Ranking Knight.png" id="105_Low-Ranking Knight" data-flag="@X" onclick="openSidebar('105_Low-Ranking Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\144_Keep Warm.png" id="144_Keep Warm" data-flag="@X" onclick="openSidebar('144_Keep Warm',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\183_Iron Flesh Augur.png" id="183_Iron Flesh Augur" data-flag="@X" onclick="openSidebar('183_Iron Flesh Augur',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\23_Painting Guardian.png" id="23_Painting Guardian" data-flag="@X" onclick="openSidebar('23_Painting Guardian',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\58_Illusory Phantom.png" id="58_Illusory Phantom" data-flag="@X" onclick="openSidebar('58_Illusory Phantom',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\106_Nasty End.png" id="106_Nasty End" data-flag="@X" onclick="openSidebar('106_Nasty End',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\147_Quelaag's Flame.png" id="147_Quelaags Flame" data-flag="@X" onclick="openSidebar('147_Quelaags Flame',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\184_Journey to Lordran.png" id="184_Journey to Lordran" data-flag="@X" onclick="openSidebar('184_Journey to Lordran',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\24_Parry.png" id="24_Parry" data-flag="@X" onclick="openSidebar('24_Parry',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\64_Lost in Crystal Caves.png" id="64_Lost in Crystal Caves" data-flag="@X" onclick="openSidebar('64_Lost in Crystal Caves',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\107_Overcome the Asylum.png" id="107_Overcome the Asylum" data-flag="@X" onclick="openSidebar('107_Overcome the Asylum',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\150_Rusted Iron Ring.png" id="150_Rusted Iron Ring" data-flag="@X" onclick="openSidebar('150_Rusted Iron Ring',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\186_Man-Serpent Warrior.png" id="186_Man-Serpent Warrior" data-flag="@X" onclick="openSidebar('186_Man-Serpent Warrior',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\28_Rest at Firelink Shrine.png" id="28_Rest at Firelink Shrine" data-flag="@X" onclick="openSidebar('28_Rest at Firelink Shrine',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\67_Momentary Breath.png" id="67_Momentary Breath" data-flag="@X" onclick="openSidebar('67_Momentary Breath',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\109_Poisonous Affliction.png" id="109_Poisonous Affliction" data-flag="@X" onclick="openSidebar('109_Poisonous Affliction',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\151_Savage Bandit.png" id="151_Savage Bandit" data-flag="@X" onclick="openSidebar('151_Savage Bandit',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\188_Mushroomfolk Beatdown.png" id="188_Mushroomfolk Beatdown" data-flag="@X" onclick="openSidebar('188_Mushroomfolk Beatdown',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\29_Ring of Steel Protection.png" id="29_Ring of Steel Protection" data-flag="@X" onclick="openSidebar('29_Ring of Steel Protection',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\73_Quiet Contemplation.png" id="73_Quiet Contemplation" data-flag="@X" onclick="openSidebar('73_Quiet Contemplation',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\110_Sewer Slime.png" id="110_Sewer Slime" data-flag="@X" onclick="openSidebar('110_Sewer Slime',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\156_Taurus Demon.png" id="156_Taurus Demon" data-flag="@X" onclick="openSidebar('156_Taurus Demon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\190_Return to Nature.png" id="190_Return to Nature" data-flag="@X" onclick="openSidebar('190_Return to Nature',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\35_Soapstone Summoner.png" id="35_Soapstone Summoner" data-flag="@X" onclick="openSidebar('35_Soapstone Summoner',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\76_Seath's Dismissal.png" id="76_Seaths Dismissal" data-flag="@X" onclick="openSidebar('76_Seaths Dismissal',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\111_Sewer-Rot Rat.png" id="111_Sewer-Rot Rat" data-flag="@X" onclick="openSidebar('111_Sewer-Rot Rat',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\157_Torch Hollow.png" id="157_Torch Hollow" data-flag="@X" onclick="openSidebar('157_Torch Hollow',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\195_Sif's End.png" id="195_Sifs End" data-flag="@X" onclick="openSidebar('195_Sifs End',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\38_Towershield Knight.png" id="38_Towershield Knight" data-flag="@X" onclick="openSidebar('38_Towershield Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\77_Soul Arrow.png" id="77_Soul Arrow" data-flag="@X" onclick="openSidebar('77_Soul Arrow',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\113_Skeleton Warrior.png" id="113_Skeleton Warrior" data-flag="@X" onclick="openSidebar('113_Skeleton Warrior',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\159_Undead Archer.png" id="159_Undead Archer" data-flag="@X" onclick="openSidebar('159_Undead Archer',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\197_Spotted Frog-Ray.png" id="197_Spotted Frog-Ray" data-flag="@X" onclick="openSidebar('197_Spotted Frog-Ray',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\40_Undead Soldier.png" id="40_Undead Soldier" data-flag="@X" onclick="openSidebar('40_Undead Soldier',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\78_Strategic Planning.png" id="78_Strategic Planning" data-flag="@X" onclick="openSidebar('78_Strategic Planning',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\120_Undead Dog.png" id="120_Undead Dog" data-flag="@X" onclick="openSidebar('120_Undead Dog',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\160_Vinheim Deserter.png" id="160_Vinheim Deserter" data-flag="@X" onclick="openSidebar('160_Vinheim Deserter',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\199_Unclothed Deprived.png" id="199_Unclothed Deprived" data-flag="@X" onclick="openSidebar('199_Unclothed Deprived',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\41_You Defeated.png" id="41_You Defeated" data-flag="@X" onclick="openSidebar('41_You Defeated',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\81_Valley Drake.png" id="81_Valley Drake" data-flag="@X" onclick="openSidebar('81_Valley Drake',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\121_Wrong Way.png" id="121_Wrong Way" data-flag="@X" onclick="openSidebar('121_Wrong Way',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\161_Witch of Flames.png" id="161_Witch of Flames" data-flag="@X" onclick="openSidebar('161_Witch of Flames',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\201_Wingrotted Dragon.png" id="201_Wingrotted Dragon" data-flag="@X" onclick="openSidebar('201_Wingrotted Dragon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\1_Farewell.png" id="1_Farewell" data-flag="@X" onclick="openSidebar('1_Farewell',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\3_Ponder.png" id="3_Ponder" data-flag="@X" onclick="openSidebar('3_Ponder',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\4_Crumbling Ashes.png" id="4_Crumbling Ashes" data-flag="@X" onclick="openSidebar('4_Crumbling Ashes',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\6_Faithless Looting.png" id="6_Faithless Looting" data-flag="@X" onclick="openSidebar('6_Faithless Looting',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\7_Realms Uncharted.png" id="7_Realms Uncharted" data-flag="@X" onclick="openSidebar('7_Realms Uncharted',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\2_Solemnity.png" id="2_Solemnity" data-flag="@X" onclick="openSidebar('2_Solemnity',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\5_Hero's Downfall.png" id="5_Heros Downfall" data-flag="@X" onclick="openSidebar('5_Heros Downfall',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\229_Seath the Scaleless.png" id="229_Seath the Scaleless" data-flag="@X" onclick="openSidebar('229_Seath the Scaleless',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\212_Darkstalker Kaathe.png" id="212_Darkstalker Kaathe" data-flag="@X" onclick="openSidebar('212_Darkstalker Kaathe',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\205_The Bed of Chaos.png" id="205_The Bed of Chaos" data-flag="@X" onclick="openSidebar('205_The Bed of Chaos',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\208_Clan of Forest Protectors.png" id="208_Clan of Forest Protectors" data-flag="@X" onclick="openSidebar('208_Clan of Forest Protectors',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\231_Sif the Great Grey Wolf.png" id="231_Sif the Great Grey Wolf" data-flag="@X" onclick="openSidebar('231_Sif the Great Grey Wolf',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\222_Kingseeker Frampt.png" id="222_Kingseeker Frampt" data-flag="@X" onclick="openSidebar('222_Kingseeker Frampt',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\234_Traverse the Ruins.png" id="234_Traverse the Ruins" data-flag="@X" onclick="openSidebar('234_Traverse the Ruins',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\207_Chaos Witch Quelaag.png" id="207_Chaos Witch Quelaag" data-flag="@X" onclick="openSidebar('207_Chaos Witch Quelaag',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\220_Inciting Summon.png" id="220_Inciting Summon" data-flag="@X" onclick="openSidebar('220_Inciting Summon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\204_Ash Maiden Anastacia.png" id="204_Ash Maiden Anastacia" data-flag="@X" onclick="openSidebar('204_Ash Maiden Anastacia',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\210_Crossbreed Priscilla.png" id="210_Crossbreed Priscilla" data-flag="@X" onclick="openSidebar('210_Crossbreed Priscilla',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\235_Witch Beatrice.png" id="235_Witch Beatrice" data-flag="@X" onclick="openSidebar('235_Witch Beatrice',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\233_Stone Demon of Izalith.png" id="233_Stone Demon of Izalith" data-flag="@X" onclick="openSidebar('233_Stone Demon of Izalith',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\230_Shiva of the East.png" id="230_Shiva of the East" data-flag="@X" onclick="openSidebar('230_Shiva of the East',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\226_Novice Undead.png" id="226_Novice Undead" data-flag="@X" onclick="openSidebar('226_Novice Undead',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\228_Priscilla's Ice Wind.png" id="228_Priscillas Ice Wind" data-flag="@X" onclick="openSidebar('228_Priscillas Ice Wind',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\236_Xanthous King Jeremiah.png" id="236_Xanthous King Jeremiah" data-flag="@X" onclick="openSidebar('236_Xanthous King Jeremiah',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\8_Everlasting Torment.png" id="8_Everlasting Torment" data-flag="@X" onclick="openSidebar('8_Everlasting Torment',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\221_King of New Londo.png" id="221_King of New Londo" data-flag="@X" onclick="openSidebar('221_King of New Londo',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\215_The Gaping Dragon.png" id="215_The Gaping Dragon" data-flag="@X" onclick="openSidebar('215_The Gaping Dragon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\225_The Moonlight Butterfly.png" id="225_The Moonlight Butterfly" data-flag="@X" onclick="openSidebar('225_The Moonlight Butterfly',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\211_The Crystal General.png" id="211_The Crystal General" data-flag="@X" onclick="openSidebar('211_The Crystal General',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\217_Gwyn, Lord of Cinder.png" id="217_Gwyn, Lord of Cinder" data-flag="@X" onclick="openSidebar('217_Gwyn, Lord of Cinder',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\218_Havel the Rock.png" id="218_Havel the Rock" data-flag="@X" onclick="openSidebar('218_Havel the Rock',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\206_Bone Tower.png" id="206_Bone Tower" data-flag="@X" onclick="openSidebar('206_Bone Tower',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\203_Archive Channeler.png" id="203_Archive Channeler" data-flag="@X" onclick="openSidebar('203_Archive Channeler',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\216_Griggs of Vinheim.png" id="216_Griggs of Vinheim" data-flag="@X" onclick="openSidebar('216_Griggs of Vinheim',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\214_The Fair Lady.png" id="214_The Fair Lady" data-flag="@X" onclick="openSidebar('214_The Fair Lady',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\209_Crestfallen Knight.png" id="209_Crestfallen Knight" data-flag="@X" onclick="openSidebar('209_Crestfallen Knight',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\224_Maneater Mildred.png" id="224_Maneater Mildred" data-flag="@X" onclick="openSidebar('224_Maneater Mildred',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\213_Dusk, Princess of Oolacile.png" id="213_Dusk, Princess of Oolacile" data-flag="@X" onclick="openSidebar('213_Dusk, Princess of Oolacile',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\219_Hellkite Wyvern.png" id="219_Hellkite Wyvern" data-flag="@X" onclick="openSidebar('219_Hellkite Wyvern',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\202_Andre, Astora Blacksmith.png" id="202_Andre, Astora Blacksmith" data-flag="@X" onclick="openSidebar('202_Andre, Astora Blacksmith',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\227_Paladin Leeroy the First.png" id="227_Paladin Leeroy the First" data-flag="@X" onclick="openSidebar('227_Paladin Leeroy the First',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\223_Lordran Pilgrim.png" id="223_Lordran Pilgrim" data-flag="@X" onclick="openSidebar('223_Lordran Pilgrim',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\232_The Souls of Lords.png" id="232_The Souls of Lords" data-flag="@X" onclick="openSidebar('232_The Souls of Lords',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\248_The Lordvessel.png" id="248_The Lordvessel" data-flag="@X" onclick="openSidebar('248_The Lordvessel',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\1_Phantom Vagrant.png" id="1_Phantom Vagrant" data-flag="@X" onclick="openSidebar('1_Phantom Vagrant',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\238_Black Knight Greatsword.png" id="238_Black Knight Greatsword" data-flag="@X" onclick="openSidebar('238_Black Knight Greatsword',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\243_The Dark Hand.png" id="243_The Dark Hand" data-flag="@X" onclick="openSidebar('243_The Dark Hand',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\246_Havel's Set.png" id="246_Havels Set" data-flag="@X" onclick="openSidebar('246_Havels Set',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\237_Bell Tower Gargoyle.png" id="237_Bell Tower Gargoyle" data-flag="@X" onclick="openSidebar('237_Bell Tower Gargoyle',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\240_Caestus.png" id="240_Caestus" data-flag="@X" onclick="openSidebar('240_Caestus',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\244_The Everlasting Dragon.png" id="244_The Everlasting Dragon" data-flag="@X" onclick="openSidebar('244_The Everlasting Dragon',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\245_Gravelord Sword.png" id="245_Gravelord Sword" data-flag="@X" onclick="openSidebar('245_Gravelord Sword',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\247_Iron Golem.png" id="247_Iron Golem" data-flag="@X" onclick="openSidebar('247_Iron Golem',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\249_Orange Guidance Soapstone.png" id="249_Orange Guidance Soapstone" data-flag="@X" onclick="openSidebar('249_Orange Guidance Soapstone',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\250_Ring of Sacrifice.png" id="250_Ring of Sacrifice" data-flag="@X" onclick="openSidebar('250_Ring of Sacrifice',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\252_Tin Crystallization Catalyst.png" id="252_Tin Crystallization Catalyst" data-flag="@X" onclick="openSidebar('252_Tin Crystallization Catalyst',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\253_Tower Shield.png" id="253_Tower Shield" data-flag="@X" onclick="openSidebar('253_Tower Shield',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\239_Broken Straight Sword.png" id="239_Broken Straight Sword" data-flag="@X" onclick="openSidebar('239_Broken Straight Sword',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\241_Covetous Gold Serpent Ring.png" id="241_Covetous Gold Serpent Ring" data-flag="@X" onclick="openSidebar('241_Covetous Gold Serpent Ring',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\242_Crystal Lizard.png" id="242_Crystal Lizard" data-flag="@X" onclick="openSidebar('242_Crystal Lizard',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\251_Skull Lantern.png" id="251_Skull Lantern" data-flag="@X" onclick="openSidebar('251_Skull Lantern',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\254_Vile Mimic.png" id="254_Vile Mimic" data-flag="@X" onclick="openSidebar('254_Vile Mimic',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\9_Temple Bell.png" id="9_Temple Bell" data-flag="@X" onclick="openSidebar('9_Temple Bell',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\255_Astora Connection.png" id="255_Astora Connection" data-flag="@X" onclick="openSidebar('255_Astora Connection',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\261_Vinheim Connection.png" id="261_Vinheim Connection" data-flag="@X" onclick="openSidebar('261_Vinheim Connection',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\259_Great Swamp Connection.png" id="259_Great Swamp Connection" data-flag="@X" onclick="openSidebar('259_Great Swamp Connection',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\257_Far East Connection.png" id="257_Far East Connection" data-flag="@X" onclick="openSidebar('257_Far East Connection',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\256_Catarina Connection.png" id="256_Catarina Connection" data-flag="@X" onclick="openSidebar('256_Catarina Connection',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\270_Painted World.png" id="270_Painted World" data-flag="@X" onclick="openSidebar('270_Painted World',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\269_New Londo Ruins.png" id="269_New Londo Ruins" data-flag="@X" onclick="openSidebar('269_New Londo Ruins',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\268_Lost Izalith.png" id="268_Lost Izalith" data-flag="@X" onclick="openSidebar('268_Lost Izalith',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\266_Darkroot Garden.png" id="266_Darkroot Garden" data-flag="@X" onclick="openSidebar('266_Darkroot Garden',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\262_Anor Londo.png" id="262_Anor Londo" data-flag="@X" onclick="openSidebar('262_Anor Londo',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\271_Undead Parish.png" id="271_Undead Parish" data-flag="@X" onclick="openSidebar('271_Undead Parish',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\263_Blighttown.png" id="263_Blighttown" data-flag="@X" onclick="openSidebar('263_Blighttown',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\265_Darkroot Basin.png" id="265_Darkroot Basin" data-flag="@X" onclick="openSidebar('265_Darkroot Basin',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\264_Crystal Caves.png" id="264_Crystal Caves" data-flag="@X" onclick="openSidebar('264_Crystal Caves',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\267_Kiln of the First Flame.png" id="267_Kiln of the First Flame" data-flag="@X" onclick="openSidebar('267_Kiln of the First Flame',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\260_Valley of Drakes.png" id="260_Valley of Drakes" data-flag="@X" onclick="openSidebar('260_Valley of Drakes',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\258_Firelink Shrine.png" id="258_Firelink Shrine" data-flag="@X" onclick="openSidebar('258_Firelink Shrine',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\10_Field of the Dead.png" id="10_Field of the Dead" data-flag="@X" onclick="openSidebar('10_Field of the Dead',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\272_Plains.png" id="272_Plains" data-flag="@X" onclick="openSidebar('272_Plains',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\273_Island.png" id="273_Island" data-flag="@X" onclick="openSidebar('273_Island',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\274_Swamp.png" id="274_Swamp" data-flag="@X" onclick="openSidebar('274_Swamp',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\275_Mountain.png" id="275_Mountain" data-flag="@X" onclick="openSidebar('275_Mountain',false)"></div>
+			<div class="container"><img alt="sets\LOR-files\img\276_Forest.png" id="276_Forest" data-flag="@X" onclick="openSidebar('276_Forest',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>

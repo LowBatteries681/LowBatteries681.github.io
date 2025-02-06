@@ -1,0 +1,3410 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Balder Knight",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Zombie Knight ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/3_Balder Knight.png"
+			}
+		},
+		{
+			"name": "Anor Londo Gargoyle",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Artifact Creature — Gargoyle ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/2_Anor Londo Gargoyle.png"
+			}
+		},
+		{
+			"name": "Drakerider Elite",
+			"rarity": "common",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Zombie Knight ",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/9_Drakerider Elite.png"
+			}
+		},
+		{
+			"name": "Fire Keeper",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/11_Fire Keeper.png"
+			}
+		},
+		{
+			"name": "Hollowed Spearman",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Zombie Soldier ",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/16_Hollowed Spearman.png"
+			}
+		},
+		{
+			"name": "Miracle Princess Guard",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/20_Miracle Princess Guard.png"
+			}
+		},
+		{
+			"name": "Painting Guardian",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/23_Painting Guardian.png"
+			}
+		},
+		{
+			"name": "Parry",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/24_Parry.png"
+			}
+		},
+		{
+			"name": "Rest at Firelink Shrine",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/28_Rest at Firelink Shrine.png"
+			}
+		},
+		{
+			"name": "Ring of Steel Protection",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/29_Ring of Steel Protection.png"
+			}
+		},
+		{
+			"name": "Soapstone Summoner",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/35_Soapstone Summoner.png"
+			}
+		},
+		{
+			"name": "Great Heal Cleric",
+			"rarity": "common",
+			"mana_cost": "{5}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/14_Great Heal Cleric.png"
+			}
+		},
+		{
+			"name": "Undead Soldier",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Zombie Soldier ",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/40_Undead Soldier.png"
+			}
+		},
+		{
+			"name": "Archival Apparition",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Spirit ",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/42_Archival Apparition.png"
+			}
+		},
+		{
+			"name": "Ash Lake Explorer",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/43_Ash Lake Explorer.png"
+			}
+		},
+		{
+			"name": "Quiet Contemplation",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/73_Quiet Contemplation.png"
+			}
+		},
+		{
+			"name": "Blue Crystal Golem",
+			"rarity": "common",
+			"mana_cost": "{5}{U}",
+			"type": "Artifact Creature — Golem ",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/45_Blue Crystal Golem.png"
+			}
+		},
+		{
+			"name": "Crystalline Banisher",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/49_Crystalline Banisher.png"
+			}
+		},
+		{
+			"name": "Strategic Planning",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/78_Strategic Planning.png"
+			}
+		},
+		{
+			"name": "Guilt-Ridden Thief",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/56_Guilt-Ridden Thief.png"
+			}
+		},
+		{
+			"name": "Illusory Phantom",
+			"rarity": "common",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Spirit Illusion ",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/58_Illusory Phantom.png"
+			}
+		},
+		{
+			"name": "Lost in Crystal Caves",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Instant",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/64_Lost in Crystal Caves.png"
+			}
+		},
+		{
+			"name": "Momentary Breath",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Sorcery",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/67_Momentary Breath.png"
+			}
+		},
+		{
+			"name": "Seath's Dismissal",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/76_Seath's Dismissal.png"
+			}
+		},
+		{
+			"name": "Soul Arrow",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/77_Soul Arrow.png"
+			}
+		},
+		{
+			"name": "Valley Drake",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Drake ",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/81_Valley Drake.png"
+			}
+		},
+		{
+			"name": "Blighttown Mosquito",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Insect ",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/86_Blighttown Mosquito.png"
+			}
+		},
+		{
+			"name": "Cemetery Scavenger",
+			"rarity": "common",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/90_Cemetery Scavenger.png"
+			}
+		},
+		{
+			"name": "Dragon's Grasp",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Instant",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/94_Dragon's Grasp.png"
+			}
+		},
+		{
+			"name": "Giant Leeches",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Leech ",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/97_Giant Leeches.png"
+			}
+		},
+		{
+			"name": "Hollows of Undead Burg",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Zombie Soldier ",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/102_Hollows of Undead Burg.png"
+			}
+		},
+		{
+			"name": "Low-Ranking Knight",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/105_Low-Ranking Knight.png"
+			}
+		},
+		{
+			"name": "Overcome the Asylum",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Instant",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/107_Overcome the Asylum.png"
+			}
+		},
+		{
+			"name": "Poisonous Affliction",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/109_Poisonous Affliction.png"
+			}
+		},
+		{
+			"name": "Nasty End",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/106_Nasty End.png"
+			}
+		},
+		{
+			"name": "Sewer Slime",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Ooze ",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/110_Sewer Slime.png"
+			}
+		},
+		{
+			"name": "Sewer-Rot Rat",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Zombie Rat ",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/111_Sewer-Rot Rat.png"
+			}
+		},
+		{
+			"name": "Skeleton Warrior",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Skeleton Warrior ",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/113_Skeleton Warrior.png"
+			}
+		},
+		{
+			"name": "Undead Dog",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie Dog ",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/120_Undead Dog.png"
+			}
+		},
+		{
+			"name": "Wrong Way",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/121_Wrong Way.png"
+			}
+		},
+		{
+			"name": "Apply Resin",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/122_Apply Resin.png"
+			}
+		},
+		{
+			"name": "Fearless Warrior",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/137_Fearless Warrior.png"
+			}
+		},
+		{
+			"name": "Firebomb Toss",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/138_Firebomb Toss.png"
+			}
+		},
+		{
+			"name": "Foolish Undead",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/139_Foolish Undead.png"
+			}
+		},
+		{
+			"name": "Great Swamp Pyromancer",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/141_Great Swamp Pyromancer.png"
+			}
+		},
+		{
+			"name": "Keep Warm",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/144_Keep Warm.png"
+			}
+		},
+		{
+			"name": "Vinheim Deserter",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/160_Vinheim Deserter.png"
+			}
+		},
+		{
+			"name": "Quelaag's Flame",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/147_Quelaag's Flame.png"
+			}
+		},
+		{
+			"name": "Rusted Iron Ring",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/150_Rusted Iron Ring.png"
+			}
+		},
+		{
+			"name": "Savage Bandit",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Barbarian ",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/151_Savage Bandit.png"
+			}
+		},
+		{
+			"name": "Taurus Demon",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Minotaur Demon ",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/156_Taurus Demon.png"
+			}
+		},
+		{
+			"name": "Torch Hollow",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Zombie ",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/157_Torch Hollow.png"
+			}
+		},
+		{
+			"name": "Undead Archer",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Zombie Archer ",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/159_Undead Archer.png"
+			}
+		},
+		{
+			"name": "Witch of Flames",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Warlock ",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/161_Witch of Flames.png"
+			}
+		},
+		{
+			"name": "Blowdart Sniper",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Archer ",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/166_Blowdart Sniper.png"
+			}
+		},
+		{
+			"name": "Cat Covenant Ring",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/167_Cat Covenant Ring.png"
+			}
+		},
+		{
+			"name": "Cursebreath Basilisk",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Basilisk ",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/168_Cursebreath Basilisk.png"
+			}
+		},
+		{
+			"name": "Darkroot Bramble",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Plant Horror ",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/169_Darkroot Bramble.png"
+			}
+		},
+		{
+			"name": "Darkroot Foliage",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Plant Elemental ",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/170_Darkroot Foliage.png"
+			}
+		},
+		{
+			"name": "Mushroomfolk Beatdown",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/188_Mushroomfolk Beatdown.png"
+			}
+		},
+		{
+			"name": "Down to the Depths",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/173_Down to the Depths.png"
+			}
+		},
+		{
+			"name": "Iron Flesh Augur",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/183_Iron Flesh Augur.png"
+			}
+		},
+		{
+			"name": "Journey to Lordran",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/184_Journey to Lordran.png"
+			}
+		},
+		{
+			"name": "Man-Serpent Warrior",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Serpent Warrior ",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/186_Man-Serpent Warrior.png"
+			}
+		},
+		{
+			"name": "Return to Nature",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/190_Return to Nature.png"
+			}
+		},
+		{
+			"name": "Sif's End",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/195_Sif's End.png"
+			}
+		},
+		{
+			"name": "Spotted Frog-Ray",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Frog ",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/197_Spotted Frog-Ray.png"
+			}
+		},
+		{
+			"name": "Unclothed Deprived",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human ",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/199_Unclothed Deprived.png"
+			}
+		},
+		{
+			"name": "Wingrotted Dragon",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Zombie Dragon ",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/201_Wingrotted Dragon.png"
+			}
+		},
+		{
+			"name": "Covetous Gold Serpent Ring",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/241_Covetous Gold Serpent Ring.png"
+			}
+		},
+		{
+			"name": "Crystal Lizard",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Lizard ",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/242_Crystal Lizard.png"
+			}
+		},
+		{
+			"name": "Vile Mimic",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Treasure ",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/254_Vile Mimic.png"
+			}
+		},
+		{
+			"name": "Broken Straight Sword",
+			"rarity": "common",
+			"mana_cost": "{0}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/239_Broken Straight Sword.png"
+			}
+		},
+		{
+			"name": "Skull Lantern",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/251_Skull Lantern.png"
+			}
+		},
+		{
+			"name": "You Defeated",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/41_You Defeated.png"
+			}
+		},
+		{
+			"name": "Towershield Knight",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/38_Towershield Knight.png"
+			}
+		},
+		{
+			"name": "Firelink Shrine",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/258_Firelink Shrine.png"
+			}
+		},
+		{
+			"name": "Ghost of New Londo",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Spirit ",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/55_Ghost of New Londo.png"
+			}
+		},
+		{
+			"name": "Catalyst Instructor",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/46_Catalyst Instructor.png"
+			}
+		},
+		{
+			"name": "From the Catacombs",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Sorcery",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/96_From the Catacombs.png"
+			}
+		},
+		{
+			"name": "Confrontation",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/130_Confrontation.png"
+			}
+		},
+		{
+			"name": "Selfless Summon",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Human ",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/31_Selfless Summon.png"
+			}
+		},
+		{
+			"name": "Homeward Paladin",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/17_Homeward Paladin.png"
+			}
+		},
+		{
+			"name": "Lordran Pilgrim",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/223_Lordran Pilgrim.png"
+			}
+		},
+		{
+			"name": "Petrus of Thorolund",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Creature — Human Cleric ",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/25_Petrus of Thorolund.png"
+			}
+		},
+		{
+			"name": "Cleric of Replenishment",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/7_Cleric of Replenishment.png"
+			}
+		},
+		{
+			"name": "Crestfallen Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/209_Crestfallen Knight.png"
+			}
+		},
+		{
+			"name": "Silver Knights of Gwyn",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/34_Silver Knights of Gwyn.png"
+			}
+		},
+		{
+			"name": "Berenike Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Zombie Knight ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/4_Berenike Knight.png"
+			}
+		},
+		{
+			"name": "Thorolund Clerics",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/37_Thorolund Clerics.png"
+			}
+		},
+		{
+			"name": "Oscar, Astorian Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/21_Oscar, Astorian Knight.png"
+			}
+		},
+		{
+			"name": "Sentinel of Anor Londo",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Giant Knight ",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/32_Sentinel of Anor Londo.png"
+			}
+		},
+		{
+			"name": "Plunging Attack",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/26_Plunging Attack.png"
+			}
+		},
+		{
+			"name": "Jolly Cooperation",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/18_Jolly Cooperation.png"
+			}
+		},
+		{
+			"name": "Silver Knight Armor Set",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/33_Silver Knight Armor Set.png"
+			}
+		},
+		{
+			"name": "Fated Pilgrimage",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/10_Fated Pilgrimage.png"
+			}
+		},
+		{
+			"name": "Covenant of Sunlight",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/8_Covenant of Sunlight.png"
+			}
+		},
+		{
+			"name": "Obsessive Archivist",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/69_Obsessive Archivist.png"
+			}
+		},
+		{
+			"name": "Crow of Undead Asylum",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Bird ",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/48_Crow of Undead Asylum.png"
+			}
+		},
+		{
+			"name": "Magic Shield Sorcerer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/65_Magic Shield Sorcerer.png"
+			}
+		},
+		{
+			"name": "Dragon School Researchers",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/54_Dragon School Researchers.png"
+			}
+		},
+		{
+			"name": "Illusory Wall",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Illusion Wall ",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/59_Illusory Wall.png"
+			}
+		},
+		{
+			"name": "Rickert, Vinheim Smith",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Human Artificer ",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/74_Rickert, Vinheim Smith.png"
+			}
+		},
+		{
+			"name": "Big Hat Logan",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/44_Big Hat Logan.png"
+			}
+		},
+		{
+			"name": "Darkroot Sorcerer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/52_Darkroot Sorcerer.png"
+			}
+		},
+		{
+			"name": "Archive Channeler",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Creature — Avatar Wizard ",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/203_Archive Channeler.png"
+			}
+		},
+		{
+			"name": "Kingseeker's Insight",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/62_Kingseeker's Insight.png"
+			}
+		},
+		{
+			"name": "Into the Painting",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/61_Into the Painting.png"
+			}
+		},
+		{
+			"name": "Logan's Teachings",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/63_Logan's Teachings.png"
+			}
+		},
+		{
+			"name": "Sanctum of Seath",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/75_Sanctum of Seath.png"
+			}
+		},
+		{
+			"name": "Priscilla's Ice Wind",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Instant",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/228_Priscilla's Ice Wind.png"
+			}
+		},
+		{
+			"name": "Thirst for Power",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/79_Thirst for Power.png"
+			}
+		},
+		{
+			"name": "Discover the Weakness",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Instant",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/53_Discover the Weakness.png"
+			}
+		},
+		{
+			"name": "Gravelord's Servant",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/101_Gravelord's Servant.png"
+			}
+		},
+		{
+			"name": "Bonewheel Skeleton",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Skeleton ",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/87_Bonewheel Skeleton.png"
+			}
+		},
+		{
+			"name": "Butcher of the Depths",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Zombie Warrior ",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/88_Butcher of the Depths.png"
+			}
+		},
+		{
+			"name": "Batwing Demon",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Demon ",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/84_Batwing Demon.png"
+			}
+		},
+		{
+			"name": "Knight Kirk of Thorns",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/104_Knight Kirk of Thorns.png"
+			}
+		},
+		{
+			"name": "Undead Assassin",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Zombie Assassin ",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/119_Undead Assassin.png"
+			}
+		},
+		{
+			"name": "Bone Tower",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Creature — Skeleton ",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/206_Bone Tower.png"
+			}
+		},
+		{
+			"name": "Titanite Demon",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Artifact Creature — Demon ",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/116_Titanite Demon.png"
+			}
+		},
+		{
+			"name": "The Asylum Demon",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Creature — Demon ",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/83_The Asylum Demon.png"
+			}
+		},
+		{
+			"name": "Skeletal Beast",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Creature — Skeleton Beast Giant ",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/112_Skeletal Beast.png"
+			}
+		},
+		{
+			"name": "Curse of the Darksign",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/91_Curse of the Darksign.png"
+			}
+		},
+		{
+			"name": "Desperate Strike",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/93_Desperate Strike.png"
+			}
+		},
+		{
+			"name": "Struggle for Humanity",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/115_Struggle for Humanity.png"
+			}
+		},
+		{
+			"name": "Gravelord's Curse",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/99_Gravelord's Curse.png"
+			}
+		},
+		{
+			"name": "Turn Hollow",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/118_Turn Hollow.png"
+			}
+		},
+		{
+			"name": "Traverse the Ruins",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/234_Traverse the Ruins.png"
+			}
+		},
+		{
+			"name": "Red-Eye Chaos Bug",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Creature — Insect ",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/149_Red-Eye Chaos Bug.png"
+			}
+		},
+		{
+			"name": "Burrowing Rockworm",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Worm ",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/124_Burrowing Rockworm.png"
+			}
+		},
+		{
+			"name": "Eingyi the Egg-Burdened",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Creature — Egg Warlock ",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/136_Eingyi the Egg-Burdened.png"
+			}
+		},
+		{
+			"name": "Stone Demon of Izalith",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{R}",
+			"type": "Artifact Creature — Gargoyle Demon ",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/233_Stone Demon of Izalith.png"
+			}
+		},
+		{
+			"name": "Catacomb Wisp",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Spirit ",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/126_Catacomb Wisp.png"
+			}
+		},
+		{
+			"name": "Chaos Eater",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Horror ",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/129_Chaos Eater.png"
+			}
+		},
+		{
+			"name": "Cragspider",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Insect Demon ",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/131_Cragspider.png"
+			}
+		},
+		{
+			"name": "Domhnall of Zena",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Legendary Creature — Human Citizen ",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/133_Domhnall of Zena.png"
+			}
+		},
+		{
+			"name": "Darkwraith Invader",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Wraith Knight ",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/132_Darkwraith Invader.png"
+			}
+		},
+		{
+			"name": "Hellkite Wyvern",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{R}",
+			"type": "Creature — Dragon ",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/219_Hellkite Wyvern.png"
+			}
+		},
+		{
+			"name": "Notched Whip",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/146_Notched Whip.png"
+			}
+		},
+		{
+			"name": "Sporting Duel",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/152_Sporting Duel.png"
+			}
+		},
+		{
+			"name": "Talisman Throw",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/155_Talisman Throw.png"
+			}
+		},
+		{
+			"name": "Hellkite Ambush",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/143_Hellkite Ambush.png"
+			}
+		},
+		{
+			"name": "Treacherous Invasion",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/158_Treacherous Invasion.png"
+			}
+		},
+		{
+			"name": "Sunlight Spear",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/154_Sunlight Spear.png"
+			}
+		},
+		{
+			"name": "Alvina of the Darkroot Wood",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Legendary Creature — Cat ",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/162_Alvina of the Darkroot Wood.png"
+			}
+		},
+		{
+			"name": "Inciting Summon",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/220_Inciting Summon.png"
+			}
+		},
+		{
+			"name": "Parasitic Wall-Hugger",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Insect Horror ",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/189_Parasitic Wall-Hugger.png"
+			}
+		},
+		{
+			"name": "Toxic Ooze",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Ooze ",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/198_Toxic Ooze.png"
+			}
+		},
+		{
+			"name": "Darkroot Outlander",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/171_Darkroot Outlander.png"
+			}
+		},
+		{
+			"name": "Anor Londo Archer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Archer ",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/163_Anor Londo Archer.png"
+			}
+		},
+		{
+			"name": "Novice Undead",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/226_Novice Undead.png"
+			}
+		},
+		{
+			"name": "Infested Barbarian",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Zombie Barbarian ",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/182_Infested Barbarian.png"
+			}
+		},
+		{
+			"name": "Mushroom People",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Fungus ",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/187_Mushroom People.png"
+			}
+		},
+		{
+			"name": "Black-Iron Tarkus",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/165_Black-Iron Tarkus.png"
+			}
+		},
+		{
+			"name": "Great Stone Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/181_Great Stone Knight.png"
+			}
+		},
+		{
+			"name": "Great Magic Barrier",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/180_Great Magic Barrier.png"
+			}
+		},
+		{
+			"name": "Grass Crest Shield",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/179_Grass Crest Shield.png"
+			}
+		},
+		{
+			"name": "Seek Guidance",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/193_Seek Guidance.png"
+			}
+		},
+		{
+			"name": "Kindle the Bonfire",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/185_Kindle the Bonfire.png"
+			}
+		},
+		{
+			"name": "Souls Retrieved",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/196_Souls Retrieved.png"
+			}
+		},
+		{
+			"name": "Andre, Astora Blacksmith",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{W}",
+			"type": "Legendary Creature — Human Artificer ",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/202_Andre, Astora Blacksmith.png"
+			}
+		},
+		{
+			"name": "Ash Maiden Anastacia",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Legendary Creature — Human Cleric ",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/204_Ash Maiden Anastacia.png"
+			}
+		},
+		{
+			"name": "Crossbreed Priscilla",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Creature — Human Dragon ",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/210_Crossbreed Priscilla.png"
+			}
+		},
+		{
+			"name": "Dusk, Princess of Oolacile",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/213_Dusk, Princess of Oolacile.png"
+			}
+		},
+		{
+			"name": "Griggs of Vinheim",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/216_Griggs of Vinheim.png"
+			}
+		},
+		{
+			"name": "Maneater Mildred",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{G}",
+			"type": "Legendary Creature — Human Warrior ",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/224_Maneater Mildred.png"
+			}
+		},
+		{
+			"name": "Paladin Leeroy the First",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{B}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/227_Paladin Leeroy the First.png"
+			}
+		},
+		{
+			"name": "Shiva of the East",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Legendary Creature — Human Warrior ",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/230_Shiva of the East.png"
+			}
+		},
+		{
+			"name": "Witch Beatrice",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Human Warlock ",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/235_Witch Beatrice.png"
+			}
+		},
+		{
+			"name": "Xanthous King Jeremiah",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{R}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/236_Xanthous King Jeremiah.png"
+			}
+		},
+		{
+			"name": "Ring of Sacrifice",
+			"rarity": "uncommon",
+			"mana_cost": "{0}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/250_Ring of Sacrifice.png"
+			}
+		},
+		{
+			"name": "Caestus",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/240_Caestus.png"
+			}
+		},
+		{
+			"name": "Tower Shield",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/253_Tower Shield.png"
+			}
+		},
+		{
+			"name": "Tin Crystallization Catalyst",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/252_Tin Crystallization Catalyst.png"
+			}
+		},
+		{
+			"name": "Gravelord Sword",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/245_Gravelord Sword.png"
+			}
+		},
+		{
+			"name": "Orange Guidance Soapstone",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/249_Orange Guidance Soapstone.png"
+			}
+		},
+		{
+			"name": "The Everlasting Dragon",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Legendary Artifact Creature — Dragon ",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/244_The Everlasting Dragon.png"
+			}
+		},
+		{
+			"name": "Iron Golem",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Golem ",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/247_Iron Golem.png"
+			}
+		},
+		{
+			"name": "Bell Tower Gargoyle",
+			"rarity": "uncommon",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Gargoyle ",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/237_Bell Tower Gargoyle.png"
+			}
+		},
+		{
+			"name": "Valley of Drakes",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/260_Valley of Drakes.png"
+			}
+		},
+		{
+			"name": "Phantom Vagrant",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Creature — Crab Horror ",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/1_Phantom Vagrant.png"
+			}
+		},
+		{
+			"name": "Black Crystal Banisher",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/5_Black Crystal Banisher.png"
+			}
+		},
+		{
+			"name": "Fire Keeper's Soul",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Artifact",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/12_Fire Keeper's Soul.png"
+			}
+		},
+		{
+			"name": "Golden Phantom Ally",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Ally ",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/13_Golden Phantom Ally.png"
+			}
+		},
+		{
+			"name": "Greatsword of Artorias",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/15_Greatsword of Artorias.png"
+			}
+		},
+		{
+			"name": "Oswald of Carim",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Creature — Human Cleric ",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/22_Oswald of Carim.png"
+			}
+		},
+		{
+			"name": "Princess Gwynevere",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Legendary Creature — God Illusion ",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/27_Princess Gwynevere.png"
+			}
+		},
+		{
+			"name": "Solaire of Astora",
+			"rarity": "rare",
+			"mana_cost": "{W}{W}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/36_Solaire of Astora.png"
+			}
+		},
+		{
+			"name": "Traverse the White Light",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Sorcery",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/39_Traverse the White Light.png"
+			}
+		},
+		{
+			"name": "Crow Demon of Ariamis",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Harpy Demon ",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/47_Crow Demon of Ariamis.png"
+			}
+		},
+		{
+			"name": "Dark Sun Gwyndolin",
+			"rarity": "rare",
+			"mana_cost": "{U}{U}",
+			"type": "Legendary Creature — God Wizard ",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/51_Dark Sun Gwyndolin.png"
+			}
+		},
+		{
+			"name": "Ingward, Guardian of the Seal",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/60_Ingward, Guardian of the Seal.png"
+			}
+		},
+		{
+			"name": "Mass of Souls",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Horror Ooze ",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/66_Mass of Souls.png"
+			}
+		},
+		{
+			"name": "Moonlight Greatsword",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/68_Moonlight Greatsword.png"
+			}
+		},
+		{
+			"name": "Open the Floodgates",
+			"rarity": "rare",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/70_Open the Floodgates.png"
+			}
+		},
+		{
+			"name": "Pale Drake's Betrayal",
+			"rarity": "rare",
+			"mana_cost": "{X}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/71_Pale Drake's Betrayal.png"
+			}
+		},
+		{
+			"name": "Twilight of Anor Londo",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/80_Twilight of Anor Londo.png"
+			}
+		},
+		{
+			"name": "Age of Dark",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Enchantment",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/82_Age of Dark.png"
+			}
+		},
+		{
+			"name": "Black Knight of the Kiln",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Creature — Spirit Knight ",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/85_Black Knight of the Kiln.png"
+			}
+		},
+		{
+			"name": "Catacomb Necromage",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Zombie Wizard ",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/89_Catacomb Necromage.png"
+			}
+		},
+		{
+			"name": "Darkwraith Knight",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Wraith Knight ",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/92_Darkwraith Knight.png"
+			}
+		},
+		{
+			"name": "Executioner Smough",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Creature — Giant Warrior ",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/95_Executioner Smough.png"
+			}
+		},
+		{
+			"name": "Gravelord's Miasma",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/100_Gravelord's Miasma.png"
+			}
+		},
+		{
+			"name": "Pinwheel",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Legendary Creature — Horror Wizard ",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/108_Pinwheel.png"
+			}
+		},
+		{
+			"name": "Smough's Great Hammer",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/114_Smough's Great Hammer.png"
+			}
+		},
+		{
+			"name": "Bounding Demon of Izalith",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Zombie Demon Dragon ",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/123_Bounding Demon of Izalith.png"
+			}
+		},
+		{
+			"name": "Capra Demon",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Demon ",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/125_Capra Demon.png"
+			}
+		},
+		{
+			"name": "The Centipede Demon",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Legendary Creature — Insect Demon ",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/128_The Centipede Demon.png"
+			}
+		},
+		{
+			"name": "Dragon Slayer Ornstein",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Legendary Creature — God Knight ",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/134_Dragon Slayer Ornstein.png"
+			}
+		},
+		{
+			"name": "Dragonslayer Spear",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/135_Dragonslayer Spear.png"
+			}
+		},
+		{
+			"name": "Forged by Giants",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/140_Forged by Giants.png"
+			}
+		},
+		{
+			"name": "Knight Lautrec of Carim",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/145_Knight Lautrec of Carim.png"
+			}
+		},
+		{
+			"name": "Student of Laurentius",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/153_Student of Laurentius.png"
+			}
+		},
+		{
+			"name": "Ash Lake Hydra",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Hydra ",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/164_Ash Lake Hydra.png"
+			}
+		},
+		{
+			"name": "Darkroot Summoner",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/172_Darkroot Summoner.png"
+			}
+		},
+		{
+			"name": "Dragon Bone Fist",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/174_Dragon Bone Fist.png"
+			}
+		},
+		{
+			"name": "End of the Ancients",
+			"rarity": "rare",
+			"mana_cost": "{X}{X}{G}",
+			"type": "Sorcery",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/175_End of the Ancients.png"
+			}
+		},
+		{
+			"name": "Expedition of the Undead",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/176_Expedition of the Undead.png"
+			}
+		},
+		{
+			"name": "Ricard, Undead Prince",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Creature — Zombie Archer Noble ",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/191_Ricard, Undead Prince.png"
+			}
+		},
+		{
+			"name": "Siegmeyer of Catarina",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/194_Siegmeyer of Catarina.png"
+			}
+		},
+		{
+			"name": "Undead Merchant",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Creature — Zombie Citizen ",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/200_Undead Merchant.png"
+			}
+		},
+		{
+			"name": "Kingseeker Frampt",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Legendary Creature — Elder Serpent ",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/222_Kingseeker Frampt.png"
+			}
+		},
+		{
+			"name": "Darkstalker Kaathe",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Legendary Creature — Elder Serpent ",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/212_Darkstalker Kaathe.png"
+			}
+		},
+		{
+			"name": "Chaos Witch Quelaag",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Legendary Creature — Human Spider Demon ",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/207_Chaos Witch Quelaag.png"
+			}
+		},
+		{
+			"name": "Clan of Forest Protectors",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{G}",
+			"type": "Legendary Creature — Human ",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/208_Clan of Forest Protectors.png"
+			}
+		},
+		{
+			"name": "Sif the Great Grey Wolf",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}",
+			"type": "Legendary Creature — Wolf ",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/231_Sif the Great Grey Wolf.png"
+			}
+		},
+		{
+			"name": "Havel the Rock",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{B}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/218_Havel the Rock.png"
+			}
+		},
+		{
+			"name": "The Crystal General",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}",
+			"type": "Legendary Creature — Zombie Knight ",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/211_The Crystal General.png"
+			}
+		},
+		{
+			"name": "The Gaping Dragon",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Legendary Creature — Dragon Horror ",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/215_The Gaping Dragon.png"
+			}
+		},
+		{
+			"name": "The Fair Lady",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Legendary Creature — Human Spider Demon ",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/214_The Fair Lady.png"
+			}
+		},
+		{
+			"name": "The Moonlight Butterfly",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Legendary Creature — Insect Wizard ",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/225_The Moonlight Butterfly.png"
+			}
+		},
+		{
+			"name": "The Souls of Lords",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}{B}{R}{G}",
+			"type": "Legendary Artifact",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/232_The Souls of Lords.png"
+			}
+		},
+		{
+			"name": "Black Knight Greatsword",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/238_Black Knight Greatsword.png"
+			}
+		},
+		{
+			"name": "The Dark Hand",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/243_The Dark Hand.png"
+			}
+		},
+		{
+			"name": "Havel's Set",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/246_Havel's Set.png"
+			}
+		},
+		{
+			"name": "Astora Connection",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Plains ",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/255_Astora Connection.png"
+			}
+		},
+		{
+			"name": "Catarina Connection",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Forest ",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/256_Catarina Connection.png"
+			}
+		},
+		{
+			"name": "Far East Connection",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Mountain ",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/257_Far East Connection.png"
+			}
+		},
+		{
+			"name": "Great Swamp Connection",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Swamp ",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/259_Great Swamp Connection.png"
+			}
+		},
+		{
+			"name": "Vinheim Connection",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Island ",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/261_Vinheim Connection.png"
+			}
+		},
+		{
+			"name": "Link the Fire",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/19_Link the Fire.png"
+			}
+		},
+		{
+			"name": "Royal Sentinels",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Giant Soldier ",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/30_Royal Sentinels.png"
+			}
+		},
+		{
+			"name": "Bonfire Lit",
+			"rarity": "mythic",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/6_Bonfire Lit.png"
+			}
+		},
+		{
+			"name": "Horde of Hollows",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Zombie ",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/57_Horde of Hollows.png"
+			}
+		},
+		{
+			"name": "Into the Abyss",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/103_Into the Abyss.png"
+			}
+		},
+		{
+			"name": "Gwyn's Greatsword",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/142_Gwyn's Greatsword.png"
+			}
+		},
+		{
+			"name": "Ring the Two Bells",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/192_Ring the Two Bells.png"
+			}
+		},
+		{
+			"name": "The Cycle Continues",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/50_The Cycle Continues.png"
+			}
+		},
+		{
+			"name": "Pursuit of Immortality",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/72_Pursuit of Immortality.png"
+			}
+		},
+		{
+			"name": "Trusty Patches",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Legendary Planeswalker — Patches ",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/117_Trusty Patches.png"
+			}
+		},
+		{
+			"name": "Gravelord Nito",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}{B}",
+			"type": "Legendary Creature — Skeleton God ",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/98_Gravelord Nito.png"
+			}
+		},
+		{
+			"name": "The Bed of Chaos",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Creature — Demon God ",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/205_The Bed of Chaos.png"
+			}
+		},
+		{
+			"name": "Giants of Sen's Fortress",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Giant Warrior ",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/178_Giants of Sen's Fortress.png"
+			}
+		},
+		{
+			"name": "Fang Boar",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Boar ",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/177_Fang Boar.png"
+			}
+		},
+		{
+			"name": "Gwyn, Lord of Cinder",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}{W}",
+			"type": "Legendary Creature — Noble God ",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/217_Gwyn, Lord of Cinder.png"
+			}
+		},
+		{
+			"name": "King of New Londo",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}{B}",
+			"type": "Legendary Creature — Spirit God ",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/221_King of New Londo.png"
+			}
+		},
+		{
+			"name": "Seath the Scaleless",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{U}",
+			"type": "Legendary Creature — Elder Dragon God ",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/229_Seath the Scaleless.png"
+			}
+		},
+		{
+			"name": "The Lordvessel",
+			"rarity": "mythic",
+			"mana_cost": "{3}",
+			"type": "Legendary Artifact",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/248_The Lordvessel.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest ",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/276_Forest.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain ",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/275_Mountain.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp ",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/274_Swamp.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island ",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/273_Island.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains ",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/272_Plains.png"
+			}
+		},
+		{
+			"name": "Anor Londo",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Forest Plains ",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/262_Anor Londo.png"
+			}
+		},
+		{
+			"name": "Blighttown",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Swamp Forest ",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/263_Blighttown.png"
+			}
+		},
+		{
+			"name": "Crystal Caves",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Island Mountain ",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/264_Crystal Caves.png"
+			}
+		},
+		{
+			"name": "Darkroot Basin",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Forest Island ",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/265_Darkroot Basin.png"
+			}
+		},
+		{
+			"name": "Darkroot Garden",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Mountain Forest ",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/266_Darkroot Garden.png"
+			}
+		},
+		{
+			"name": "Kiln of the First Flame",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Mountain Plains ",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/267_Kiln of the First Flame.png"
+			}
+		},
+		{
+			"name": "Lost Izalith",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Swamp Mountain ",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/268_Lost Izalith.png"
+			}
+		},
+		{
+			"name": "New Londo Ruins",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Island Swamp ",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/269_New Londo Ruins.png"
+			}
+		},
+		{
+			"name": "Painted World",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Plains Island ",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/270_Painted World.png"
+			}
+		},
+		{
+			"name": "Undead Parish",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Plains Swamp ",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/271_Undead Parish.png"
+			}
+		},
+		{
+			"name": "Hero's Downfall",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Instant",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/5_Hero's Downfall.png"
+			}
+		},
+		{
+			"name": "Realms Uncharted",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/7_Realms Uncharted.png"
+			}
+		},
+		{
+			"name": "Faithless Looting",
+			"rarity": "masterpiece",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/6_Faithless Looting.png"
+			}
+		},
+		{
+			"name": "Ponder",
+			"rarity": "masterpiece",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/3_Ponder.png"
+			}
+		},
+		{
+			"name": "Solemnity",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/2_Solemnity.png"
+			}
+		},
+		{
+			"name": "Farewell",
+			"rarity": "masterpiece",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/1_Farewell.png"
+			}
+		},
+		{
+			"name": "Crumbling Ashes",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/4_Crumbling Ashes.png"
+			}
+		},
+		{
+			"name": "Ceaseless Discharge",
+			"rarity": "mythic",
+			"mana_cost": "{R}{R}{R}",
+			"type": "Legendary Creature — Demon ",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/127_Ceaseless Discharge.png"
+			}
+		},
+		{
+			"name": "Temple Bell",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/9_Temple Bell.png"
+			}
+		},
+		{
+			"name": "Everlasting Torment",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{B/R}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/8_Everlasting Torment.png"
+			}
+		},
+		{
+			"name": "Field of the Dead",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/10_Field of the Dead.png"
+			}
+		},
+		{
+			"name": "Red Eye Champion",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Wraith Knight ",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://LowBatteries681.github.io/sets/LOR-files/img/148_Red Eye Champion.png"
+			}
+		}
+	]
+[RareSlot(1)]
+2 Phantom Vagrant
+2 Black Crystal Banisher
+2 Fire Keeper's Soul
+2 Golden Phantom Ally
+2 Greatsword of Artorias
+2 Oswald of Carim
+2 Princess Gwynevere
+2 Solaire of Astora
+2 Traverse the White Light
+2 Crow Demon of Ariamis
+2 Dark Sun Gwyndolin
+2 Ingward, Guardian of the Seal
+2 Mass of Souls
+2 Moonlight Greatsword
+2 Open the Floodgates
+2 Pale Drake's Betrayal
+2 Twilight of Anor Londo
+2 Age of Dark
+2 Black Knight of the Kiln
+2 Catacomb Necromage
+2 Darkwraith Knight
+2 Executioner Smough
+2 Gravelord's Miasma
+2 Pinwheel
+2 Smough's Great Hammer
+2 Bounding Demon of Izalith
+2 Capra Demon
+2 The Centipede Demon
+2 Dragon Slayer Ornstein
+2 Dragonslayer Spear
+2 Forged by Giants
+2 Knight Lautrec of Carim
+2 Student of Laurentius
+2 Ash Lake Hydra
+2 Darkroot Summoner
+2 Dragon Bone Fist
+2 End of the Ancients
+2 Expedition of the Undead
+2 Ricard, Undead Prince
+2 Siegmeyer of Catarina
+2 Undead Merchant
+2 Kingseeker Frampt
+2 Darkstalker Kaathe
+2 Chaos Witch Quelaag
+2 Clan of Forest Protectors
+2 Sif the Great Grey Wolf
+2 Havel the Rock
+2 The Crystal General
+2 The Gaping Dragon
+2 The Fair Lady
+2 The Moonlight Butterfly
+2 The Souls of Lords
+2 Black Knight Greatsword
+2 The Dark Hand
+2 Havel's Set
+2 Astora Connection
+2 Catarina Connection
+2 Far East Connection
+2 Great Swamp Connection
+2 Vinheim Connection
+1 Link the Fire
+1 Royal Sentinels
+1 Bonfire Lit
+1 Horde of Hollows
+1 Into the Abyss
+1 Gwyn's Greatsword
+1 Ring the Two Bells
+1 The Cycle Continues
+1 Pursuit of Immortality
+1 Trusty Patches
+1 Gravelord Nito
+1 The Bed of Chaos
+1 Giants of Sen's Fortress
+1 Fang Boar
+1 Gwyn, Lord of Cinder
+1 King of New Londo
+1 Seath the Scaleless
+1 The Lordvessel
+1 Ceaseless Discharge
+1 Red Eye Champion
+[UncommonSlot(3)]
+9 Selfless Summon
+9 Homeward Paladin
+9 Lordran Pilgrim
+9 Petrus of Thorolund
+9 Cleric of Replenishment
+9 Crestfallen Knight
+9 Silver Knights of Gwyn
+9 Berenike Knight
+9 Thorolund Clerics
+9 Oscar, Astorian Knight
+9 Sentinel of Anor Londo
+9 Plunging Attack
+9 Jolly Cooperation
+9 Silver Knight Armor Set
+9 Fated Pilgrimage
+9 Covenant of Sunlight
+9 Obsessive Archivist
+9 Crow of Undead Asylum
+9 Magic Shield Sorcerer
+9 Dragon School Researchers
+9 Illusory Wall
+9 Rickert, Vinheim Smith
+9 Big Hat Logan
+9 Darkroot Sorcerer
+9 Archive Channeler
+9 Kingseeker's Insight
+9 Into the Painting
+9 Logan's Teachings
+9 Sanctum of Seath
+9 Priscilla's Ice Wind
+9 Thirst for Power
+9 Discover the Weakness
+9 Gravelord's Servant
+9 Bonewheel Skeleton
+9 Butcher of the Depths
+9 Batwing Demon
+9 Knight Kirk of Thorns
+9 Undead Assassin
+9 Bone Tower
+9 Titanite Demon
+9 The Asylum Demon
+9 Skeletal Beast
+9 Curse of the Darksign
+9 Desperate Strike
+9 Struggle for Humanity
+9 Gravelord's Curse
+9 Turn Hollow
+9 Traverse the Ruins
+9 Red-Eye Chaos Bug
+9 Burrowing Rockworm
+9 Eingyi the Egg-Burdened
+9 Stone Demon of Izalith
+9 Catacomb Wisp
+9 Chaos Eater
+9 Cragspider
+9 Domhnall of Zena
+9 Darkwraith Invader
+9 Hellkite Wyvern
+9 Notched Whip
+9 Sporting Duel
+9 Talisman Throw
+9 Hellkite Ambush
+9 Treacherous Invasion
+9 Sunlight Spear
+9 Alvina of the Darkroot Wood
+9 Inciting Summon
+9 Parasitic Wall-Hugger
+9 Toxic Ooze
+9 Darkroot Outlander
+9 Anor Londo Archer
+9 Novice Undead
+9 Infested Barbarian
+9 Mushroom People
+9 Black-Iron Tarkus
+9 Great Stone Knight
+9 Great Magic Barrier
+9 Grass Crest Shield
+9 Seek Guidance
+9 Kindle the Bonfire
+9 Souls Retrieved
+9 Andre, Astora Blacksmith
+9 Ash Maiden Anastacia
+9 Crossbreed Priscilla
+9 Dusk, Princess of Oolacile
+9 Griggs of Vinheim
+9 Maneater Mildred
+9 Paladin Leeroy the First
+9 Shiva of the East
+9 Witch Beatrice
+9 Xanthous King Jeremiah
+9 Ring of Sacrifice
+9 Caestus
+9 Tower Shield
+9 Tin Crystallization Catalyst
+9 Gravelord Sword
+9 Orange Guidance Soapstone
+9 The Everlasting Dragon
+9 Iron Golem
+9 Bell Tower Gargoyle
+9 Valley of Drakes
+[CommonSlot(7)]
+30 Balder Knight
+30 Anor Londo Gargoyle
+30 Drakerider Elite
+30 Fire Keeper
+30 Hollowed Spearman
+30 Miracle Princess Guard
+30 Painting Guardian
+30 Parry
+30 Rest at Firelink Shrine
+30 Ring of Steel Protection
+30 Soapstone Summoner
+30 Great Heal Cleric
+30 Undead Soldier
+30 Archival Apparition
+30 Ash Lake Explorer
+30 Quiet Contemplation
+30 Blue Crystal Golem
+30 Crystalline Banisher
+30 Strategic Planning
+30 Guilt-Ridden Thief
+30 Illusory Phantom
+30 Lost in Crystal Caves
+30 Momentary Breath
+30 Seath's Dismissal
+30 Soul Arrow
+30 Valley Drake
+30 Blighttown Mosquito
+30 Cemetery Scavenger
+30 Dragon's Grasp
+30 Giant Leeches
+30 Hollows of Undead Burg
+30 Low-Ranking Knight
+30 Overcome the Asylum
+30 Poisonous Affliction
+30 Nasty End
+30 Sewer Slime
+30 Sewer-Rot Rat
+30 Skeleton Warrior
+30 Undead Dog
+30 Wrong Way
+30 Apply Resin
+30 Fearless Warrior
+30 Firebomb Toss
+30 Foolish Undead
+30 Great Swamp Pyromancer
+30 Keep Warm
+30 Vinheim Deserter
+30 Quelaag's Flame
+30 Rusted Iron Ring
+30 Savage Bandit
+30 Taurus Demon
+30 Torch Hollow
+30 Undead Archer
+30 Witch of Flames
+30 Blowdart Sniper
+30 Cat Covenant Ring
+30 Cursebreath Basilisk
+30 Darkroot Bramble
+30 Darkroot Foliage
+30 Mushroomfolk Beatdown
+30 Down to the Depths
+30 Iron Flesh Augur
+30 Journey to Lordran
+30 Man-Serpent Warrior
+30 Return to Nature
+30 Sif's End
+30 Spotted Frog-Ray
+30 Unclothed Deprived
+30 Wingrotted Dragon
+30 Covetous Gold Serpent Ring
+30 Crystal Lizard
+30 Vile Mimic
+30 Broken Straight Sword
+30 Skull Lantern
+30 You Defeated
+30 Towershield Knight
+30 Firelink Shrine
+30 Ghost of New Londo
+30 Catalyst Instructor
+30 From the Catacombs
+30 Confrontation
+[WildcardSlot(2)]
+10 Balder Knight
+10 Anor Londo Gargoyle
+10 Drakerider Elite
+10 Fire Keeper
+10 Hollowed Spearman
+10 Miracle Princess Guard
+10 Painting Guardian
+10 Parry
+10 Rest at Firelink Shrine
+10 Ring of Steel Protection
+10 Soapstone Summoner
+10 Great Heal Cleric
+10 Undead Soldier
+10 Archival Apparition
+10 Ash Lake Explorer
+10 Quiet Contemplation
+10 Blue Crystal Golem
+10 Crystalline Banisher
+10 Strategic Planning
+10 Guilt-Ridden Thief
+10 Illusory Phantom
+10 Lost in Crystal Caves
+10 Momentary Breath
+10 Seath's Dismissal
+10 Soul Arrow
+10 Valley Drake
+10 Blighttown Mosquito
+10 Cemetery Scavenger
+10 Dragon's Grasp
+10 Giant Leeches
+10 Hollows of Undead Burg
+10 Low-Ranking Knight
+10 Overcome the Asylum
+10 Poisonous Affliction
+10 Nasty End
+10 Sewer Slime
+10 Sewer-Rot Rat
+10 Skeleton Warrior
+10 Undead Dog
+10 Wrong Way
+10 Apply Resin
+10 Fearless Warrior
+10 Firebomb Toss
+10 Foolish Undead
+10 Great Swamp Pyromancer
+10 Keep Warm
+10 Vinheim Deserter
+10 Quelaag's Flame
+10 Rusted Iron Ring
+10 Savage Bandit
+10 Taurus Demon
+10 Torch Hollow
+10 Undead Archer
+10 Witch of Flames
+10 Blowdart Sniper
+10 Cat Covenant Ring
+10 Cursebreath Basilisk
+10 Darkroot Bramble
+10 Darkroot Foliage
+10 Mushroomfolk Beatdown
+10 Down to the Depths
+10 Iron Flesh Augur
+10 Journey to Lordran
+10 Man-Serpent Warrior
+10 Return to Nature
+10 Sif's End
+10 Spotted Frog-Ray
+10 Unclothed Deprived
+10 Wingrotted Dragon
+10 Covetous Gold Serpent Ring
+10 Crystal Lizard
+10 Vile Mimic
+10 Broken Straight Sword
+10 Skull Lantern
+10 You Defeated
+10 Towershield Knight
+10 Firelink Shrine
+10 Ghost of New Londo
+10 Catalyst Instructor
+10 From the Catacombs
+10 Confrontation
+10 Selfless Summon
+10 Homeward Paladin
+10 Lordran Pilgrim
+10 Petrus of Thorolund
+10 Cleric of Replenishment
+10 Crestfallen Knight
+10 Silver Knights of Gwyn
+10 Berenike Knight
+10 Thorolund Clerics
+10 Oscar, Astorian Knight
+10 Sentinel of Anor Londo
+10 Plunging Attack
+10 Jolly Cooperation
+10 Silver Knight Armor Set
+10 Fated Pilgrimage
+10 Covenant of Sunlight
+10 Obsessive Archivist
+10 Crow of Undead Asylum
+10 Magic Shield Sorcerer
+10 Dragon School Researchers
+10 Illusory Wall
+10 Rickert, Vinheim Smith
+10 Big Hat Logan
+10 Darkroot Sorcerer
+10 Archive Channeler
+10 Kingseeker's Insight
+10 Into the Painting
+10 Logan's Teachings
+10 Sanctum of Seath
+10 Priscilla's Ice Wind
+10 Thirst for Power
+10 Discover the Weakness
+10 Gravelord's Servant
+10 Bonewheel Skeleton
+10 Butcher of the Depths
+10 Batwing Demon
+10 Knight Kirk of Thorns
+10 Undead Assassin
+10 Bone Tower
+10 Titanite Demon
+10 The Asylum Demon
+10 Skeletal Beast
+10 Curse of the Darksign
+10 Desperate Strike
+10 Struggle for Humanity
+10 Gravelord's Curse
+10 Turn Hollow
+10 Traverse the Ruins
+10 Red-Eye Chaos Bug
+10 Burrowing Rockworm
+10 Eingyi the Egg-Burdened
+10 Stone Demon of Izalith
+10 Catacomb Wisp
+10 Chaos Eater
+10 Cragspider
+10 Domhnall of Zena
+10 Darkwraith Invader
+10 Hellkite Wyvern
+10 Notched Whip
+10 Sporting Duel
+10 Talisman Throw
+10 Hellkite Ambush
+10 Treacherous Invasion
+10 Sunlight Spear
+10 Alvina of the Darkroot Wood
+10 Inciting Summon
+10 Parasitic Wall-Hugger
+10 Toxic Ooze
+10 Darkroot Outlander
+10 Anor Londo Archer
+10 Novice Undead
+10 Infested Barbarian
+10 Mushroom People
+10 Black-Iron Tarkus
+10 Great Stone Knight
+10 Great Magic Barrier
+10 Grass Crest Shield
+10 Seek Guidance
+10 Kindle the Bonfire
+10 Souls Retrieved
+10 Andre, Astora Blacksmith
+10 Ash Maiden Anastacia
+10 Crossbreed Priscilla
+10 Dusk, Princess of Oolacile
+10 Griggs of Vinheim
+10 Maneater Mildred
+10 Paladin Leeroy the First
+10 Shiva of the East
+10 Witch Beatrice
+10 Xanthous King Jeremiah
+10 Ring of Sacrifice
+10 Caestus
+10 Tower Shield
+10 Tin Crystallization Catalyst
+10 Gravelord Sword
+10 Orange Guidance Soapstone
+10 The Everlasting Dragon
+10 Iron Golem
+10 Bell Tower Gargoyle
+10 Valley of Drakes
+10 Phantom Vagrant
+10 Black Crystal Banisher
+10 Fire Keeper's Soul
+10 Golden Phantom Ally
+10 Greatsword of Artorias
+10 Oswald of Carim
+10 Princess Gwynevere
+10 Solaire of Astora
+10 Traverse the White Light
+10 Crow Demon of Ariamis
+10 Dark Sun Gwyndolin
+10 Ingward, Guardian of the Seal
+10 Mass of Souls
+10 Moonlight Greatsword
+10 Open the Floodgates
+10 Pale Drake's Betrayal
+10 Twilight of Anor Londo
+10 Age of Dark
+10 Black Knight of the Kiln
+10 Catacomb Necromage
+10 Darkwraith Knight
+10 Executioner Smough
+10 Gravelord's Miasma
+10 Pinwheel
+10 Smough's Great Hammer
+10 Bounding Demon of Izalith
+10 Capra Demon
+10 The Centipede Demon
+10 Dragon Slayer Ornstein
+10 Dragonslayer Spear
+10 Forged by Giants
+10 Knight Lautrec of Carim
+10 Student of Laurentius
+10 Ash Lake Hydra
+10 Darkroot Summoner
+10 Dragon Bone Fist
+10 End of the Ancients
+10 Expedition of the Undead
+10 Ricard, Undead Prince
+10 Siegmeyer of Catarina
+10 Undead Merchant
+10 Kingseeker Frampt
+10 Darkstalker Kaathe
+10 Chaos Witch Quelaag
+10 Clan of Forest Protectors
+10 Sif the Great Grey Wolf
+10 Havel the Rock
+10 The Crystal General
+10 The Gaping Dragon
+10 The Fair Lady
+10 The Moonlight Butterfly
+10 The Souls of Lords
+10 Black Knight Greatsword
+10 The Dark Hand
+10 Havel's Set
+10 Astora Connection
+10 Catarina Connection
+10 Far East Connection
+10 Great Swamp Connection
+10 Vinheim Connection
+10 Link the Fire
+10 Royal Sentinels
+10 Bonfire Lit
+10 Horde of Hollows
+10 Into the Abyss
+10 Gwyn's Greatsword
+10 Ring the Two Bells
+10 The Cycle Continues
+10 Pursuit of Immortality
+10 Trusty Patches
+10 Gravelord Nito
+10 The Bed of Chaos
+10 Giants of Sen's Fortress
+10 Fang Boar
+10 Gwyn, Lord of Cinder
+10 King of New Londo
+10 Seath the Scaleless
+10 The Lordvessel
+10 Hero's Downfall
+10 Realms Uncharted
+10 Faithless Looting
+10 Ponder
+10 Solemnity
+10 Farewell
+10 Crumbling Ashes
+10 Ceaseless Discharge
+10 Temple Bell
+10 Everlasting Torment
+10 Field of the Dead
+10 Red Eye Champion
+[LandSlot(1)]
+10 Anor Londo
+10 Blighttown
+10 Crystal Caves
+10 Darkroot Basin
+10 Darkroot Garden
+10 Kiln of the First Flame
+10 Lost Izalith
+10 New Londo Ruins
+10 Painted World
+10 Undead Parish
