@@ -41,23 +41,23 @@
 			}
 		},
 		{
-			"name": "CW04 'WU / WG Crossover'",
+			"name": "CW04 'WU WG Crossover'",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
 			"type": "Creature",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/5_CW04 'WU / WG Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/5_CW04 'WU WG Crossover'.png"
 			}
 		},
 		{
-			"name": "CW05 'WB / WR Crossover'",
+			"name": "CW05 'WB WR Crossover'",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Rebel ",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/6_CW05 'WB / WR Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/6_CW05 'WB WR Crossover'.png"
 			}
 		},
 		{
@@ -441,23 +441,23 @@
 			}
 		},
 		{
-			"name": "CU04 'UR / UB Crossover'",
+			"name": "CU04 'UR UB Crossover'",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Human Soldier ",
 			"collector_number": "46",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/46_CU04 'UR / UB Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/46_CU04 'UR UB Crossover'.png"
 			}
 		},
 		{
-			"name": "CU05 'UW / UG Crossover'",
+			"name": "CU05 'UW UG Crossover'",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
 			"type": "Creature",
 			"collector_number": "47",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/47_CU05 'UW / UG Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/47_CU05 'UW UG Crossover'.png"
 			}
 		},
 		{
@@ -831,13 +831,13 @@
 			}
 		},
 		{
-			"name": "CB04 'UB / BR Crossover'",
+			"name": "CB04 'UB BR Crossover'",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Creature",
 			"collector_number": "87",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/87_CB04 'UB / BR Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/87_CB04 'UB BR Crossover'.png"
 			}
 		},
 		{
@@ -861,13 +861,13 @@
 			}
 		},
 		{
-			"name": "CB07 'WB / BG Crossover'",
+			"name": "CB07 'WB BG Crossover'",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
 			"type": "Creature",
 			"collector_number": "90",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/90_CB07 'WB / BG Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/90_CB07 'WB BG Crossover'.png"
 			}
 		},
 		{
@@ -1221,13 +1221,13 @@
 			}
 		},
 		{
-			"name": "CR02 'UR / RW Crossover'",
+			"name": "CR02 'UR RW Crossover'",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Rebel ",
 			"collector_number": "126",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/126_CR02 'UR / RW Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/126_CR02 'UR RW Crossover'.png"
 			}
 		},
 		{
@@ -1271,13 +1271,13 @@
 			}
 		},
 		{
-			"name": "CR06 'BR / RG Crossover'",
+			"name": "CR06 'BR RG Crossover'",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
 			"type": "Creature",
 			"collector_number": "130",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/130_CR06 'BR / RG Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/130_CR06 'BR RG Crossover'.png"
 			}
 		},
 		{
@@ -1641,13 +1641,13 @@
 			}
 		},
 		{
-			"name": "CG04 'RG / GW Crossover'",
+			"name": "CG04 'RG GW Crossover'",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Creature",
 			"collector_number": "169",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/169_CG04 'RG / GW Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/169_CG04 'RG GW Crossover'.png"
 			}
 		},
 		{
@@ -1701,13 +1701,13 @@
 			}
 		},
 		{
-			"name": "CG10 'BG / GU Crossover'",
+			"name": "CG10 'BG GU Crossover'",
 			"rarity": "common",
 			"mana_cost": "{5}{G}",
 			"type": "Creature",
 			"collector_number": "175",
 			"image_uris": {
-				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/175_CG10 'BG / GU Crossover'.png"
+				"en": "https://LowBatteries681.github.io/sets/FMA-files/img/175_CG10 'BG GU Crossover'.png"
 			}
 		},
 		{
@@ -2948,8 +2948,8 @@
 30 CW01 'Soul Mark'
 30 CW07 'Voltron Target'
 30 CW03 'Sanctified Soldier'
-30 CW04 'WU / WG Crossover'
-30 CW05 'WB / WR Crossover'
+30 CW04 'WU WG Crossover'
+30 CW05 'WB WR Crossover'
 30 CW06 'Overhead Support'
 30 CW08 'Aerial Patrol'
 30 CW09 'Rebel Tagteam'
@@ -2962,8 +2962,8 @@
 30 CU01 'Dork for Alchemize'
 30 CU02 'Small Guy Who Tries'
 30 CU03 'Teacher and Student'
-30 CU04 'UR / UB Crossover'
-30 CU05 'UW / UG Crossover'
+30 CU04 'UR UB Crossover'
+30 CU05 'UW UG Crossover'
 30 CU06 'Alchemize Enabler'
 30 CU07 'End Game Flier'
 30 CU08 'Military Tactitian'
@@ -2977,10 +2977,10 @@
 30 CB01 'Holy Gravetender'
 30 CB02 'Failed Vessel'
 30 CB03 'Greedy Thug'
-30 CB04 'UB / BR Crossover'
+30 CB04 'UB BR Crossover'
 30 CB05 'Aerial Scavenger'
 30 CB06 'Alchemical Fiend'
-30 CB07 'WB / BG Crossover'
+30 CB07 'WB BG Crossover'
 30 CB08 'Late Game Engine'
 30 CB09 'Gravegorger'
 30 CB10 Lethal Confrontation
@@ -2990,12 +2990,12 @@
 30 CB12 Necessary Steps
 30 CB15 Last Moments
 30 CR01 'Reckless Opener'
-30 CR02 'UR / RW Crossover'
+30 CR02 'UR RW Crossover'
 30 CR03 'Surprise Specialist'
 30 CR04 'Trench Grunt'
 30 CR05 'Ishvalan Resistance'
 30 CR08 'Big Ramp Stompy'
-30 CR06 'BR / RG Crossover'
+30 CR06 'BR RG Crossover'
 30 CR07 'Transmutationist'
 30 CR09 'Overwhelming Rebels'
 30 CR11 'Ping Re-Ping'
@@ -3006,13 +3006,13 @@
 30 CG01 'Hardened Servant'
 30 CG02 'Filter Fella'
 30 CG03 'Bear With Unite'
-30 CG04 'RG / GW Crossover'
+30 CG04 'RG GW Crossover'
 30 CG05 'Grave Excavator'
 30 CG06 'United Charger'
 30 CG07 'Mutation Patient'
 30 CG08 'Prized Chimera'
 30 CG09 'Green Stomper'
-30 CG10 'BG / GU Crossover'
+30 CG10 'BG GU Crossover'
 30 CG13 Exert Effort
 30 CG12 Voracious Appetite
 30 CG11 Greed Breaks In
@@ -3040,8 +3040,8 @@
 10 CW01 'Soul Mark'
 10 CW07 'Voltron Target'
 10 CW03 'Sanctified Soldier'
-10 CW04 'WU / WG Crossover'
-10 CW05 'WB / WR Crossover'
+10 CW04 'WU WG Crossover'
+10 CW05 'WB WR Crossover'
 10 CW06 'Overhead Support'
 10 CW08 'Aerial Patrol'
 10 CW09 'Rebel Tagteam'
@@ -3080,8 +3080,8 @@
 10 CU01 'Dork for Alchemize'
 10 CU02 'Small Guy Who Tries'
 10 CU03 'Teacher and Student'
-10 CU04 'UR / UB Crossover'
-10 CU05 'UW / UG Crossover'
+10 CU04 'UR UB Crossover'
+10 CU05 'UW UG Crossover'
 10 CU06 'Alchemize Enabler'
 10 CU07 'End Game Flier'
 10 CU08 'Military Tactitian'
@@ -3119,10 +3119,10 @@
 10 CB01 'Holy Gravetender'
 10 CB02 'Failed Vessel'
 10 CB03 'Greedy Thug'
-10 CB04 'UB / BR Crossover'
+10 CB04 'UB BR Crossover'
 10 CB05 'Aerial Scavenger'
 10 CB06 'Alchemical Fiend'
-10 CB07 'WB / BG Crossover'
+10 CB07 'WB BG Crossover'
 10 CB08 'Late Game Engine'
 10 CB09 'Gravegorger'
 10 CB10 Lethal Confrontation
@@ -3158,12 +3158,12 @@
 10 UB14
 10 UB15
 10 CR01 'Reckless Opener'
-10 CR02 'UR / RW Crossover'
+10 CR02 'UR RW Crossover'
 10 CR03 'Surprise Specialist'
 10 CR04 'Trench Grunt'
 10 CR05 'Ishvalan Resistance'
 10 CR08 'Big Ramp Stompy'
-10 CR06 'BR / RG Crossover'
+10 CR06 'BR RG Crossover'
 10 CR07 'Transmutationist'
 10 CR09 'Overwhelming Rebels'
 10 CR11 'Ping Re-Ping'
@@ -3200,13 +3200,13 @@
 10 CG01 'Hardened Servant'
 10 CG02 'Filter Fella'
 10 CG03 'Bear With Unite'
-10 CG04 'RG / GW Crossover'
+10 CG04 'RG GW Crossover'
 10 CG05 'Grave Excavator'
 10 CG06 'United Charger'
 10 CG07 'Mutation Patient'
 10 CG08 'Prized Chimera'
 10 CG09 'Green Stomper'
-10 CG10 'BG / GU Crossover'
+10 CG10 'BG GU Crossover'
 10 CG13 Exert Effort
 10 CG12 Voracious Appetite
 10 CG11 Greed Breaks In
