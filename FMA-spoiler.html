@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/FMA-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>FMA visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/FMA-files/logo.png" />
+	<img class="preload-hidden" src="/sets/FMA-files/icon.png" />
+		<img class="preload-hidden" src="/sets/LOR-files/icon.png" />
+		<img class="preload-hidden" src="/sets/TMA-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="FMA-spoiler"><img src="sets/FMA-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="LOR-spoiler"><img src="sets/LOR-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="TMA-spoiler"><img src="sets/TMA-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/FMA-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\FMA-files\img\17_MW01.png" id="17_MW01" data-flag="@X" onclick="openSidebar('17_MW01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\58_MU01.png" id="58_MU01" data-flag="@X" onclick="openSidebar('58_MU01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\99_MB01 Father.png" id="99_MB01 Father" data-flag="@X" onclick="openSidebar('99_MB01 Father',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\140_MR01.png" id="140_MR01" data-flag="@X" onclick="openSidebar('140_MR01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\181_MG01.png" id="181_MG01" data-flag="@X" onclick="openSidebar('181_MG01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\18_MW02.png" id="18_MW02" data-flag="@X" onclick="openSidebar('18_MW02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\59_MU02.png" id="59_MU02" data-flag="@X" onclick="openSidebar('59_MU02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\100_MB02.png" id="100_MB02" data-flag="@X" onclick="openSidebar('100_MB02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\141_MR02.png" id="141_MR02" data-flag="@X" onclick="openSidebar('141_MR02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\182_MG02.png" id="182_MG02" data-flag="@X" onclick="openSidebar('182_MG02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\19_MW03.png" id="19_MW03" data-flag="@X" onclick="openSidebar('19_MW03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\60_MU03.png" id="60_MU03" data-flag="@X" onclick="openSidebar('60_MU03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\101_MB03.png" id="101_MB03" data-flag="@X" onclick="openSidebar('101_MB03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\142_MR03.png" id="142_MR03" data-flag="@X" onclick="openSidebar('142_MR03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\183_MG03.png" id="183_MG03" data-flag="@X" onclick="openSidebar('183_MG03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\20_RW01 Lieutenant Hawkeye.png" id="20_RW01 Lieutenant Hawkeye" data-flag="@X" onclick="openSidebar('20_RW01 Lieutenant Hawkeye',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\61_RU01.png" id="61_RU01" data-flag="@X" onclick="openSidebar('61_RU01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\102_RB01 The Dwarf in the Flask.png" id="102_RB01 The Dwarf in the Flask" data-flag="@X" onclick="openSidebar('102_RB01 The Dwarf in the Flask',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\143_RR01.png" id="143_RR01" data-flag="@X" onclick="openSidebar('143_RR01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\184_RG01.png" id="184_RG01" data-flag="@X" onclick="openSidebar('184_RG01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\21_RW02.png" id="21_RW02" data-flag="@X" onclick="openSidebar('21_RW02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\62_RU02.png" id="62_RU02" data-flag="@X" onclick="openSidebar('62_RU02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\103_RB02.png" id="103_RB02" data-flag="@X" onclick="openSidebar('103_RB02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\144_RR02.png" id="144_RR02" data-flag="@X" onclick="openSidebar('144_RR02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\185_RG02.png" id="185_RG02" data-flag="@X" onclick="openSidebar('185_RG02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\22_RW03.png" id="22_RW03" data-flag="@X" onclick="openSidebar('22_RW03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\63_RU03.png" id="63_RU03" data-flag="@X" onclick="openSidebar('63_RU03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\104_RB03.png" id="104_RB03" data-flag="@X" onclick="openSidebar('104_RB03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\145_RR03.png" id="145_RR03" data-flag="@X" onclick="openSidebar('145_RR03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\186_RG03.png" id="186_RG03" data-flag="@X" onclick="openSidebar('186_RG03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\23_RW04.png" id="23_RW04" data-flag="@X" onclick="openSidebar('23_RW04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\64_RU04.png" id="64_RU04" data-flag="@X" onclick="openSidebar('64_RU04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\105_RB04.png" id="105_RB04" data-flag="@X" onclick="openSidebar('105_RB04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\146_RR04.png" id="146_RR04" data-flag="@X" onclick="openSidebar('146_RR04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\187_RG04.png" id="187_RG04" data-flag="@X" onclick="openSidebar('187_RG04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\24_RW05.png" id="24_RW05" data-flag="@X" onclick="openSidebar('24_RW05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\65_RU05.png" id="65_RU05" data-flag="@X" onclick="openSidebar('65_RU05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\106_RB05.png" id="106_RB05" data-flag="@X" onclick="openSidebar('106_RB05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\147_RR05.png" id="147_RR05" data-flag="@X" onclick="openSidebar('147_RR05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\188_RG05.png" id="188_RG05" data-flag="@X" onclick="openSidebar('188_RG05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\25_RW06.png" id="25_RW06" data-flag="@X" onclick="openSidebar('25_RW06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\66_RU06.png" id="66_RU06" data-flag="@X" onclick="openSidebar('66_RU06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\107_RB06.png" id="107_RB06" data-flag="@X" onclick="openSidebar('107_RB06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\148_RR06.png" id="148_RR06" data-flag="@X" onclick="openSidebar('148_RR06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\189_RG06.png" id="189_RG06" data-flag="@X" onclick="openSidebar('189_RG06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\26_RW07.png" id="26_RW07" data-flag="@X" onclick="openSidebar('26_RW07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\67_RU07.png" id="67_RU07" data-flag="@X" onclick="openSidebar('67_RU07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\108_RB07.png" id="108_RB07" data-flag="@X" onclick="openSidebar('108_RB07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\149_RR07.png" id="149_RR07" data-flag="@X" onclick="openSidebar('149_RR07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\190_RG07.png" id="190_RG07" data-flag="@X" onclick="openSidebar('190_RG07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\27_RW08 Rest in Peace.png" id="27_RW08 Rest in Peace" data-flag="@X" onclick="openSidebar('27_RW08 Rest in Peace',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\68_RU08.png" id="68_RU08" data-flag="@X" onclick="openSidebar('68_RU08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\109_RB08 Greed, the Avaricious.png" id="109_RB08 Greed, the Avaricious" data-flag="@X" onclick="openSidebar('109_RB08 Greed, the Avaricious',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\150_RR08.png" id="150_RR08" data-flag="@X" onclick="openSidebar('150_RR08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\191_RG08.png" id="191_RG08" data-flag="@X" onclick="openSidebar('191_RG08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\28_UW01 Nina Tucker.png" id="28_UW01 Nina Tucker" data-flag="@X" onclick="openSidebar('28_UW01 Nina Tucker',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\69_UU01.png" id="69_UU01" data-flag="@X" onclick="openSidebar('69_UU01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\110_UB01.png" id="110_UB01" data-flag="@X" onclick="openSidebar('110_UB01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\151_UR01.png" id="151_UR01" data-flag="@X" onclick="openSidebar('151_UR01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\192_UG01.png" id="192_UG01" data-flag="@X" onclick="openSidebar('192_UG01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\29_UW02.png" id="29_UW02" data-flag="@X" onclick="openSidebar('29_UW02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\70_UU02.png" id="70_UU02" data-flag="@X" onclick="openSidebar('70_UU02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\111_UB02.png" id="111_UB02" data-flag="@X" onclick="openSidebar('111_UB02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\152_UR02.png" id="152_UR02" data-flag="@X" onclick="openSidebar('152_UR02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\193_UG02.png" id="193_UG02" data-flag="@X" onclick="openSidebar('193_UG02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\30_UW03.png" id="30_UW03" data-flag="@X" onclick="openSidebar('30_UW03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\71_UU03.png" id="71_UU03" data-flag="@X" onclick="openSidebar('71_UU03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\112_UB03.png" id="112_UB03" data-flag="@X" onclick="openSidebar('112_UB03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\153_UR03.png" id="153_UR03" data-flag="@X" onclick="openSidebar('153_UR03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\194_UG03.png" id="194_UG03" data-flag="@X" onclick="openSidebar('194_UG03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\31_UW04.png" id="31_UW04" data-flag="@X" onclick="openSidebar('31_UW04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\72_UU04.png" id="72_UU04" data-flag="@X" onclick="openSidebar('72_UU04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\113_UB04.png" id="113_UB04" data-flag="@X" onclick="openSidebar('113_UB04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\154_UR04.png" id="154_UR04" data-flag="@X" onclick="openSidebar('154_UR04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\195_UG04.png" id="195_UG04" data-flag="@X" onclick="openSidebar('195_UG04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\32_UW05.png" id="32_UW05" data-flag="@X" onclick="openSidebar('32_UW05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\73_UU05.png" id="73_UU05" data-flag="@X" onclick="openSidebar('73_UU05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\114_UB05.png" id="114_UB05" data-flag="@X" onclick="openSidebar('114_UB05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\155_UR05.png" id="155_UR05" data-flag="@X" onclick="openSidebar('155_UR05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\196_UG05 Alexander, Loyal Friend.png" id="196_UG05 Alexander, Loyal Friend" data-flag="@X" onclick="openSidebar('196_UG05 Alexander, Loyal Friend',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\33_UW06.png" id="33_UW06" data-flag="@X" onclick="openSidebar('33_UW06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\74_UU06.png" id="74_UU06" data-flag="@X" onclick="openSidebar('74_UU06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\115_UB06.png" id="115_UB06" data-flag="@X" onclick="openSidebar('115_UB06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\156_UR06.png" id="156_UR06" data-flag="@X" onclick="openSidebar('156_UR06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\197_UG06.png" id="197_UG06" data-flag="@X" onclick="openSidebar('197_UG06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\34_UW07.png" id="34_UW07" data-flag="@X" onclick="openSidebar('34_UW07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\75_UU07 Pinako, Skilled Caretaker.png" id="75_UU07 Pinako, Skilled Caretaker" data-flag="@X" onclick="openSidebar('75_UU07 Pinako, Skilled Caretaker',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\116_UB07.png" id="116_UB07" data-flag="@X" onclick="openSidebar('116_UB07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\157_UR07.png" id="157_UR07" data-flag="@X" onclick="openSidebar('157_UR07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\198_UG07.png" id="198_UG07" data-flag="@X" onclick="openSidebar('198_UG07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\35_UW08.png" id="35_UW08" data-flag="@X" onclick="openSidebar('35_UW08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\76_UU08.png" id="76_UU08" data-flag="@X" onclick="openSidebar('76_UU08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\117_UB08 Solf J. Kimblee.png" id="117_UB08 Solf J. Kimblee" data-flag="@X" onclick="openSidebar('117_UB08 Solf J. Kimblee',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\158_UR08.png" id="158_UR08" data-flag="@X" onclick="openSidebar('158_UR08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\199_UG08.png" id="199_UG08" data-flag="@X" onclick="openSidebar('199_UG08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\36_UW09.png" id="36_UW09" data-flag="@X" onclick="openSidebar('36_UW09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\77_UU09.png" id="77_UU09" data-flag="@X" onclick="openSidebar('77_UU09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\118_UB09 Swift Strike.png" id="118_UB09 Swift Strike" data-flag="@X" onclick="openSidebar('118_UB09 Swift Strike',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\159_UR09.png" id="159_UR09" data-flag="@X" onclick="openSidebar('159_UR09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\200_UG09.png" id="200_UG09" data-flag="@X" onclick="openSidebar('200_UG09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\37_UW10.png" id="37_UW10" data-flag="@X" onclick="openSidebar('37_UW10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\78_UU10.png" id="78_UU10" data-flag="@X" onclick="openSidebar('78_UU10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\119_UB10.png" id="119_UB10" data-flag="@X" onclick="openSidebar('119_UB10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\160_UR10.png" id="160_UR10" data-flag="@X" onclick="openSidebar('160_UR10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\201_UG10.png" id="201_UG10" data-flag="@X" onclick="openSidebar('201_UG10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\38_UW11.png" id="38_UW11" data-flag="@X" onclick="openSidebar('38_UW11',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\79_UU11 Missing Screw.png" id="79_UU11 Missing Screw" data-flag="@X" onclick="openSidebar('79_UU11 Missing Screw',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\120_UB11.png" id="120_UB11" data-flag="@X" onclick="openSidebar('120_UB11',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\161_UR11.png" id="161_UR11" data-flag="@X" onclick="openSidebar('161_UR11',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\202_UG11.png" id="202_UG11" data-flag="@X" onclick="openSidebar('202_UG11',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\39_UW12 Mutual Respect.png" id="39_UW12 Mutual Respect" data-flag="@X" onclick="openSidebar('39_UW12 Mutual Respect',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\80_UU12 Envy's Trick.png" id="80_UU12 Envys Trick" data-flag="@X" onclick="openSidebar('80_UU12 Envys Trick',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\121_UB12.png" id="121_UB12" data-flag="@X" onclick="openSidebar('121_UB12',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\162_UR12.png" id="162_UR12" data-flag="@X" onclick="openSidebar('162_UR12',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\203_UG12.png" id="203_UG12" data-flag="@X" onclick="openSidebar('203_UG12',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\40_UW13 Ultimate Eye.png" id="40_UW13 Ultimate Eye" data-flag="@X" onclick="openSidebar('40_UW13 Ultimate Eye',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\81_UU13 Necessary Repairs.png" id="81_UU13 Necessary Repairs" data-flag="@X" onclick="openSidebar('81_UU13 Necessary Repairs',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\122_UB13 Human Transmutation.png" id="122_UB13 Human Transmutation" data-flag="@X" onclick="openSidebar('122_UB13 Human Transmutation',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\163_UR13 Mustang's Fury.png" id="163_UR13 Mustangs Fury" data-flag="@X" onclick="openSidebar('163_UR13 Mustangs Fury',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\204_UG13.png" id="204_UG13" data-flag="@X" onclick="openSidebar('204_UG13',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\41_UW14.png" id="41_UW14" data-flag="@X" onclick="openSidebar('41_UW14',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\82_UU14.png" id="82_UU14" data-flag="@X" onclick="openSidebar('82_UU14',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\123_UB14.png" id="123_UB14" data-flag="@X" onclick="openSidebar('123_UB14',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\164_UR14.png" id="164_UR14" data-flag="@X" onclick="openSidebar('164_UR14',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\205_UG14.png" id="205_UG14" data-flag="@X" onclick="openSidebar('205_UG14',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\42_UW15.png" id="42_UW15" data-flag="@X" onclick="openSidebar('42_UW15',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\83_UU15.png" id="83_UU15" data-flag="@X" onclick="openSidebar('83_UU15',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\124_UB15.png" id="124_UB15" data-flag="@X" onclick="openSidebar('124_UB15',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\165_UR15.png" id="165_UR15" data-flag="@X" onclick="openSidebar('165_UR15',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\206_UG15.png" id="206_UG15" data-flag="@X" onclick="openSidebar('206_UG15',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\2_CW01 'Soul Mark'.png" id="2_CW01 Soul Mark" data-flag="@X" onclick="openSidebar('2_CW01 Soul Mark',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\43_CU01 'Dork for Alchemize'.png" id="43_CU01 Dork for Alchemize" data-flag="@X" onclick="openSidebar('43_CU01 Dork for Alchemize',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\84_CB01 'Holy Gravetender'.png" id="84_CB01 Holy Gravetender" data-flag="@X" onclick="openSidebar('84_CB01 Holy Gravetender',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\125_CR01 'Reckless Opener'.png" id="125_CR01 Reckless Opener" data-flag="@X" onclick="openSidebar('125_CR01 Reckless Opener',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\166_CG01 'Hardened Servant'.png" id="166_CG01 Hardened Servant" data-flag="@X" onclick="openSidebar('166_CG01 Hardened Servant',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\3_CW02 'United Scout'.png" id="3_CW02 United Scout" data-flag="@X" onclick="openSidebar('3_CW02 United Scout',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\44_CU02 'Small Guy Who Tries'.png" id="44_CU02 Small Guy Who Tries" data-flag="@X" onclick="openSidebar('44_CU02 Small Guy Who Tries',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\85_CB02 'Failed Vessel'.png" id="85_CB02 Failed Vessel" data-flag="@X" onclick="openSidebar('85_CB02 Failed Vessel',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\126_CR02 'UR / RW Crossover'.png" id="126_CR02 UR / RW Crossover" data-flag="@N" onclick="openSidebar('126_CR02 UR / RW Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\167_CG02 'Filter Fella'.png" id="167_CG02 Filter Fella" data-flag="@X" onclick="openSidebar('167_CG02 Filter Fella',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\4_CW03 'Sanctified Soldier'.png" id="4_CW03 Sanctified Soldier" data-flag="@X" onclick="openSidebar('4_CW03 Sanctified Soldier',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\45_CU03 'Teacher and Student'.png" id="45_CU03 Teacher and Student" data-flag="@X" onclick="openSidebar('45_CU03 Teacher and Student',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\86_CB03 'Greedy Thug'.png" id="86_CB03 Greedy Thug" data-flag="@X" onclick="openSidebar('86_CB03 Greedy Thug',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\127_CR03 'Surprise Specialist'.png" id="127_CR03 Surprise Specialist" data-flag="@X" onclick="openSidebar('127_CR03 Surprise Specialist',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\168_CG03 'Bear With Unite'.png" id="168_CG03 Bear With Unite" data-flag="@X" onclick="openSidebar('168_CG03 Bear With Unite',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\5_CW04 'WU / WG Crossover'.png" id="5_CW04 WU / WG Crossover" data-flag="@N" onclick="openSidebar('5_CW04 WU / WG Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\46_CU04 'UR / UB Crossover'.png" id="46_CU04 UR / UB Crossover" data-flag="@N" onclick="openSidebar('46_CU04 UR / UB Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\87_CB04 'UB / BR Crossover'.png" id="87_CB04 UB / BR Crossover" data-flag="@N" onclick="openSidebar('87_CB04 UB / BR Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\128_CR04 'Trench Grunt'.png" id="128_CR04 Trench Grunt" data-flag="@X" onclick="openSidebar('128_CR04 Trench Grunt',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\169_CG04 'RG / GW Crossover'.png" id="169_CG04 RG / GW Crossover" data-flag="@N" onclick="openSidebar('169_CG04 RG / GW Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\6_CW05 'WB / WR Crossover'.png" id="6_CW05 WB / WR Crossover" data-flag="@N" onclick="openSidebar('6_CW05 WB / WR Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\47_CU05 'UW / UG Crossover'.png" id="47_CU05 UW / UG Crossover" data-flag="@N" onclick="openSidebar('47_CU05 UW / UG Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\88_CB05 'Aerial Scavenger'.png" id="88_CB05 Aerial Scavenger" data-flag="@X" onclick="openSidebar('88_CB05 Aerial Scavenger',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\129_CR05 'Ishvalan Resistance'.png" id="129_CR05 Ishvalan Resistance" data-flag="@X" onclick="openSidebar('129_CR05 Ishvalan Resistance',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\170_CG05 'Grave Excavator'.png" id="170_CG05 Grave Excavator" data-flag="@X" onclick="openSidebar('170_CG05 Grave Excavator',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\7_CW06 'Overhead Support'.png" id="7_CW06 Overhead Support" data-flag="@X" onclick="openSidebar('7_CW06 Overhead Support',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\48_CU06 'Alchemize Enabler'.png" id="48_CU06 Alchemize Enabler" data-flag="@X" onclick="openSidebar('48_CU06 Alchemize Enabler',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\89_CB06 'Alchemical Fiend'.png" id="89_CB06 Alchemical Fiend" data-flag="@X" onclick="openSidebar('89_CB06 Alchemical Fiend',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\130_CR06 'BR / RG Crossover'.png" id="130_CR06 BR / RG Crossover" data-flag="@N" onclick="openSidebar('130_CR06 BR / RG Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\171_CG06 'United Charger'.png" id="171_CG06 United Charger" data-flag="@X" onclick="openSidebar('171_CG06 United Charger',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\8_CW07 'Voltron Target'.png" id="8_CW07 Voltron Target" data-flag="@X" onclick="openSidebar('8_CW07 Voltron Target',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\49_CU07 'End Game Flier'.png" id="49_CU07 End Game Flier" data-flag="@X" onclick="openSidebar('49_CU07 End Game Flier',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\90_CB07 'WB / BG Crossover'.png" id="90_CB07 WB / BG Crossover" data-flag="@N" onclick="openSidebar('90_CB07 WB / BG Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\131_CR07 'Transmutationist'.png" id="131_CR07 Transmutationist" data-flag="@X" onclick="openSidebar('131_CR07 Transmutationist',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\172_CG07 'Mutation Patient'.png" id="172_CG07 Mutation Patient" data-flag="@X" onclick="openSidebar('172_CG07 Mutation Patient',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\9_CW08 'Aerial Patrol'.png" id="9_CW08 Aerial Patrol" data-flag="@X" onclick="openSidebar('9_CW08 Aerial Patrol',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\50_CU08 'Military Tactitian'.png" id="50_CU08 Military Tactitian" data-flag="@X" onclick="openSidebar('50_CU08 Military Tactitian',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\91_CB08 'Late Game Engine'.png" id="91_CB08 Late Game Engine" data-flag="@X" onclick="openSidebar('91_CB08 Late Game Engine',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\132_CR08 'Big Ramp Stompy'.png" id="132_CR08 Big Ramp Stompy" data-flag="@X" onclick="openSidebar('132_CR08 Big Ramp Stompy',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\173_CG08 'Prized Chimera'.png" id="173_CG08 Prized Chimera" data-flag="@X" onclick="openSidebar('173_CG08 Prized Chimera',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\10_CW09 'Rebel Tagteam'.png" id="10_CW09 Rebel Tagteam" data-flag="@X" onclick="openSidebar('10_CW09 Rebel Tagteam',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\51_CU09 Glimpse Truth.png" id="51_CU09 Glimpse Truth" data-flag="@X" onclick="openSidebar('51_CU09 Glimpse Truth',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\92_CB09 'Gravegorger'.png" id="92_CB09 Gravegorger" data-flag="@X" onclick="openSidebar('92_CB09 Gravegorger',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\133_CR09 'Overwhelming Rebels'.png" id="133_CR09 Overwhelming Rebels" data-flag="@X" onclick="openSidebar('133_CR09 Overwhelming Rebels',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\174_CG09 'Green Stomper'.png" id="174_CG09 Green Stomper" data-flag="@X" onclick="openSidebar('174_CG09 Green Stomper',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\11_CW10 'Token Pay Off'.png" id="11_CW10 Token Pay Off" data-flag="@X" onclick="openSidebar('11_CW10 Token Pay Off',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\52_CU10 I Know Your Secret.png" id="52_CU10 I Know Your Secret" data-flag="@X" onclick="openSidebar('52_CU10 I Know Your Secret',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\93_CB10 Lethal Confrontation.png" id="93_CB10 Lethal Confrontation" data-flag="@X" onclick="openSidebar('93_CB10 Lethal Confrontation',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\134_CR10 'Alchemist's Gambit'.png" id="134_CR10 Alchemists Gambit" data-flag="@X" onclick="openSidebar('134_CR10 Alchemists Gambit',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\175_CG10 'BG / GU Crossover'.png" id="175_CG10 BG / GU Crossover" data-flag="@N" onclick="openSidebar('175_CG10 BG / GU Crossover',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\12_CW11 'United Finisher'.png" id="12_CW11 United Finisher" data-flag="@X" onclick="openSidebar('12_CW11 United Finisher',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\53_CU11 Forbidden Alchemy.png" id="53_CU11 Forbidden Alchemy" data-flag="@X" onclick="openSidebar('53_CU11 Forbidden Alchemy',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\94_CB11 Ultimate Shield.png" id="94_CB11 Ultimate Shield" data-flag="@X" onclick="openSidebar('94_CB11 Ultimate Shield',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\135_CR11 'Ping Re-Ping'.png" id="135_CR11 Ping Re-Ping" data-flag="@X" onclick="openSidebar('135_CR11 Ping Re-Ping',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\176_CG11 Greed Breaks In.png" id="176_CG11 Greed Breaks In" data-flag="@X" onclick="openSidebar('176_CG11 Greed Breaks In',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\13_CW12 'Teamwork Takedown'.png" id="13_CW12 Teamwork Takedown" data-flag="@X" onclick="openSidebar('13_CW12 Teamwork Takedown',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\54_CU12 State Training.png" id="54_CU12 State Training" data-flag="@X" onclick="openSidebar('54_CU12 State Training',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\95_CB12 Necessary Steps.png" id="95_CB12 Necessary Steps" data-flag="@X" onclick="openSidebar('95_CB12 Necessary Steps',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\136_CR12 Fleeting Memories.png" id="136_CR12 Fleeting Memories" data-flag="@X" onclick="openSidebar('136_CR12 Fleeting Memories',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\177_CG12 Voracious Appetite.png" id="177_CG12 Voracious Appetite" data-flag="@X" onclick="openSidebar('177_CG12 Voracious Appetite',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\14_CW13 Through the Gate.png" id="14_CW13 Through the Gate" data-flag="@X" onclick="openSidebar('14_CW13 Through the Gate',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\55_CU13 Presidential Decree.png" id="55_CU13 Presidential Decree" data-flag="@X" onclick="openSidebar('55_CU13 Presidential Decree',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\96_CB13 Relentless Creations.png" id="96_CB13 Relentless Creations" data-flag="@X" onclick="openSidebar('96_CB13 Relentless Creations',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\137_CR13 Winry's Rage.png" id="137_CR13 Winrys Rage" data-flag="@X" onclick="openSidebar('137_CR13 Winrys Rage',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\178_CG13 Exert Effort.png" id="178_CG13 Exert Effort" data-flag="@X" onclick="openSidebar('178_CG13 Exert Effort',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\15_CW14 'Suit Up'.png" id="15_CW14 Suit Up" data-flag="@X" onclick="openSidebar('15_CW14 Suit Up',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\56_CU14 Loss of Self.png" id="56_CU14 Loss of Self" data-flag="@X" onclick="openSidebar('56_CU14 Loss of Self',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\97_CB14 Murder.png" id="97_CB14 Murder" data-flag="@X" onclick="openSidebar('97_CB14 Murder',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\138_CR14 Deconstruction Array.png" id="138_CR14 Deconstruction Array" data-flag="@X" onclick="openSidebar('138_CR14 Deconstruction Array',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\179_CG14 Study of Alkahestry.png" id="179_CG14 Study of Alkahestry" data-flag="@X" onclick="openSidebar('179_CG14 Study of Alkahestry',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\16_CW15 Break Down.png" id="16_CW15 Break Down" data-flag="@X" onclick="openSidebar('16_CW15 Break Down',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\57_CU15 Experts In Their Fields.png" id="57_CU15 Experts In Their Fields" data-flag="@X" onclick="openSidebar('57_CU15 Experts In Their Fields',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\98_CB15 Last Moments.png" id="98_CB15 Last Moments" data-flag="@X" onclick="openSidebar('98_CB15 Last Moments',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\139_CR15 Snap Spark.png" id="139_CR15 Snap Spark" data-flag="@X" onclick="openSidebar('139_CR15 Snap Spark',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\180_CG15 Gift of a Name.png" id="180_CG15 Gift of a Name" data-flag="@X" onclick="openSidebar('180_CG15 Gift of a Name',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\208_MM02 Van Hohenheim, Slave 23.png" id="208_MM02 Van Hohenheim, Slave 23" data-flag="@X" onclick="openSidebar('208_MM02 Van Hohenheim, Slave 23',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\222_UM02 Shou Tucker.png" id="222_UM02 Shou Tucker" data-flag="@X" onclick="openSidebar('222_UM02 Shou Tucker',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\207_MM01 Fall of Xerxes.png" id="207_MM01 Fall of Xerxes" data-flag="@X" onclick="openSidebar('207_MM01 Fall of Xerxes',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\224_UM04 Izumi and Sig Curtis.png" id="224_UM04 Izumi and Sig Curtis" data-flag="@X" onclick="openSidebar('224_UM04 Izumi and Sig Curtis',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\225_UM05 May Chang.png" id="225_UM05 May Chang" data-flag="@X" onclick="openSidebar('225_UM05 May Chang',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\221_UM01 Maes Hughes.png" id="221_UM01 Maes Hughes" data-flag="@X" onclick="openSidebar('221_UM01 Maes Hughes',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\232_UM12 'Chimera Scientist'.png" id="232_UM12 Chimera Scientist" data-flag="@X" onclick="openSidebar('232_UM12 Chimera Scientist',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\223_UM03 Barry the Chopper.png" id="223_UM03 Barry the Chopper" data-flag="@X" onclick="openSidebar('223_UM03 Barry the Chopper',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\234_UM14 'Utility Alchemist'.png" id="234_UM14 Utility Alchemist" data-flag="@X" onclick="openSidebar('234_UM14 Utility Alchemist',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\235_UM15 Call for Dinner.png" id="235_UM15 Call for Dinner" data-flag="@X" onclick="openSidebar('235_UM15 Call for Dinner',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\231_UM11 'Militant Crew'.png" id="231_UM11 Militant Crew" data-flag="@X" onclick="openSidebar('231_UM11 Militant Crew',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\233_UM13 'Pinger's Best Friend'.png" id="233_UM13 Pingers Best Friend" data-flag="@X" onclick="openSidebar('233_UM13 Pingers Best Friend',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\226_UM06 Olivier, Ice Queen.png" id="226_UM06 Olivier, Ice Queen" data-flag="@X" onclick="openSidebar('226_UM06 Olivier, Ice Queen',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\209_MM03.png" id="209_MM03" data-flag="@X" onclick="openSidebar('209_MM03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\210_MM04.png" id="210_MM04" data-flag="@X" onclick="openSidebar('210_MM04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\227_UM07 Ed and Al, Young Alchemists.png" id="227_UM07 Ed and Al, Young Alchemists" data-flag="@X" onclick="openSidebar('227_UM07 Ed and Al, Young Alchemists',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\229_UM09 Major Armstrong.png" id="229_UM09 Major Armstrong" data-flag="@X" onclick="openSidebar('229_UM09 Major Armstrong',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\236_UM16.png" id="236_UM16" data-flag="@X" onclick="openSidebar('236_UM16',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\228_UM08 The Devil's Nest Gang.png" id="228_UM08 The Devils Nest Gang" data-flag="@X" onclick="openSidebar('228_UM08 The Devils Nest Gang',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\230_UM10 Winry, Automail Mechanic.png" id="230_UM10 Winry, Automail Mechanic" data-flag="@X" onclick="openSidebar('230_UM10 Winry, Automail Mechanic',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\237_UM17.png" id="237_UM17" data-flag="@X" onclick="openSidebar('237_UM17',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\239_UM19.png" id="239_UM19" data-flag="@X" onclick="openSidebar('239_UM19',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\238_UM18.png" id="238_UM18" data-flag="@X" onclick="openSidebar('238_UM18',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\240_UM20.png" id="240_UM20" data-flag="@X" onclick="openSidebar('240_UM20',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\215_RM05 Alphonse Elric.png" id="215_RM05 Alphonse Elric" data-flag="@X" onclick="openSidebar('215_RM05 Alphonse Elric',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\211_RM01 Pride, the Arrogant.png" id="211_RM01 Pride, the Arrogant" data-flag="@X" onclick="openSidebar('211_RM01 Pride, the Arrogant',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\212_RM02 Lust, the Lascivious.png" id="212_RM02 Lust, the Lascivious" data-flag="@X" onclick="openSidebar('212_RM02 Lust, the Lascivious',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\213_RM03 Sloth, the Indolent.png" id="213_RM03 Sloth, the Indolent" data-flag="@X" onclick="openSidebar('213_RM03 Sloth, the Indolent',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\214_RM04 Armstrong and Sig.png" id="214_RM04 Armstrong and Sig" data-flag="@X" onclick="openSidebar('214_RM04 Armstrong and Sig',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\216_RM06 Wrath, the Furious.png" id="216_RM06 Wrath, the Furious" data-flag="@X" onclick="openSidebar('216_RM06 Wrath, the Furious',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\217_RM07.png" id="217_RM07" data-flag="@X" onclick="openSidebar('217_RM07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\218_RM08 Gluttony, the Voracious.png" id="218_RM08 Gluttony, the Voracious" data-flag="@X" onclick="openSidebar('218_RM08 Gluttony, the Voracious',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\219_RM09 Edward, Full Metal Alchemist.png" id="219_RM09 Edward, Full Metal Alchemist" data-flag="@X" onclick="openSidebar('219_RM09 Edward, Full Metal Alchemist',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\220_RM10 Envy, the Jealous.png" id="220_RM10 Envy, the Jealous" data-flag="@X" onclick="openSidebar('220_RM10 Envy, the Jealous',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\246_MA01 The Philosopher's Stone.png" id="246_MA01 The Philosophers Stone" data-flag="@X" onclick="openSidebar('246_MA01 The Philosophers Stone',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\247_UA01.png" id="247_UA01" data-flag="@X" onclick="openSidebar('247_UA01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\248_UA02.png" id="248_UA02" data-flag="@X" onclick="openSidebar('248_UA02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\249_UA03.png" id="249_UA03" data-flag="@X" onclick="openSidebar('249_UA03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\250_UA04.png" id="250_UA04" data-flag="@X" onclick="openSidebar('250_UA04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\251_UA05.png" id="251_UA05" data-flag="@X" onclick="openSidebar('251_UA05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\1_CC01.png" id="1_CC01" data-flag="@X" onclick="openSidebar('1_CC01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\241_CA01 Military Sidearm.png" id="241_CA01 Military Sidearm" data-flag="@X" onclick="openSidebar('241_CA01 Military Sidearm',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\242_CA02.png" id="242_CA02" data-flag="@X" onclick="openSidebar('242_CA02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\243_CA03.png" id="243_CA03" data-flag="@X" onclick="openSidebar('243_CA03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\244_CA04.png" id="244_CA04" data-flag="@X" onclick="openSidebar('244_CA04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\245_CA05 Pocket Watch.png" id="245_CA05 Pocket Watch" data-flag="@X" onclick="openSidebar('245_CA05 Pocket Watch',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\262_RL01.png" id="262_RL01" data-flag="@X" onclick="openSidebar('262_RL01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\263_RL02.png" id="263_RL02" data-flag="@X" onclick="openSidebar('263_RL02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\264_RL03.png" id="264_RL03" data-flag="@X" onclick="openSidebar('264_RL03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\265_RL04.png" id="265_RL04" data-flag="@X" onclick="openSidebar('265_RL04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\266_RL05.png" id="266_RL05" data-flag="@X" onclick="openSidebar('266_RL05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\267_RL06.png" id="267_RL06" data-flag="@X" onclick="openSidebar('267_RL06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\268_RL07.png" id="268_RL07" data-flag="@X" onclick="openSidebar('268_RL07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\269_RL08.png" id="269_RL08" data-flag="@X" onclick="openSidebar('269_RL08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\270_RL09.png" id="270_RL09" data-flag="@X" onclick="openSidebar('270_RL09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\271_RL10.png" id="271_RL10" data-flag="@X" onclick="openSidebar('271_RL10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\252_CL01.png" id="252_CL01" data-flag="@X" onclick="openSidebar('252_CL01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\253_CL02.png" id="253_CL02" data-flag="@X" onclick="openSidebar('253_CL02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\254_CL03.png" id="254_CL03" data-flag="@X" onclick="openSidebar('254_CL03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\255_CL04.png" id="255_CL04" data-flag="@X" onclick="openSidebar('255_CL04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\256_CL05.png" id="256_CL05" data-flag="@X" onclick="openSidebar('256_CL05',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\257_CL06.png" id="257_CL06" data-flag="@X" onclick="openSidebar('257_CL06',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\258_CL07.png" id="258_CL07" data-flag="@X" onclick="openSidebar('258_CL07',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\259_CL08.png" id="259_CL08" data-flag="@X" onclick="openSidebar('259_CL08',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\260_CL09.png" id="260_CL09" data-flag="@X" onclick="openSidebar('260_CL09',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\261_CL10.png" id="261_CL10" data-flag="@X" onclick="openSidebar('261_CL10',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\272_BL01.png" id="272_BL01" data-flag="@X" onclick="openSidebar('272_BL01',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\273_BL02.png" id="273_BL02" data-flag="@X" onclick="openSidebar('273_BL02',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\274_BL03.png" id="274_BL03" data-flag="@X" onclick="openSidebar('274_BL03',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\275_BL04.png" id="275_BL04" data-flag="@X" onclick="openSidebar('275_BL04',false)"></div>
+			<div class="container"><img alt="sets\FMA-files\img\276_BL05.png" id="276_BL05" data-flag="@X" onclick="openSidebar('276_BL05',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>
